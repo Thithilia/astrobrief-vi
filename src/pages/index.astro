@@ -1,0 +1,216 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import SummaryCard from '../components/SummaryCard.astro';
+import { externalUrl, formatDate, formatTimestamp, internalUrl, journalName, loadCatalog, safeJson, TOPICS, topicName } from '../lib/catalog';
+import type { SummaryPreview } from '../lib/catalog';
+
+const catalog = loadCatalog();
+const posts = await getCollection('summaries');
+const summaries: SummaryPreview[] = posts.map((post) => {
+  const id = post.data.id ?? post.id;
+  const original = catalog.summaries.find((item) => item.id === id);
+  return {
+    ...original,
+    id,
+    doi: post.data.doi,
+    title: post.data.title,
+    dek: post.data.dek,
+    journal: post.data.journal,
+    paper_title: post.data.paper_title,
+    summary_date: post.data.summary_date,
+    generated_at: post.data.generated_at,
+    topic: post.data.topic,
+    reading_minutes: post.data.reading_minutes,
+    source: post.data.source,
+    image: post.data.figures[0]?.src ?? original?.image,
+    search_text: `${post.data.title} ${post.data.dek} ${post.body ?? ''}`,
+  };
+}).sort((a, b) => b.summary_date.localeCompare(a.summary_date) || a.id.localeCompare(b.id));
+const latestDay = summaries[0]?.summary_date;
+const latest = summaries.filter((summary) => summary.summary_date === latestDay).slice(0, 5);
+const summaryMap = new Map(summaries.map((summary) => [summary.doi.toLowerCase(), summary]));
+const papers = catalog.papers.map((paper) => {
+  const summary = summaryMap.get(paper.doi.toLowerCase());
+  return { ...paper, has_summary: Boolean(summary), summary_id: summary?.id ?? null };
+}).sort((a, b) => (b.published_online ?? b.first_seen ?? '').localeCompare(a.published_online ?? a.first_seen ?? '') || a.id.localeCompare(b.id));
+const initial = papers.slice(0, 30);
+const kindLabels: Record<string, string> = { letter: 'Letters', correction: 'Đính chính', editorial: 'Biên tập', review: 'Tổng quan' };
+const clientData = { papers, summaries, base: internalUrl(), topics: TOPICS, journals: catalog.journals.map(({id,short}) => ({id,short})) };
+---
+<Layout active="home">
+  <section class="hero container">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="tiny-star" aria-hidden="true">✦</span> NGHIÊN CỨU MỚI · GÓC NHÌN RÕ HƠN</p>
+      <h1>Mỗi ngày, một bước<br />gần hơn với <em>vũ trụ.</em></h1>
+      <p class="hero-description">Theo dõi những bài báo thiên văn vừa xuất bản.<br class="desktop-break" /> Đọc câu hỏi, cách tìm lời giải và điều chúng ta học được — bằng tiếng Việt.</p>
+      <a class="text-link" href="#bai-moi">Khám phá bài mới <span aria-hidden="true">↓</span></a>
+    </div>
+    <div class="hero-aside">
+      <div class="orbit-mark" aria-hidden="true"><span class="orbit o1"></span><span class="orbit o2"></span><span class="orbit o3"></span><span class="orbit-dot d1"></span><span class="orbit-dot d2"></span><span class="orbit-center">✦</span></div>
+      <div class="hero-caption"><span>06 tạp chí được theo dõi</span><strong>A&A · ApJ · ApJL · ApJS · AJ · MNRAS</strong></div>
+    </div>
+  </section>
+
+  <div class="update-strip">
+    <div class="container update-inner">
+      <span><span class:list={['status-dot', { 'status-dot-pending': !catalog.generated_at }]}></span>{catalog.generated_at ? `Dữ liệu cập nhật ${formatTimestamp(catalog.generated_at)}` : 'Đang chuẩn bị lần cập nhật đầu tiên'}</span>
+      <span class="update-secondary">Giờ Việt Nam <span aria-hidden="true">·</span> Summary lúc 07:00</span>
+      <a href={internalUrl('tap-chi/')}>Xem nguồn <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+
+  <section class="container section-block" id="lua-chon">
+    <div class="section-heading">
+      <div><p class="eyebrow">DÀNH MỘT CHÚT THỜI GIAN ĐỂ HIỂU</p><h2>Những bài đọc được chọn</h2></div>
+      {latestDay && <span class="section-date">Phiên {formatDate(latestDay)}</span>}
+    </div>
+    {latest.length > 0 ? (
+      <div class="summary-grid">{latest.map((summary, index) => <SummaryCard summary={summary} index={index} featured={index === 0} />)}</div>
+    ) : (
+      <div class="empty-feature">
+        <span class="empty-symbol" aria-hidden="true">✧</span>
+        <div><h3>Phiên đọc đầu tiên đang được chuẩn bị</h3><p>Các bài giải thích sẽ xuất hiện sau khi Codex đọc toàn văn và hoàn tất bước đối chiếu nguồn. Bạn có thể xem danh sách article mới ở bên dưới.</p></div>
+      </div>
+    )}
+    {summaries.length > latest.length && <p class="archive-note">Kho đọc hiện có <strong>{summaries.length}</strong> summary. Chọn “Đã có summary” trong danh sách bên dưới để tìm các bài trước.</p>}
+  </section>
+
+  <section class="catalog-section" id="bai-moi">
+    <div class="container section-block">
+      <div class="section-heading catalog-heading">
+        <div><p class="eyebrow">THEO DÒNG XUẤT BẢN</p><h2>Danh sách bài mới</h2><p class="section-description">Ngày online của article được hiển thị riêng với ngày phát hiện và ngày ra số.</p></div>
+        <div class="catalog-total"><strong>{papers.length.toLocaleString('vi-VN')}</strong><span>article trong danh sách</span></div>
+      </div>
+      <form class="filter-panel" id="paper-filters" role="search" aria-label="Tìm và lọc bài báo">
+        <div class="search-field"><label for="paper-search">Tìm bài báo</label><div class="input-icon"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.5"/><path d="m13 13 4 4" stroke="currentColor" stroke-width="1.5"/></svg><input id="paper-search" name="q" type="search" placeholder="Tiêu đề, tác giả, nội dung summary…" autocomplete="off" /></div></div>
+        <div><label for="journal-filter">Tạp chí</label><select id="journal-filter" name="journal"><option value="">Tất cả tạp chí</option>{catalog.journals.map((journal) => <option value={journal.id}>{journal.short}</option>)}</select></div>
+        <div><label for="topic-filter">Chủ đề</label><select id="topic-filter" name="topic"><option value="">Tất cả chủ đề</option>{Object.entries(TOPICS).map(([key, label]) => <option value={key}>{label}</option>)}</select></div>
+        <div><label for="date-filter">Ngày online</label><input id="date-filter" name="date" type="date" /></div>
+        <div><label for="summary-filter">Summary</label><select id="summary-filter" name="summary"><option value="">Tất cả bài</option><option value="yes">Đã có summary</option><option value="no">Chưa có summary</option></select></div>
+        <button class="reset-button" type="reset">Xóa bộ lọc <span aria-hidden="true">↺</span></button>
+      </form>
+      <div class="results-toolbar"><p id="result-count" role="status" aria-live="polite">Hiển thị {initial.length}/{papers.length} bài</p><span>Sắp xếp theo ngày online mới nhất</span></div>
+      <div id="paper-list" class="paper-list">
+        {initial.map((paper) => {
+          const summary = summaryMap.get(paper.doi.toLowerCase());
+          const url = summary ? internalUrl(`bai-viet/${summary.id}/`) : externalUrl(paper.source_url, `https://doi.org/${paper.doi}`);
+          const isSummary = Boolean(summary);
+          return <article class="paper-card">
+            <div class="paper-marker" aria-hidden="true">{journalName(paper.journal)}</div>
+            <div class="paper-main">
+              <div class="paper-tags"><span class="journal-tag mobile-journal">{journalName(paper.journal)}</span><span class="topic-label">{topicName(paper.topic)}</span>{kindLabels[paper.kind] && <span class="kind-tag">{kindLabels[paper.kind]}</span>}{isSummary && <span class="summary-tag">Có summary tiếng Việt</span>}</div>
+              <h3><a href={url} target={isSummary ? undefined : '_blank'} rel={isSummary ? undefined : 'noopener noreferrer'}>{summary?.title ?? paper.title}</a></h3>
+              {summary && <p class="paper-original-title">{paper.title}</p>}
+              <p class="paper-authors">{paper.authors.slice(0, 3).join(', ')}{paper.authors.length > 3 ? ' và cộng sự' : ''}</p>
+              <div class="paper-meta"><span>Online: <time datetime={paper.published_online ?? undefined}>{formatDate(paper.published_online, paper.online_date_precision)}</time></span><span>Phát hiện: <time datetime={paper.first_seen ?? undefined}>{formatDate(paper.first_seen)}</time></span>{paper.volume && <span>Tập {paper.volume}{paper.issue ? ` · số ${paper.issue}` : ''}</span>}</div>
+            </div>
+            <div class="paper-actions">{summary && <a class="paper-read" href={internalUrl(`bai-viet/${summary.id}/`)}>Đọc summary <span aria-hidden="true">→</span></a>}<a class="source-link" href={externalUrl(paper.source_url, `https://doi.org/${paper.doi}`)} target="_blank" rel="noopener noreferrer">Bài gốc <span aria-hidden="true">↗</span></a></div>
+          </article>;
+        })}
+      </div>
+      <div id="no-results" class="empty-results" hidden={papers.length > 0}><span aria-hidden="true">⌕</span><h3>{papers.length ? 'Chưa có bài phù hợp' : 'Chưa có dữ liệu article'}</h3><p>{papers.length ? 'Thử đổi từ khóa hoặc xóa bớt bộ lọc.' : 'Danh sách sẽ xuất hiện sau phiên thu thập đầu tiên.'}</p></div>
+      <div class="load-more-wrap"><button id="load-more" class="button-secondary" hidden={papers.length <= 30}>Xem thêm bài <span aria-hidden="true">↓</span></button></div>
+      <noscript><p class="notice">Bật JavaScript để tìm kiếm, lọc và xem thêm article. Các summary ở đầu trang vẫn có thể đọc trực tiếp.</p></noscript>
+      <p class="catalog-footnote">Danh sách kết hợp RSS và metadata DOI. Một số bài có thể được phát hiện sau ngày online. <a href={internalUrl('tap-chi/')}>Xem tình trạng từng nguồn →</a></p>
+    </div>
+  </section>
+
+  <section class="container editorial-note">
+    <span class="editorial-icon" aria-hidden="true">✦</span><div><p class="eyebrow">ĐỌC ĐỂ HIỂU CÂU HỎI PHÍA SAU</p><h2>Hiểu kết quả và cách tìm ra chúng.</h2><p>Mỗi bài đọc nối câu hỏi khoa học với phương pháp, bằng chứng và ý nghĩa của kết quả. Thuật ngữ có tên tiếng Anh để bạn tiếp tục đọc bài gốc.</p></div><a href={internalUrl('cach-chung-toi-viet/')} class="text-link">Tìm hiểu cách viết <span aria-hidden="true">↗</span></a>
+  </section>
+  <script id="catalog-data" type="application/json" set:html={safeJson(clientData)} />
+</Layout>
+
+<script>
+  import type { Paper, SummaryPreview } from '../lib/catalog';
+  type ClientData = { papers: Paper[]; summaries: SummaryPreview[]; base: string; topics: Record<string, string>; journals: {id: string; short: string}[] };
+  const data = JSON.parse(document.querySelector('#catalog-data')?.textContent ?? '{}') as ClientData;
+  const form = document.querySelector<HTMLFormElement>('#paper-filters');
+  const list = document.querySelector<HTMLDivElement>('#paper-list');
+  const count = document.querySelector<HTMLParagraphElement>('#result-count');
+  const empty = document.querySelector<HTMLDivElement>('#no-results');
+  const more = document.querySelector<HTMLButtonElement>('#load-more');
+  if (form && list && count && empty && more) {
+    const summaries = new Map(data.summaries.map((summary) => [summary.doi.toLowerCase(), summary]));
+    const norm = (value: string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd').replace(/Đ/g, 'D').toLowerCase();
+    const searchable = new Map(data.papers.map((paper) => [paper.id, norm([paper.title, ...(paper.authors ?? []), summaries.get(paper.doi.toLowerCase())?.search_text ?? '', summaries.get(paper.doi.toLowerCase())?.title ?? ''].join(' '))]));
+    const journal = (id: string) => data.journals.find((entry) => entry.id === id)?.short ?? id;
+    const safeLink = (value: string, fallback: string) => { try { const url = new URL(value); return ['http:', 'https:'].includes(url.protocol) ? url.href : fallback; } catch { return fallback; } };
+    const day = (value?: string | null) => {
+      if (!value) return '';
+      if (!value.includes('T')) return value;
+      const date = new Date(value);
+      if (Number.isNaN(date.getTime())) return '';
+      const parts = new Intl.DateTimeFormat('en-CA', {timeZone:'Asia/Ho_Chi_Minh',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(date);
+      return ['year','month','day'].map((part) => parts.find((p) => p.type === part)?.value ?? '').join('-');
+    };
+    const date = (value?: string | null, precision?: string | null) => {
+      if (!value) return 'Chưa có ngày';
+      if (precision === 'year' || /^\d{4}$/.test(value)) return value.slice(0,4);
+      if (precision === 'month' || /^\d{4}-\d{2}$/.test(value)) return `${value.slice(5,7)}/${value.slice(0,4)}`;
+      const key = day(value);
+      return /^\d{4}-\d{2}-\d{2}$/.test(key) ? `${key.slice(8,10)}/${key.slice(5,7)}/${key.slice(0,4)}` : value;
+    };
+    const make = <K extends keyof HTMLElementTagNameMap>(tag: K, className: string, text?: string) => {
+      const node = document.createElement(tag); node.className = className; if (text) node.textContent = text; return node;
+    };
+    const link = (href: string, text: string, className: string, external = false) => {
+      const node = make('a', className, text); node.href = href;
+      if (external) { node.target = '_blank'; node.rel = 'noopener noreferrer'; }
+      return node;
+    };
+    const labels: Record<string,string> = {letter:'Letters',correction:'Đính chính',editorial:'Biên tập',review:'Tổng quan'};
+    let limit = 30;
+    let filtered = data.papers;
+    function renderPaper(paper: Paper) {
+      const summary = summaries.get(paper.doi.toLowerCase());
+      const article = make('article','paper-card');
+      const marker = make('div','paper-marker',journal(paper.journal)); marker.setAttribute('aria-hidden','true'); article.append(marker);
+      const main = make('div','paper-main');
+      const tags = make('div','paper-tags'); tags.append(make('span','journal-tag mobile-journal',journal(paper.journal)),make('span','topic-label',data.topics[paper.topic] ?? data.topics.other));
+      if (labels[paper.kind]) tags.append(make('span','kind-tag',labels[paper.kind]));
+      if (summary) tags.append(make('span','summary-tag','Có summary tiếng Việt'));
+      main.append(tags);
+      const source = safeLink(paper.source_url,`https://doi.org/${paper.doi}`);
+      const heading = make('h3',''); heading.append(link(summary ? `${data.base}bai-viet/${summary.id}/` : source,summary?.title ?? paper.title,'',!summary)); main.append(heading);
+      if (summary) main.append(make('p','paper-original-title',paper.title));
+      main.append(make('p','paper-authors',(paper.authors ?? []).slice(0,3).join(', ') + ((paper.authors ?? []).length > 3 ? ' và cộng sự' : '')));
+      const meta = make('div','paper-meta');
+      meta.append(make('span','',`Online: ${date(paper.published_online,paper.online_date_precision)}`),make('span','',`Phát hiện: ${date(paper.first_seen)}`));
+      if (paper.volume) meta.append(make('span','',`Tập ${paper.volume}${paper.issue ? ` · số ${paper.issue}` : ''}`));
+      main.append(meta); article.append(main);
+      const actions = make('div','paper-actions');
+      if (summary) actions.append(link(`${data.base}bai-viet/${summary.id}/`,'Đọc summary →','paper-read'));
+      actions.append(link(source,'Bài gốc ↗','source-link',true)); article.append(actions);
+      return article;
+    }
+    function render() {
+      const fragment = document.createDocumentFragment();
+      filtered.slice(0,limit).forEach((paper) => fragment.append(renderPaper(paper)));
+      list!.replaceChildren(fragment);
+      count!.textContent = `Hiển thị ${Math.min(limit,filtered.length).toLocaleString('vi-VN')}/${filtered.length.toLocaleString('vi-VN')} bài${filtered.length !== data.papers.length ? ` trong ${data.papers.length.toLocaleString('vi-VN')} article` : ''}`;
+      empty!.hidden = filtered.length > 0;
+      if (!empty!.hidden && data.papers.length > 0) {
+        empty!.querySelector('h3')!.textContent = 'Chưa có bài phù hợp';
+        empty!.querySelector('p')!.textContent = 'Thử đổi từ khóa hoặc xóa bớt bộ lọc.';
+      }
+      more!.hidden = limit >= filtered.length;
+    }
+    function applyFilters() {
+      const values = new FormData(form!);
+      const query = norm(String(values.get('q') ?? '').trim());
+      const selectedJournal = String(values.get('journal') ?? '');
+      const selectedTopic = String(values.get('topic') ?? '');
+      const selectedDate = String(values.get('date') ?? '');
+      const selectedSummary = String(values.get('summary') ?? '');
+      filtered = data.papers.filter((paper) => (!query || searchable.get(paper.id)?.includes(query)) && (!selectedJournal || paper.journal === selectedJournal) && (!selectedTopic || paper.topic === selectedTopic) && (!selectedDate || (paper.online_date_precision !== 'month' && paper.online_date_precision !== 'year' && day(paper.published_online) === selectedDate)) && (!selectedSummary || (selectedSummary === 'yes' ? summaries.has(paper.doi.toLowerCase()) : !summaries.has(paper.doi.toLowerCase()))));
+      limit = 30; render();
+    }
+    form.addEventListener('submit',(event) => event.preventDefault());
+    form.addEventListener('input',applyFilters);
+    form.addEventListener('change',applyFilters);
+    form.addEventListener('reset',() => setTimeout(applyFilters,0));
+    more.addEventListener('click',() => { limit += 30; render(); });
+  }
+</script>

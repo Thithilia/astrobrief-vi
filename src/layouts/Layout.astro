@@ -1,0 +1,58 @@
+---
+import '../styles/global.css';
+import 'katex/dist/katex.min.css';
+import { internalUrl } from '../lib/catalog';
+interface Props { title?: string; description?: string; active?: string; }
+const {
+  title = 'AstroBrief Việt — Đọc thiên văn mỗi ngày',
+  description = 'Theo dõi sáu tạp chí thiên văn và đọc các bài giải thích nghiên cứu mới bằng tiếng Việt.',
+  active = '',
+} = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#f7f5f0" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="vi_VN" />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href={internalUrl('favicon.svg')} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#noi-dung">Đến nội dung chính</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href={internalUrl()} class="brand" aria-label="AstroBrief Việt — trang chủ">
+          <svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="14.5" stroke="currentColor"/><ellipse cx="20" cy="20" rx="7" ry="18" stroke="currentColor" transform="rotate(47 20 20)"/><path d="M20 12v16M12 20h16" stroke="currentColor"/><circle cx="20" cy="20" r="2" fill="currentColor"/></svg>
+          <span>AstroBrief <em>Việt</em></span>
+        </a>
+        <nav aria-label="Điều hướng chính">
+          <a href={internalUrl()} aria-current={active === 'home' ? 'page' : undefined}>Mỗi ngày</a>
+          <a href={internalUrl('tap-chi/')} aria-current={active === 'journals' ? 'page' : undefined}>Tạp chí</a>
+          <a href={internalUrl('cach-chung-toi-viet/')} aria-current={active === 'about' ? 'page' : undefined}>Cách viết</a>
+        </nav>
+      </div>
+    </header>
+    <main id="noi-dung"><slot /></main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <a class="footer-brand" href={internalUrl()}>AstroBrief Việt <span>✦</span></a>
+          <p>Một điểm hẹn với nghiên cứu thiên văn.</p>
+        </div>
+        <div class="footer-notes">
+          <p>Summary được tổng hợp tự động bằng Codex, có đối chiếu với nguồn toàn văn.</p>
+          <p><a href={internalUrl('cach-chung-toi-viet/')}>Phương pháp & nguồn</a><span aria-hidden="true"> · </span><a href="https://github.com/Thithilia/astrobrief-vi" target="_blank" rel="noopener noreferrer">Mã nguồn ↗</a></p>
+          <p class="muted">Một dự án độc lập, lấy cảm hứng từ cách giải thích nghiên cứu của Astrobites.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

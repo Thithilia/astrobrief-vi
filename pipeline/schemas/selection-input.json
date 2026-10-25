@@ -1,0 +1,1 @@
+{"type":"object","properties":{"ready_dois":{"type":"array","items":{"type":"string"}}},"required":["ready_dois"],"additionalProperties":false}

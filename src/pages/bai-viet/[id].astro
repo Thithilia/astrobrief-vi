@@ -1,0 +1,57 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import { assetUrl, externalUrl, formatDate, internalUrl, journalName, topicName } from '../../lib/catalog';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('summaries');
+  return posts.map((post) => ({ params: { id: post.data.id ?? post.id }, props: { post } }));
+}
+const { post } = Astro.props;
+const data = post.data;
+const { Content, headings } = await render(post);
+const doiUrl = `https://doi.org/${data.doi}`;
+const sourceUrl = externalUrl(data.source.url, doiUrl);
+const isArxiv = data.source.kind.toLowerCase().startsWith('arxiv');
+const figures = data.figures.filter((figure) => !(post.body ?? '').includes(figure.src));
+const toc = headings.filter((heading) => heading.depth === 2);
+const captionText = (caption: string) => caption.replace(/\[(P\d{3}(?:-S\d{3})?)\]\(#nguon-goc\)/g, '($1)');
+---
+<Layout title={`${data.title} — AstroBrief Việt`} description={data.dek}>
+  <div class="article-container">
+    <nav class="breadcrumb" aria-label="Đường dẫn"><a href={internalUrl()}>Mỗi ngày</a><span aria-hidden="true">/</span><span>{journalName(data.journal)}</span><span aria-hidden="true">/</span><span>{formatDate(data.summary_date)}</span></nav>
+    <header class="article-header">
+      <div class="article-kicker"><span class="journal-tag">{journalName(data.journal)}</span><span class="topic-label">{topicName(data.topic)}</span></div>
+      <h1>{data.title}</h1><p class="article-dek">{data.dek}</p>
+      <div class="article-byline"><span>{data.byline}</span><span>Summary: <time datetime={data.summary_date}>{formatDate(data.summary_date)}</time></span><span>{data.reading_minutes} phút đọc</span></div>
+    </header>
+    <div class="article-layout">
+      <div class="article-main">
+        <section class="original-paper" id="nguon-goc" aria-labelledby="paper-heading">
+          <p class="eyebrow" id="paper-heading">BÀI NGHIÊN CỨU GỐC</p>
+          <h2><a href={doiUrl} target="_blank" rel="noopener noreferrer">{data.paper_title || data.title} <span aria-hidden="true">↗</span></a></h2>
+          {data.authors.length > 0 && <p class="original-authors">{data.authors.join(', ')}</p>}
+          <dl class="original-dates"><div><dt>Ngày online của article</dt><dd><time datetime={data.published_online ?? undefined}>{formatDate(data.published_online,data.online_date_precision)}</time></dd></div><div><dt>Ngày ghi trên tập/số</dt><dd><time datetime={data.issue_date ?? undefined}>{formatDate(data.issue_date)}</time></dd></div>{data.first_seen && <div><dt>Ngày phát hiện trong danh sách</dt><dd><time datetime={data.first_seen}>{formatDate(data.first_seen)}</time></dd></div>}<div><dt>DOI</dt><dd><a href={doiUrl} target="_blank" rel="noopener noreferrer">{data.doi}</a></dd></div></dl>
+          <div class="source-badge"><span>Nguồn toàn văn đã đọc:</span><span class="badge">{isArxiv ? 'Bản arXiv' : 'Bản publisher'}</span>{data.source.version && <strong>{data.source.version}</strong>}<a href={sourceUrl} target="_blank" rel="noopener noreferrer">Mở nguồn ↗</a></div>
+        </section>
+        <article class="article-body"><Content /></article>
+        {figures.length > 0 && <section class="figures-section" aria-labelledby="figures-heading">
+          <h2 id="figures-heading">Các hình trong bài nghiên cứu</h2>
+          {figures.map((figure) => <figure class="paper-figure">
+            <a href={externalUrl(figure.original_url,sourceUrl)} target="_blank" rel="noopener noreferrer" aria-label={`Mở nguồn của hình: ${figure.alt}`}><img src={assetUrl(figure.src)} alt={figure.alt} loading="lazy" /></a>
+            <figcaption>{captionText(figure.caption)}<span class="figure-credit">
+              {figure.source_locator && <span>{figure.source_locator}. </span>}{figure.credit}
+              {figure.license && <span> · {figure.license}</span>}
+              {figure.original_url && <span> · <a href={externalUrl(figure.original_url,sourceUrl)} target="_blank" rel="noopener noreferrer">Nguồn hình ↗</a></span>}
+            </span></figcaption>
+          </figure>)}
+        </section>}
+        {data.glossary.length > 0 && <section class="glossary" id="thuat-ngu"><h2>Thuật ngữ để đọc tiếp</h2><dl>{data.glossary.map((term) => <div><dt>{term.vi}</dt><dd>{term.en}</dd></div>)}</dl></section>}
+        <section class="article-references" id="nguon-tham-khao"><h2>Nguồn và đọc tiếp</h2><ol><li><a href={doiUrl} target="_blank" rel="noopener noreferrer">Bài nghiên cứu gốc — {data.doi} ↗</a></li>{sourceUrl !== doiUrl && <li><a href={sourceUrl} target="_blank" rel="noopener noreferrer">Toàn văn đã sử dụng{data.source.version ? ` (${data.source.version})` : ''} ↗</a></li>}{data.references.filter((reference) => reference.url !== doiUrl && reference.url !== sourceUrl).map((reference) => <li><a href={externalUrl(reference.url)} target="_blank" rel="noopener noreferrer">{reference.label} ↗</a></li>)}</ol></section>
+        <p class="article-ending">{data.byline}. Nguồn và phiên bản đã đọc được ghi ở đầu bài; ngày summary được giữ riêng với ngày xuất bản của article.</p>
+        <a href={internalUrl('#bai-moi')} class="article-back"><span aria-hidden="true">←</span> Trở lại danh sách bài mới</a>
+      </div>
+      <aside class="article-aside" aria-label="Mục lục bài đọc"><h2>Trong bài này</h2><ol>{toc.map((heading) => <li><a href={`#${heading.slug}`}>{heading.text}</a></li>)}{figures.length > 0 && <li><a href="#figures-heading">Các hình trong bài nghiên cứu</a></li>}{data.glossary.length > 0 && <li><a href="#thuat-ngu">Thuật ngữ để đọc tiếp</a></li>}<li><a href="#nguon-tham-khao">Nguồn và đọc tiếp</a></li></ol><p class="aside-note">Một bài đọc khoảng {data.reading_minutes} phút để hiểu câu hỏi, phương pháp và kết quả. Các liên kết nguồn giúp bạn kiểm tra và tìm hiểu sâu hơn.</p></aside>
+    </div>
+  </div>
+</Layout>

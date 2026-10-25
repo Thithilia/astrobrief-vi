@@ -1,0 +1,20 @@
+---
+import type { SummaryPreview } from '../lib/catalog';
+import { assetUrl, formatDate, internalUrl, journalName, topicName } from '../lib/catalog';
+interface Props { summary: SummaryPreview; index?: number; featured?: boolean; }
+const { summary, index = 0, featured = false } = Astro.props;
+---
+<article class:list={['summary-card', { 'summary-card-featured': featured }]}>
+  <div class="summary-card-top">
+    <span class="journal-tag">{journalName(summary.journal)}</span>
+    <span class="card-number">{String(index + 1).padStart(2, '0')}</span>
+  </div>
+  {summary.image && <a href={internalUrl(`bai-viet/${summary.id}/`)} class="card-image-link" tabindex="-1" aria-hidden="true"><img class="card-image" src={assetUrl(summary.image)} alt="" loading="lazy" /></a>}
+  <div class="topic-label">{topicName(summary.topic)}</div>
+  <h3><a href={internalUrl(`bai-viet/${summary.id}/`)}>{summary.title}</a></h3>
+  <p class="card-dek">{summary.dek}</p>
+  <div class="card-bottom">
+    <span>{formatDate(summary.summary_date)}<span class="meta-dot">·</span>{summary.reading_minutes || 6} phút đọc</span>
+    <a href={internalUrl(`bai-viet/${summary.id}/`)} aria-label={`Đọc ${summary.title}`} class="arrow-link">Đọc bài <span aria-hidden="true">↗</span></a>
+  </div>
+</article>

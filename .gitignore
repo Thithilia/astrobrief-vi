@@ -1,0 +1,16 @@
+.venv/
+node_modules/
+dist/
+.astro/
+.local/
+data/local/
+.playwright-mcp/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env
+.env.*
+*.sqlite*
+*.log
+auth.json
+.DS_Store

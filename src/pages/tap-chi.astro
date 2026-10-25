@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { formatTimestamp, loadCatalog } from '../lib/catalog';
+const catalog = loadCatalog();
+const sources = [
+  {id:'aa', url:'https://www.aanda.org/', feed:'https://feeds.feedburner.com/edp_aa?format=xml', description:'Quan sát, lý thuyết và mô phỏng trong thiên văn và vật lý thiên văn. Bao gồm bài nghiên cứu thường và Letters.'},
+  {id:'apj', url:'https://journals.aas.org/astrophysical-journal/', feed:'https://iopscience.iop.org/journal/rss/0004-637X', description:'Nghiên cứu vật lý thiên văn, từ các hệ hành tinh và sự hình thành sao đến thiên hà và vũ trụ học.'},
+  {id:'apjl', url:'https://journals.aas.org/astrophysical-journal-letters/', feed:'https://iopscience.iop.org/journal/rss/2041-8205', description:'Những báo cáo ngắn về phát hiện và kết quả mới có ảnh hưởng tức thời trong thiên văn và vật lý thiên văn.'},
+  {id:'apjs', url:'https://journals.aas.org/astrophysical-supplement-series/', feed:'https://iopscience.iop.org/journal/rss/0067-0049', description:'Công trình mở rộng, các danh mục và bộ dữ liệu lớn được xây dựng để cộng đồng tiếp tục sử dụng.'},
+  {id:'aj', url:'https://journals.aas.org/astronomical-journal/', feed:'https://iopscience.iop.org/journal/rss/1538-3881', description:'Nghiên cứu thiên văn với trọng tâm quan sát, khảo sát, kỹ thuật phân tích, thiết bị và phần mềm.'},
+  {id:'mnras', url:'https://academic.oup.com/mnras', feed:'https://academic.oup.com/rss/site_5326/advanceAccess_3192.xml', description:'Các kết quả nghiên cứu gốc trong thiên văn và vật lý thiên văn, bao gồm cả quan sát và lý thuyết.'},
+];
+---
+<Layout title="Các tạp chí được theo dõi — AstroBrief Việt" active="journals">
+  <div class="container">
+    <header class="page-intro"><p class="eyebrow">NGUỒN CỦA NHỮNG BÀI ĐỌC</p><h1>Sáu tạp chí.<br /><em>Nhiều cửa sổ nhìn ra vũ trụ.</em></h1><p class="lead">Theo dõi article theo ngày xuất hiện online, đồng thời giữ thông tin tập và số để bạn trở lại nguồn gốc của nghiên cứu.</p></header>
+    <div class="source-callout"><p><strong>Ngày online, ngày ra số và ngày phát hiện là ba mốc riêng.</strong> Một article có thể xuất hiện trước ngày ghi trên issue; metadata cũng có thể đến muộn. Trang này cho biết lần đồng bộ gần nhất của từng nguồn.</p></div>
+    <div class="information-grid">
+      {sources.map((source) => {
+        const journal = catalog.journals.find((item) => item.id === source.id)!;
+        const ok = ['ok','success','healthy'].includes(journal.status);
+        const pending = ['pending','never','not_started',''].includes(journal.status ?? '');
+        const partial = journal.status === 'partial';
+        const status = ok ? 'Đã cập nhật nguồn' : partial ? 'Cập nhật một phần' : pending ? 'Chờ cập nhật đầu tiên' : 'Nguồn cần thử lại';
+        const count = catalog.papers.filter((paper) => paper.journal === source.id).length;
+        return <article class="journal-panel">
+          <div class="journal-panel-top"><span class="journal-tag">{journal.short}</span><span class:list={['source-status',{ok,error:!ok&&!pending}]}>{status}</span></div>
+          <h2>{journal.name}</h2><p>{source.description}</p>
+          <div class="panel-links"><a href={source.url} target="_blank" rel="noopener noreferrer">Trang tạp chí ↗</a><a href={source.feed} target="_blank" rel="noopener noreferrer">Luồng bài mới ↗</a></div>
+          <div class="sync-meta"><p><strong>{count.toLocaleString('vi-VN')}</strong> article trong danh sách</p><p>Đồng bộ thành công gần nhất: <time datetime={journal.last_success ?? undefined}>{formatTimestamp(journal.last_success)}</time></p>{journal.last_attempt && <p>Kiểm tra nguồn gần nhất: {formatTimestamp(journal.last_attempt)}</p>}{!ok&&!pending&&<p>Nguồn tạm thời chưa đọc được; các dữ liệu đã thu thập vẫn được giữ lại.</p>}</div>
+        </article>;
+      })}
+    </div>
+    <section class="prose-page"><h2>Cách danh sách được cập nhật</h2><p>Các luồng bài mới được kiểm tra định kỳ và đối chiếu với metadata DOI tại <a href="https://www.crossref.org/" target="_blank" rel="noopener noreferrer">Crossref</a>. Nhiều nguồn cùng nhắc đến một DOI sẽ được nối vào cùng một bản ghi.</p><p>Article chưa có summary vẫn được liệt kê và dẫn đến bài gốc. Các đính chính, bài tổng quan và bài biên tập được phân biệt để bạn nhận ra loại nội dung đang đọc.</p><p>Khi publisher chưa truy cập được, một bản arXiv chỉ được sử dụng cho summary sau khi xác nhận DOI phù hợp. Trang summary hiển thị rõ nguồn và phiên bản đã đọc.</p></section>
+  </div>
+</Layout>
