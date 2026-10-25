@@ -14,11 +14,13 @@ Năm bản nháp và năm lượt kiểm tra nguồn cuối cùng đều chạy 
 
 Các kiểm tra đã thực hiện:
 
-- `python -m pytest -q`: **47 passed**. Bao gồm RSS namespace và thứ tự, DOI trùng, Crossref đăng ký muộn, ngày online khác ngày issue, thiếu toàn văn, sai DOI, số liệu không được nguồn hỗ trợ, hình chưa có quyền, gián đoạn ghi, quota, chạy lại và export đồng thời.
+- `python -m pytest -q`: **52 passed**. Bao gồm RSS namespace và thứ tự, DOI trùng, Crossref đăng ký muộn, ngày online khác ngày issue, thiếu toàn văn, sai DOI, số liệu không được nguồn hỗ trợ, hình chưa có quyền, gián đoạn ghi, quota, chạy lại, export đồng thời và thu thập bù trước khi chọn bài lúc 07:00.
 - Chạy lại phiên thực tế sau khi đủ năm bài: `created=0`, `total_today=5`.
 - Codex CLI được tìm thấy và xác nhận đăng nhập ChatGPT khi bỏ PATH của phiên ứng dụng; tác vụ định giờ không phụ thuộc PATH do cửa sổ Codex thêm vào.
 - `npm run check`: **0 lỗi, 0 cảnh báo, 0 gợi ý**. `npm run build`: **9 trang**, gồm năm trang summary.
 - Kiểm tra trình duyệt ở desktop và chiều rộng 390 px: không tràn ngang; hình và font tải được; mục lục và neo nguồn hoạt động; không có lỗi trình duyệt.
 - Tìm kiếm bằng cụm chỉ có trong thân summary trả đúng bài. Kiểm tra đường dẫn và tài nguyên với tiền tố `/astrobrief-vi/`: không có đường dẫn nội bộ hỏng.
+- GitHub Actions triển khai Pages thành công. Trang chính, catalog JSON, năm trang summary và sáu hình công khai đều trả HTTP 200. Kiểm tra trình duyệt trên website công khai: tìm kiếm và bộ lọc hoạt động; 22 yêu cầu trang/CSS/font/hình đều trả HTTP 200, không có lỗi hay cảnh báo trình duyệt.
+- Đã đăng ký và xác nhận hai tác vụ Windows `AstroBriefVi-Collect` và `AstroBriefVi-Daily` ở trạng thái Ready, quyền Limited và LogonType Interactive; lặp hằng giờ và chạy bù khi đăng nhập. Phiên summary áp dụng mốc 07:00 và giới hạn năm bài theo giờ Việt Nam.
 
 Toàn văn, nhật ký Codex, bằng chứng duyệt và SQLite được lưu trong `.local/` ở máy quản trị. Dữ liệu công khai là catalog JSON, summary Markdown và các hình được phép tái sử dụng.

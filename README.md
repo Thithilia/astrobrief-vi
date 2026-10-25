@@ -21,7 +21,7 @@ npm.cmd run build
 ```powershell
 .\.venv\Scripts\python.exe -m pipeline status
 .\.venv\Scripts\python.exe -m pipeline collect
-.\.venv\Scripts\python.exe -m pipeline daily --catch-up
+.\.venv\Scripts\python.exe -m pipeline daily --catch-up --refresh
 .\.venv\Scripts\python.exe -m pipeline export
 .\.venv\Scripts\python.exe -m pipeline publish
 .\.venv\Scripts\python.exe -m pipeline deployment-status
@@ -40,9 +40,9 @@ Git Credential Manager cung cấp xác thực qua bộ nhớ tiến trình; toke
 
 ## Lịch chạy
 
-Hai tác vụ `AstroBriefVi-Collect` và `AstroBriefVi-Daily` chạy nền hằng giờ và khi đăng nhập Windows. Thu thập đọc các feed và đối chiếu Crossref. Phiên hằng ngày bắt đầu từ **07:00 Asia/Saigon**, có tối đa năm bài được tạo trong ngày; lần gọi lại sau đó tiếp tục công việc còn dở hoặc kết thúc nhanh nếu đủ năm bài. Tác vụ chạy dưới tài khoản hiện tại, không lưu mật khẩu Windows và không thay đổi cài đặt nguồn điện.
+Hai tác vụ `AstroBriefVi-Collect` và `AstroBriefVi-Daily` chạy nền hằng giờ và khi đăng nhập Windows. Thu thập đọc các feed và đối chiếu Crossref. Phiên hằng ngày bắt đầu từ **07:00 Asia/Saigon**, thu thập bù metadata trước khi chọn bài và tạo tối đa năm bài trong ngày; lần gọi lại sau đó tiếp tục công việc còn dở hoặc kết thúc nhanh nếu đủ năm bài. Tác vụ chạy khi tài khoản Windows hiện tại đã đăng nhập, kể cả lúc khóa màn hình; không lưu mật khẩu Windows và không thay đổi cài đặt nguồn điện.
 
-Máy tắt hoặc mất mạng: website vẫn giữ bản gần nhất. Khi máy hoạt động trở lại, metadata được bù từ checkpoint; bài được phát hiện muộn không bị loại khỏi hàng đợi chỉ vì đã qua ngày xuất bản. Codex hết hạn mức sẽ chờ lần chạy tiếp theo. Trạng thái đọc được bằng lệnh `status`; chi tiết nằm trong `.local/logs` và `.local/runs`.
+Máy tắt hoặc mất mạng: website vẫn giữ bản gần nhất. Khi máy bật và tài khoản Windows đăng nhập trở lại, metadata được bù từ checkpoint; bài được phát hiện muộn không bị loại khỏi hàng đợi chỉ vì đã qua ngày xuất bản. Codex hết hạn mức sẽ chờ lần chạy tiếp theo. Trạng thái đọc được bằng lệnh `status`; chi tiết nằm trong `.local/logs` và `.local/runs`.
 
 ## Quy trình biên tập
 
