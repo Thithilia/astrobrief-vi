@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T11:00:07Z",
+  "generated_at": "2026-10-26T11:05:18Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-10-26T10:05:03Z",
-      "last_attempt": "2026-10-26T10:05:03Z",
+      "last_success": "2026-10-26T11:05:04Z",
+      "last_attempt": "2026-10-26T11:05:04Z",
       "error": null
     },
     {
@@ -18,8 +18,8 @@
       "short": "ApJ",
       "url": "https://journals.aas.org/astrophysical-journal/",
       "status": "ok",
-      "last_success": "2026-10-26T10:05:03Z",
-      "last_attempt": "2026-10-26T10:05:03Z",
+      "last_success": "2026-10-26T11:05:04Z",
+      "last_attempt": "2026-10-26T11:05:04Z",
       "error": null
     },
     {
@@ -28,8 +28,8 @@
       "short": "ApJL",
       "url": "https://journals.aas.org/astrophysical-journal-letters/",
       "status": "ok",
-      "last_success": "2026-10-26T10:05:03Z",
-      "last_attempt": "2026-10-26T10:05:03Z",
+      "last_success": "2026-10-26T11:05:04Z",
+      "last_attempt": "2026-10-26T11:05:04Z",
       "error": null
     },
     {
@@ -38,8 +38,8 @@
       "short": "ApJS",
       "url": "https://journals.aas.org/astrophysical-supplement-series/",
       "status": "ok",
-      "last_success": "2026-10-26T10:05:03Z",
-      "last_attempt": "2026-10-26T10:05:03Z",
+      "last_success": "2026-10-26T11:05:04Z",
+      "last_attempt": "2026-10-26T11:05:04Z",
       "error": null
     },
     {
@@ -48,8 +48,8 @@
       "short": "AJ",
       "url": "https://journals.aas.org/astronomical-journal/",
       "status": "ok",
-      "last_success": "2026-10-26T10:05:03Z",
-      "last_attempt": "2026-10-26T10:05:03Z",
+      "last_success": "2026-10-26T11:05:04Z",
+      "last_attempt": "2026-10-26T11:05:04Z",
       "error": null
     },
     {
@@ -58,8 +58,8 @@
       "short": "MNRAS",
       "url": "https://academic.oup.com/mnras",
       "status": "ok",
-      "last_success": "2026-10-26T10:05:03Z",
-      "last_attempt": "2026-10-26T10:05:03Z",
+      "last_success": "2026-10-26T11:05:04Z",
+      "last_attempt": "2026-10-26T11:05:04Z",
       "error": null
     }
   ],
@@ -26784,12 +26784,12 @@
       ],
       "published_online": "2026-10-05",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-10-23",
       "first_seen": "2026-10-25T19:58:05Z",
-      "volume": null,
-      "issue": null,
+      "volume": "553",
+      "issue": "1",
       "article_number": "stag1856",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag1856/8865324",
+      "source_url": "https://academic.oup.com/mnras/article/doi/10.1093/mnras/stag1856/8865324",
       "kind": "research",
       "topic": "planets",
       "has_summary": false
@@ -27709,7 +27709,7 @@
     {
       "id": "1851232f57050684",
       "doi": "10.1093/mnras/stag1901",
-      "title": "Studying Generalised Polytropic and Warm Dark Matter in NGC 5055",
+      "title": "Studying generalized polytropic and warm dark matter in NGC 5055",
       "journal": "mnras",
       "authors": [
         "Aritra Sanyal",
@@ -27718,12 +27718,12 @@
       ],
       "published_online": "2026-10-07",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-10-23",
       "first_seen": "2026-10-25T19:58:05Z",
-      "volume": null,
-      "issue": null,
+      "volume": "553",
+      "issue": "1",
       "article_number": "stag1901",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag1901/8876084",
+      "source_url": "https://academic.oup.com/mnras/article/doi/10.1093/mnras/stag1901/8876084",
       "kind": "research",
       "topic": "cosmology",
       "has_summary": false
@@ -28302,12 +28302,12 @@
       ],
       "published_online": "2026-10-14",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-10-23",
       "first_seen": "2026-10-25T19:58:05Z",
-      "volume": null,
-      "issue": null,
+      "volume": "553",
+      "issue": "1",
       "article_number": "stag1928",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag1928/8916627",
+      "source_url": "https://academic.oup.com/mnras/article/doi/10.1093/mnras/stag1928/8916627",
       "kind": "research",
       "topic": "methods",
       "has_summary": false
@@ -28482,16 +28482,16 @@
         "Charlotte L B Alexander",
         "Patrick G J Irwin",
         "Ashwin S Braude",
-        "Emma Dahl"
+        "Emma K Dahl"
       ],
       "published_online": "2026-10-10",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-10-23",
       "first_seen": "2026-10-25T19:58:05Z",
-      "volume": null,
-      "issue": null,
+      "volume": "553",
+      "issue": "1",
       "article_number": "stag1936",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag1936/8907352",
+      "source_url": "https://academic.oup.com/mnras/article/doi/10.1093/mnras/stag1936/8907352",
       "kind": "research",
       "topic": "solar",
       "has_summary": false
@@ -28681,12 +28681,12 @@
       ],
       "published_online": "2026-10-13",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-10-23",
       "first_seen": "2026-10-25T19:58:05Z",
-      "volume": null,
-      "issue": null,
+      "volume": "553",
+      "issue": "1",
       "article_number": "stag1944",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag1944/8914588",
+      "source_url": "https://academic.oup.com/mnras/article/doi/10.1093/mnras/stag1944/8914588",
       "kind": "research",
       "topic": "compact",
       "has_summary": false
@@ -28845,12 +28845,12 @@
       ],
       "published_online": "2026-10-13",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-10-23",
       "first_seen": "2026-10-25T19:58:05Z",
-      "volume": null,
-      "issue": null,
+      "volume": "553",
+      "issue": "1",
       "article_number": "stag1950",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag1950/8914597",
+      "source_url": "https://academic.oup.com/mnras/article/doi/10.1093/mnras/stag1950/8914597",
       "kind": "research",
       "topic": "compact",
       "has_summary": false
