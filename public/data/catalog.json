@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T13:00:04Z",
+  "generated_at": "2026-10-26T14:00:05Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-10-26T12:05:04Z",
-      "last_attempt": "2026-10-26T12:05:04Z",
+      "last_success": "2026-10-26T13:05:04Z",
+      "last_attempt": "2026-10-26T13:05:04Z",
       "error": null
     },
     {
@@ -727,7 +727,7 @@
     {
       "id": "dea086a5e10a91a9",
       "doi": "10.3847/1538-4357/aea55e",
-      "title": "Introducing sapphire : Towards Hybrid Physics-informed, Data-driven Modeling of Galaxy Formation",
+      "title": "Introducing sapphire: Towards Hybrid Physics-informed, Data-driven Modeling of Galaxy Formation",
       "journal": "apj",
       "authors": [
         "Viraj Pandya",
@@ -876,7 +876,7 @@
     {
       "id": "7465458c14eccc9e",
       "doi": "10.3847/1538-4357/aea8f5",
-      "title": "Extreme Enrichment at Cosmic Dawn: Three Fe II -strong Quasars at z > 6 from the JWST Aether Survey",
+      "title": "Extreme Enrichment at Cosmic Dawn: Three Fe II-strong Quasars at z > 6 from the JWST Aether Survey",
       "journal": "apj",
       "authors": [
         "Anniek J. Gloudemans",
@@ -914,13 +914,13 @@
       "article_number": "44",
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aea8f5",
       "kind": "research",
-      "topic": "compact",
+      "topic": "cosmology",
       "has_summary": false
     },
     {
       "id": "61192f2adea2703a",
       "doi": "10.3847/1538-4357/aea97b",
-      "title": "Constraints on the Hot Circumgalactic Medium Around Nearby L * Galaxies from the SRG/eROSITA All Sky Survey",
+      "title": "Constraints on the Hot Circumgalactic Medium Around Nearby L* Galaxies from the SRG/eROSITA All Sky Survey",
       "journal": "apj",
       "authors": [
         "Lin He",
@@ -941,7 +941,7 @@
     {
       "id": "ea38fd6ffc83f0cd",
       "doi": "10.3847/1538-4357/aeaa36",
-      "title": "PANORAMIC: The Dawn of Massive Quiescent Galaxies. I. Number Density and Cosmic Variance from 1000 arcmin 2 NIRCam Imaging",
+      "title": "PANORAMIC: The Dawn of Massive Quiescent Galaxies. I. Number Density and Cosmic Variance from 1000 arcmin2 NIRCam Imaging",
       "journal": "apj",
       "authors": [
         "Zhiyuan Ji",
