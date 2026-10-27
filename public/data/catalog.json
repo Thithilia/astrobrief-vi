@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T08:05:52Z",
+  "generated_at": "2026-10-27T08:18:20Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -38095,7 +38095,8 @@
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aea0d5",
       "kind": "research",
       "topic": "compact",
-      "has_summary": false
+      "has_summary": true,
+      "summary_id": "321057e70a3a9663"
     },
     {
       "id": "0c0b28b0342b81b9",
@@ -40458,7 +40459,8 @@
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aea56e",
       "kind": "research",
       "topic": "stars",
-      "has_summary": false
+      "has_summary": true,
+      "summary_id": "d9e7df9b19b6bda1"
     },
     {
       "id": "76deedd4c774557e",
@@ -50559,6 +50561,44 @@
     }
   ],
   "summaries": [
+    {
+      "id": "321057e70a3a9663",
+      "doi": "10.3847/1538-4357/aea0d5",
+      "title": "VT J1906+0849: sáng vô tuyến hai thập niên, rất ít giãn nở",
+      "dek": "VT J1906+0849 sáng vô tuyến suốt khoảng 20 năm với rất ít giãn nở biểu kiến, ủng hộ một nguồn năng lượng được duy trì bằng vật chất rơi vào.",
+      "journal": "apj",
+      "paper_title": "VLASS Discovery of a Luminous Galactic Radio Transient Evolving on Decade Timescales",
+      "summary_date": "2026-10-27",
+      "generated_at": "2026-10-27T08:18:07.158659Z",
+      "topic": "compact",
+      "reading_minutes": 6,
+      "source": {
+        "kind": "publisher",
+        "url": "https://authors.library.caltech.edu/records/8d72v-s8p20/files/Miller_2026_ApJ_1010_163.pdf",
+        "version": null
+      },
+      "image": "/figures/321057e70a3a9663/figure-0.png",
+      "search_text": "Một nguồn vô tuyến có thể sáng suốt 20 năm mà gần như không nở ra bằng cách nào? VT J1906+0849 đặt câu hỏi ấy ở phía xa Ngân Hà. Một đám vật chất giãn nở rồi nguội dần phải thay đổi cả phổ lẫn kích thước; ở đây, phổ biến đổi mạnh nhưng vùng phát vẫn nhỏ.\n\nJessie M. Miller và cộng sự nhận thấy các dữ kiện ủng hộ bồi tụ (accretion), tức vật chất rơi vào vật thể đặc (compact object), kéo dài nhiều năm. Điều cần giải thích là cách môi trường quanh hệ giữ dòng vật chất thoát ra trong vùng nhỏ. Sóng vô tuyến ít bị bụi cản trở, giúp tìm những hệ bị che khuất ở bước sóng khác [P026-S004](#nguon-goc).\nBức xạ synchrotron (synchrotron radiation) xuất hiện khi electron chuyển động gần tốc độ ánh sáng bị từ trường bẻ cong quỹ đạo. Mật độ thông lượng (flux density), Sν, đo tín hiệu tại Trái Đất; độ sáng phổ (spectral luminosity), Lν, đo công suất nguồn trên mỗi đơn vị tần số. Với cùng Sν, Lν tăng theo bình phương khoảng cách.\n\nNhiệt độ sáng (brightness temperature) là nhiệt độ vật đen cần có để tạo cùng độ sáng bề mặt. Ảnh vô tuyến năm 2025 cho T_B ≳ 4.9 × 10⁸ K, vượt xa mức khoảng 10⁴ K của khí phát nhiệt, chỉ ra phát xạ phi nhiệt (nonthermal emission). Đây là đại lượng quy đổi độ sáng, không phải nhiệt độ khí [P014-S004](#nguon-goc).\n\nHấp thụ làm suy yếu phía tần số thấp, tạo đỉnh phổ. Nếu chính các electron phát bức xạ hấp thụ nó, ta có tự hấp thụ synchrotron (synchrotron self-absorption, SSA). Với một vùng SSA giãn nở thụ động, đỉnh thường dịch xuống tần số thấp. Theo dõi đỉnh giúp kiểm tra điều kiện vùng phát.\nVLASS thấy nguồn khoảng 70 mJy tại 3 GHz ngày 27/10/2017, trong khi ảnh NVSS ở 1.4 GHz năm 1996 chưa phát hiện nguồn. Hình 1 đặt hai mốc cạnh phát hiện lưu trữ năm 2005: một nguồn mới trong khảo sát đã có lịch sử hoạt động dài [P002-S008](#nguon-goc).\n\nNhóm ghép dữ liệu vô tuyến lưu trữ với quan sát mới nhiều tần số, ảnh giao thoa đường cơ sở rất dài (very long baseline interferometry, VLBI) bằng mạng VLBA, phổ quang học và cận hồng ngoại từ Keck, cùng quan sát tia X bằng Swift.\n\nKhoảng cách được ràng buộc bằng hấp thụ 21 cm của hydro trung hòa (neutral hydrogen, H I): chỉ khí phía trước mới hấp thụ tín hiệu nền. Thành phần khí ở vận tốc khoảng −40 km s⁻¹, theo mô hình quay Ngân Hà được dùng, đặt nguồn sau nhánh Norma–Cygnus, tại d ≳ 15 kpc [P012-S006](#nguon-goc), [P012-S007](#nguon-goc).\nNguồn đạt độ sáng phổ khoảng 5 × 10²²(d/15 kpc)² erg s⁻¹ Hz⁻¹ tại 6.9 GHz năm 2014 [P017-S001](#nguon-goc). Sau giai đoạn mờ dần, nó sáng trở lại cuối năm 2025. Hình 2 cho thấy các dải tần tiến hóa khác nhau.\n\nĐỉnh phổ đi từ khoảng 1.9 GHz năm 2019 xuống 0.8 GHz năm 2024, rồi lên 2.2 GHz năm 2026. Sự đảo chiều này đòi hỏi thay đổi trong nguồn hạt, từ trường hoặc hấp thụ, vượt khỏi mô hình giãn nở thụ động [P016-S001](#nguon-goc).\n\nNếu SSA tạo đỉnh, phép ước lượng cân bằng năng lượng (equipartition) giữa hạt và từ trường cho bán kính cỡ 10¹⁴ cm tại 15 kpc và tốc độ giãn nở biểu kiến ≲10 km s⁻¹. Thời gian nguội synchrotron khoảng 3–7 năm ngắn hơn thời gian hoạt động, nên hạt cần được bổ sung hoặc gia tốc lại [P017-S004](#nguon-goc). Ảnh VLBI cũng cho thấy kích thước ít thay đổi từ 2010 đến 2025 [P025-S005](#nguon-goc).\n\nMột vạch cận hồng ngoại gần 2.1476 μm có tâm gần cố định, còn độ rộng nửa cực đại (full width at half maximum, FWHM) thay đổi, tương đương vận tốc khoảng 1400–2220 km s⁻¹ [P018-S009](#nguon-goc).\nKhoảng 15–32 kpc được xét cho một nguồn thuộc đĩa Ngân Hà: biên dưới dựa trên khí hấp thụ, mốc trên dựa trên độ trải rộng đĩa sao [P013-S002](#nguon-goc). Diễn giải ngoài Ngân Hà phải đồng thời giải thích nguồn quang rất sáng, phổ quang rất xanh sau hiệu chỉnh bụi và biến đổi vô tuyến nhanh. Tổ hợp ấy khiến nhóm ưu tiên nguồn trong Ngân Hà [P020-S012](#nguon-goc).\n\nƯớc lượng cân bằng năng lượng còn giả định vùng phát lấp đầy một hình cầu và tỷ số năng lượng hạt nặng/electron bằng 1. So sánh mô hình ưu tiên SSA ở mức vừa trong 2019 và 2026; năm 2024 chưa phân biệt được với hấp thụ tự do–tự do (free–free absorption, FFA), năm 2025 nghiêng về FFA. Nếu FFA tạo đỉnh, suy luận kích thước theo SSA mất cơ sở [P017-S001](#nguon-goc). Tán xạ liên sao (interstellar scattering) có thể làm ảnh VLBI rộng thêm; kích thước nội tại chưa được tách khỏi phần mở rộng có thể do tán xạ.\n\nSwift không phát hiện nguồn năm 2023, cho giới hạn trên 3σ là L_X ≲ 9 × 10³³ erg s⁻¹ trong 0.3–10 keV tại 15 kpc. Phép đổi giả sử phổ lũy thừa có chỉ số photon Γ = 2 và cột hydro Ngân Hà N_H = 1.32 × 10²² cm⁻², chưa tính hấp thụ riêng quanh hệ [P023-S003](#nguon-goc), [P023-S004](#nguon-goc).\nNhóm đề xuất tương tác giữa luồng tia (jet) và gió đĩa (disk wind), với SS 433 làm hệ đối chiếu: dòng vật chất được tiếp sức liên tục va vào gió dày, giữ vùng vô tuyến nhỏ. Nguồn quang–hồng ngoại phù hợp một sao nóng kèm bụi; loại sao và hình học bụi còn nhiều nghiệm.\n\nNếu vạch là Brγ của hydro, có bước sóng nghỉ 2.1661 μm, tâm vạch tương ứng vận tốc dọc đường nhìn khoảng −2600 km s⁻¹. Nhóm lấy tốc độ gió đại diện khoảng 2000 km s⁻¹ để tính khả năng kìm giữ [P025-S007](#nguon-goc).\n\nNhóm xét khả năng phần gió gần tâm đặc hơn để che khuất nguồn tia X. Với giả thiết mật độ đồng đều khoảng 7 × 10⁵ cm⁻³, đạt cột hấp thụ dày Compton (Compton-thick), N_H ≳ 1.5 × 10²⁴ cm⁻², đòi hỏi chiều dày khoảng 0.7 pc, vượt xa vùng phát vô tuyến. Con số này ứng với ngưỡng dày Compton đã chọn; nó không phải chiều dài tối thiểu cho mọi trường hợp hấp thụ mạnh tia X mềm [P025-S011](#nguon-goc).\n\nPhổ cận hồng ngoại nhiều thời điểm với năng lực phân giải R = λ/Δλ ≳ 10⁴ sẽ kiểm tra nhận dạng vạch và chuyển động khí. Quan sát sâu ở tia X cứng sẽ tìm nguồn trung tâm bị che [P026-S003](#nguon-goc). Hai phép thử kiểm tra trực tiếp cách giải thích gió nhanh bao quanh một hệ bồi tụ.\n\nTổng hợp tự động bằng Codex từ bản xuất bản của bài gốc."
+    },
+    {
+      "id": "d9e7df9b19b6bda1",
+      "doi": "10.3847/1538-4357/aea56e",
+      "title": "PR Ori B bừng sáng: bằng chứng về một bộc phát FU Ori",
+      "dek": "PR Ori B ở Orion trải qua bộc phát kiểu FU Ori với biên độ ΔG = 5 mag và ánh sáng do đĩa nóng chi phối.",
+      "journal": "apj",
+      "paper_title": "The FU Ori Outburst of PR Ori B",
+      "summary_date": "2026-10-27",
+      "generated_at": "2026-10-27T08:18:06.903115Z",
+      "topic": "stars",
+      "reading_minutes": 6,
+      "source": {
+        "kind": "publisher",
+        "url": "https://authors.library.caltech.edu/records/3ezgg-xb706/files/Contreras_Pe%C3%B1a_2026_ApJ_1010_223.pdf",
+        "version": null
+      },
+      "image": "/figures/d9e7df9b19b6bda1/figure-0.png",
+      "search_text": "PR Ori B sáng lên vì vật chất đổ về sao nhanh hơn, hay vì bụi bớt che khuất? Hai cơ chế đều làm sao trẻ sáng hơn, nhưng cơ chế đầu trực tiếp cho biết sao đang tăng trưởng ra sao. Quá trình nhận thêm vật chất ấy gọi là bồi tụ (accretion). Năng lượng giải phóng còn nung nóng đĩa tiền hành tinh (protoplanetary disk), nơi chứa nguyên liệu hình thành hành tinh.\n\nCarlos Contreras Peña và cộng sự xác định PR Ori B đang trải qua bộc phát kiểu FU Ori (FU Orionis outburst, FUor): giai đoạn bồi tụ mạnh khiến đĩa sáng vượt bề mặt sao. Hệ nằm trong vùng tạo sao Orion, với khoảng cách được nhóm chọn là 388.4 pc. Nguồn này vừa gần, vừa có quan sát trước bộc phát, cho phép đối chiếu trạng thái ban đầu với đĩa đang hoạt động mạnh [P002-S002](#nguon-goc), [P002-S003](#nguon-goc).\nKhi khí dịch chuyển vào trong đĩa, thế năng hấp dẫn được chuyển thành nhiệt. Trong đĩa nhớt (viscous disk), sự tiêu tán năng lượng do các ứng suất làm vùng trong nóng và phát mạnh ở quang học, còn vùng xa hơn, lạnh hơn đóng góp nhiều ở hồng ngoại. Vì vậy, cùng một nguồn có thể mang phổ giống sao nóng ở quang học nhưng giống sao lạnh ở hồng ngoại. Đây là dấu hiệu của nhiệt độ thay đổi theo bán kính đĩa [P010-S002](#nguon-goc).\n\nThang cấp sao (magnitude) chạy ngược trực giác: số nhỏ hơn nghĩa là sáng hơn. Theo định nghĩa thang này, biên độ ΔG = 5 mag tương ứng mức tăng thông lượng (flux) khoảng 100 lần trong băng G của Gaia. Phép đổi này giúp hình dung độ lớn của sự kiện; tổng năng lượng phát ra trên mọi bước sóng phải được ước tính riêng. Các bộc phát FU Ori có thể kéo dài hơn 100 năm [P001-S005](#nguon-goc).\nManh mối đầu đến từ khảo sát NEOWISE ở hồng ngoại trung. Các phép đo gộp ánh sáng PR Ori A+B từng khiến hệ được xếp vào nhóm biến thiên ngẫu nhiên, với dữ liệu khi ấy dừng trước tháng 12/2020. Chính chương trình theo dõi phổ các nguồn biến thiên đã nhận ra đặc trưng FUor; những đợt công bố dữ liệu sau mới làm rõ quá trình bừng sáng [P002-S006](#nguon-goc).\n\nNhóm ghép quang trắc (photometry) nhiều thập kỷ với phổ lưu trữ trước bộc phát và phổ mới. Gaia và kính RC80 phân biệt được A với B, trong khi nhiều khảo sát khác chỉ đo tổng hai nguồn. Sự ổn định của A cho phép trừ phần ánh sáng của nó khỏi các phép đo gộp [P009-S002](#nguon-goc).\n\nHình được cung cấp trình bày đường cong ánh sáng (light curve) của A ở trên, B ở giữa và tổng A+B ở dưới. Trong cùng băng lọc quang học, A gần như không đổi, còn B biến động mạnh. Đường đứt xanh ở khung dưới đánh dấu giới hạn tháng 12/2020 của dữ liệu dùng để phân loại ban đầu [P004-S005](#nguon-goc).\nKết quả tách nguồn rất rõ: A ổn định ở G = 11.15 ± 0.04 mag, còn B có biên độ ΔG = 5 mag. B trải qua hai đợt tăng sáng, khoảng 2015–2018 và từ khoảng 2019. Sau khi trừ A, biên độ hồng ngoại của B đạt ΔW1 = 3.6 mag và ΔW2 = 2.8 mag [P009-S002](#nguon-goc), [P009-S009](#nguon-goc).\n\nBằng chứng quyết định đến từ phổ. Phổ hồng ngoại trước bộc phát gần với sao K7±2, còn các quan sát năm 2023–2025 có dải hấp thụ (absorption band) mạnh của ¹²CO và H₂O. Phổ quang học lại biểu hiện khí nóng hơn, đúng với một đĩa có nhiều vùng nhiệt độ. Những dấu hiệu này giúp nhóm xác nhận phân loại FUor [P010-S003](#nguon-goc), [P010-S007](#nguon-goc).\n\nMột phép kiểm tra khác tách vai trò của bụi. Nếu chỉ do bụi gây tắt sáng (extinction), mức mờ 3.8 mag ở G phải đi kèm 0.18 mag ở W1 theo đường cong tắt sáng nhóm sử dụng; thực tế nguồn mờ đi 0.8 mag ở băng W1, tức cấp sao W1 tăng 0.8 mag. Nhóm vì thế giải thích lần suy giảm này chủ yếu bằng bồi tụ yếu đi [P015-S004](#nguon-goc).\n\nCác ước tính dựa trên mô hình cho độ trưng bồi tụ (accretion luminosity) chủ yếu trong khoảng 23–53 L⊙. Khoảng tốc độ bồi tụ đỉnh được tổng hợp trong kết luận là ∼(4–14) × 10⁻⁶ M⊙ yr⁻¹. L⊙ và M⊙ lần lượt chỉ độ trưng và khối lượng Mặt Trời [P014-S001](#nguon-goc), [P017-S004](#nguon-goc).\nCác tốc độ bồi tụ trên dùng khối lượng sao 0.85 M⊙. Một nguồn sai khác lớn là mức tắt sáng, được biểu thị ở băng V bằng A_V. So phổ hồng ngoại với FU Ori cho A_V = 3.1 ± 0.3 mag, nhưng mô hình phân bố năng lượng phổ (spectral energy distribution, SED) quang học–hồng ngoại lại cho A_V khoảng 1–1.7 mag. Mô hình còn cần góc nghiêng khoảng 80°. Trong khi đó, ALMA suy ra khoảng 47° nếu đĩa tròn và mỏng; nguồn chỉ được phân giải ở mức sát giới hạn [P014-S001](#nguon-goc), [P013-S006](#nguon-goc), [P008-S001](#nguon-goc).\n\nMô hình đơn giản chưa tái hiện đồng thời được cả quang học lẫn hồng ngoại. Nhóm nêu các khả năng gồm bồi tụ thay đổi theo bán kính, vật chất bao quanh bổ sung phát xạ và ánh sáng tán xạ (scattered light) đóng góp ở quang học [P015-S002](#nguon-goc), [P015-S003](#nguon-goc). Khả năng cuối có căn cứ trực tiếp: phổ quang học trước bộc phát tại B khớp với A, và được giải thích bằng ánh sáng A phản xạ trong môi trường quanh B [P007-S006](#nguon-goc).\nSo sánh phổ Spitzer năm 2007 với phổ VLT/VISIR trong bộc phát, nhóm thấy tỉ số thông lượng có đỉnh tại khoảng 11.2 và 11.9 μm, phù hợp với forsterit (forsterite), một dạng silicat kết tinh (crystalline silicates). Kết quả đặt ra câu hỏi: bộc phát vừa tạo tinh thể mới hay làm các tinh thể có sẵn nóng và sáng hơn [P017-S002](#nguon-goc), [P017-S003](#nguon-goc)?\n\nNhóm thiếu phổ hồng ngoại trong bộc phát ở bước sóng trên 16 μm để phân biệt hai khả năng, và đề xuất quan sát JWST để kiểm tra [P017-S004](#nguon-goc). Với quá trình lan truyền bộc phát, nhóm không thấy độ trễ (time lag) giữa quang học và hồng ngoại; nhịp lấy mẫu WISE khiến độ trễ ngắn hơn khoảng một năm khó được nhận ra [P016-S001](#nguon-goc), [P017-S001](#nguon-goc). Theo dõi thường xuyên hơn sẽ kiểm tra quan hệ thời gian giữa các vùng phát sáng. Khoảng cách gần cũng mở đường cho quan sát tách được những cấu trúc nhỏ ở vùng trong đĩa [P018-S003](#nguon-goc).\n\nTổng hợp tự động bằng Codex từ phiên bản nhà xuất bản của bài gốc."
+    },
     {
       "id": "9d1a5f439bed47f4",
       "doi": "10.3847/2041-8213/aea60d",
