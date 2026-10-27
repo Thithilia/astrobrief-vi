@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T11:00:05Z",
+  "generated_at": "2026-10-27T11:05:57Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-10-27T10:05:08Z",
-      "last_attempt": "2026-10-27T10:05:08Z",
+      "last_success": "2026-10-27T11:05:05Z",
+      "last_attempt": "2026-10-27T11:05:05Z",
       "error": null
     },
     {
@@ -18,8 +18,8 @@
       "short": "ApJ",
       "url": "https://journals.aas.org/astrophysical-journal/",
       "status": "ok",
-      "last_success": "2026-10-27T10:05:08Z",
-      "last_attempt": "2026-10-27T10:05:08Z",
+      "last_success": "2026-10-27T11:05:05Z",
+      "last_attempt": "2026-10-27T11:05:05Z",
       "error": null
     },
     {
@@ -28,8 +28,8 @@
       "short": "ApJL",
       "url": "https://journals.aas.org/astrophysical-journal-letters/",
       "status": "ok",
-      "last_success": "2026-10-27T10:05:08Z",
-      "last_attempt": "2026-10-27T10:05:08Z",
+      "last_success": "2026-10-27T11:05:05Z",
+      "last_attempt": "2026-10-27T11:05:05Z",
       "error": null
     },
     {
@@ -38,8 +38,8 @@
       "short": "ApJS",
       "url": "https://journals.aas.org/astrophysical-supplement-series/",
       "status": "ok",
-      "last_success": "2026-10-27T10:05:08Z",
-      "last_attempt": "2026-10-27T10:05:08Z",
+      "last_success": "2026-10-27T11:05:05Z",
+      "last_attempt": "2026-10-27T11:05:05Z",
       "error": null
     },
     {
@@ -48,8 +48,8 @@
       "short": "AJ",
       "url": "https://journals.aas.org/astronomical-journal/",
       "status": "ok",
-      "last_success": "2026-10-27T10:05:08Z",
-      "last_attempt": "2026-10-27T10:05:08Z",
+      "last_success": "2026-10-27T11:05:05Z",
+      "last_attempt": "2026-10-27T11:05:05Z",
       "error": null
     },
     {
@@ -58,12 +58,230 @@
       "short": "MNRAS",
       "url": "https://academic.oup.com/mnras",
       "status": "ok",
-      "last_success": "2026-10-27T10:05:08Z",
-      "last_attempt": "2026-10-27T10:05:08Z",
+      "last_success": "2026-10-27T11:05:05Z",
+      "last_attempt": "2026-10-27T11:05:05Z",
       "error": null
     }
   ],
   "papers": [
+    {
+      "id": "1df071cd31c458de",
+      "doi": "10.1093/mnras/stag1858",
+      "title": "Present-day coasting in a flat FLRW cosmology with a transient acceleration pocket",
+      "journal": "mnras",
+      "authors": [
+        "Lilia Ferrario"
+      ],
+      "published_online": "2026-10-27",
+      "online_date_precision": "day",
+      "issue_date": "2026-10-23",
+      "first_seen": "2026-10-27T11:05:05Z",
+      "volume": "553",
+      "issue": "1",
+      "article_number": "stag1858",
+      "source_url": "https://academic.oup.com/mnras/article/doi/10.1093/mnras/stag1858/9002813",
+      "kind": "research",
+      "topic": "cosmology",
+      "has_summary": false
+    },
+    {
+      "id": "798fbfed0a106e9b",
+      "doi": "10.1093/mnras/stag1924",
+      "title": "Correction to: The DESIRED temperature–metallicity relations in star-forming regions: probing the Galactic radial and azimuthal metallicity distributions",
+      "journal": "mnras",
+      "authors": [],
+      "published_online": "2026-10-27",
+      "online_date_precision": "day",
+      "issue_date": "2026-10-23",
+      "first_seen": "2026-10-27T11:05:05Z",
+      "volume": "553",
+      "issue": "1",
+      "article_number": "stag1924",
+      "source_url": "https://academic.oup.com/mnras/article/doi/10.1093/mnras/stag1924/9002812",
+      "kind": "correction",
+      "topic": "stars",
+      "has_summary": false
+    },
+    {
+      "id": "0cb9bf87222dbc9a",
+      "doi": "10.3847/1538-4357/aeac54",
+      "title": "Interaction of Stellar Dipole and Disk Magnetic Fields in Accretion–Ejection Systems",
+      "journal": "apj",
+      "authors": [
+        "Somayeh Sheikhnezami",
+        "Sarah Aslani"
+      ],
+      "published_online": "2026-10-27T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": "2026-11-01",
+      "first_seen": "2026-10-27T11:05:05Z",
+      "volume": "1011",
+      "issue": "1",
+      "article_number": "80",
+      "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aeac54",
+      "kind": "research",
+      "topic": "stars",
+      "has_summary": false
+    },
+    {
+      "id": "de2f8ac92fe29cc7",
+      "doi": "10.3847/1538-4357/aeac55",
+      "title": "Properties of Circumfacular Regions Derived from H α and Ca ii K Synoptic Observations of the Sun",
+      "journal": "apj",
+      "authors": [
+        "Serena Criscuoli",
+        "Andrea Diercke"
+      ],
+      "published_online": "2026-10-27T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": "2026-11-01",
+      "first_seen": "2026-10-27T11:05:05Z",
+      "volume": "1011",
+      "issue": "1",
+      "article_number": "79",
+      "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aeac55",
+      "kind": "research",
+      "topic": "solar",
+      "has_summary": false
+    },
+    {
+      "id": "9d95db262b915327",
+      "doi": "10.3847/1538-4357/aeacc5",
+      "title": "Survival Analysis of Intermediate-mass Black Holes in Dense Star Clusters",
+      "journal": "apj",
+      "authors": [
+        "Maia A. S. Martinez",
+        "Elena González Prieto",
+        "Frederic A. Rasio"
+      ],
+      "published_online": "2026-10-27T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": "2026-11-01",
+      "first_seen": "2026-10-27T11:05:05Z",
+      "volume": "1011",
+      "issue": "1",
+      "article_number": "78",
+      "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aeacc5",
+      "kind": "research",
+      "topic": "compact",
+      "has_summary": false
+    },
+    {
+      "id": "138d0e3648eaf421",
+      "doi": "10.3847/1538-4357/aeae26",
+      "title": "Feedback-driven Interaction of Expanding Molecular Clouds in the LDN 1204–Sh 2-145–Sh 2-140 Complex",
+      "journal": "apj",
+      "authors": [
+        "C. Rishi",
+        "Neelam Panwar",
+        "L. K. Dewangan",
+        "Ajay Kumar Singh"
+      ],
+      "published_online": "2026-10-27T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": "2026-11-01",
+      "first_seen": "2026-10-27T11:05:05Z",
+      "volume": "1011",
+      "issue": "1",
+      "article_number": "77",
+      "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aeae26",
+      "kind": "research",
+      "topic": "stars",
+      "has_summary": false
+    },
+    {
+      "id": "d269f2d6fdaa8e90",
+      "doi": "10.3847/1538-4357/aeb024",
+      "title": "Environmental Modulation of Small-scale Galactic Conformity in the Virgo Filaments",
+      "journal": "apj",
+      "authors": [
+        "Youngdae Lee",
+        "Soo-Chang Rey",
+        "Suk Kim"
+      ],
+      "published_online": "2026-10-27T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": "2026-11-01",
+      "first_seen": "2026-10-27T11:05:05Z",
+      "volume": "1011",
+      "issue": "1",
+      "article_number": "76",
+      "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aeb024",
+      "kind": "research",
+      "topic": "galaxies",
+      "has_summary": false
+    },
+    {
+      "id": "a0a0a7f1453b769e",
+      "doi": "10.3847/2041-8213/aea97d",
+      "title": "Galaxy–Little Red Dot Strong Lenses: A Missing Population?",
+      "journal": "apjl",
+      "authors": [
+        "Zizhao He",
+        "Nan Li",
+        "Simon Dye",
+        "Xinzhong Er",
+        "Fuwen Shu"
+      ],
+      "published_online": "2026-10-27",
+      "online_date_precision": "day",
+      "issue_date": "2026-11-01",
+      "first_seen": "2026-10-27T11:05:05Z",
+      "volume": "1011",
+      "issue": "1",
+      "article_number": "L24",
+      "source_url": "https://iopscience.iop.org/article/10.3847/2041-8213/aea97d",
+      "kind": "letter",
+      "topic": "compact",
+      "has_summary": false
+    },
+    {
+      "id": "c36f469ae207a08a",
+      "doi": "10.3847/2041-8213/aeb267",
+      "title": "Magnetar X-Ray Flares as Elementary Reconnection Events in a Self-organized Critical Magnetosphere",
+      "journal": "apjl",
+      "authors": [
+        "Sheng-Lun 升伦 Xie 谢",
+        "Yi 一 Zhao 赵",
+        "Wen-Long 文龙 Zhang 张",
+        "Chen-Wei 晨巍 Wang 王",
+        "Yun-Wei 云伟 Yu 俞",
+        "Shao-Lin 少林 Xiong 熊"
+      ],
+      "published_online": "2026-10-27T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": "2026-11-01",
+      "first_seen": "2026-10-27T11:05:05Z",
+      "volume": "1011",
+      "issue": "1",
+      "article_number": "L21",
+      "source_url": "https://iopscience.iop.org/article/10.3847/2041-8213/aeb267",
+      "kind": "letter",
+      "topic": "stars",
+      "has_summary": false
+    },
+    {
+      "id": "3ae2f41312173b3d",
+      "doi": "10.3847/2041-8213/aeb374",
+      "title": "Discovery of Gamma-Ray Pulsations from the Millisecond Pulsar PSR J0435+3233",
+      "journal": "apjl",
+      "authors": [
+        "Mengqing Zhang",
+        "Shengbin Pei",
+        "Pengfei Zhang"
+      ],
+      "published_online": "2026-10-27T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": "2026-11-01",
+      "first_seen": "2026-10-27T11:05:05Z",
+      "volume": "1011",
+      "issue": "1",
+      "article_number": "L19",
+      "source_url": "https://iopscience.iop.org/article/10.3847/2041-8213/aeb374",
+      "kind": "letter",
+      "topic": "compact",
+      "has_summary": false
+    },
     {
       "id": "c63481ffc36cc8ad",
       "doi": "10.1051/0004-6361/202557571",
@@ -3324,7 +3542,7 @@
     {
       "id": "0956c6ff433b23d5",
       "doi": "10.1051/0004-6361/202662313",
-      "title": "EMIR confirmation of the high- z Ly α blob SHARDS20018464",
+      "title": "EMIR confirmation of the high-z Lyα blob SHARDS20018464",
       "journal": "aa",
       "authors": [
         "S. Zarattini",
@@ -11904,7 +12122,7 @@
       "article_number": "A506",
       "source_url": "https://www.aanda.org/10.1051/0004-6361/202660182",
       "kind": "research",
-      "topic": "cosmology",
+      "topic": "galaxies",
       "has_summary": false
     },
     {
@@ -17935,7 +18153,7 @@
       "article_number": "A491",
       "source_url": "https://www.aanda.org/10.1051/0004-6361/202661047",
       "kind": "research",
-      "topic": "planets",
+      "topic": "stars",
       "has_summary": false
     },
     {
@@ -25767,7 +25985,7 @@
       "article_number": "A522",
       "source_url": "https://www.aanda.org/10.1051/0004-6361/202662111",
       "kind": "research",
-      "topic": "galaxies",
+      "topic": "stars",
       "has_summary": false
     },
     {
@@ -29349,7 +29567,7 @@
     {
       "id": "e7268b3c93429b00",
       "doi": "10.1093/mnras/stag1849",
-      "title": "The BUFFALO Survey : The Subhalo Mass Function for Abell 2744 with Strong+Weak Gravitational Lensing",
+      "title": "The BUFFALO survey: the subhalo mass function for Abell 2744 with strong + weak gravitational lensing",
       "journal": "mnras",
       "authors": [
         "Nency R Patel",
@@ -29374,12 +29592,12 @@
       ],
       "published_online": "2026-09-26",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-10-23",
       "first_seen": "2026-10-25T19:58:05Z",
-      "volume": null,
-      "issue": null,
+      "volume": "553",
+      "issue": "1",
       "article_number": "stag1849",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag1849/8836715",
+      "source_url": "https://academic.oup.com/mnras/article/doi/10.1093/mnras/stag1849/8836715",
       "kind": "research",
       "topic": "cosmology",
       "has_summary": false
@@ -29760,7 +29978,7 @@
     {
       "id": "eca92c597bd4ce75",
       "doi": "10.1093/mnras/stag1866",
-      "title": "Sky-Plane Velocity Distributions of Interstellar Objects and Implications for Their Detection",
+      "title": "Sky-plane velocity distributions of interstellar objects and implications for their detection",
       "journal": "mnras",
       "authors": [
         "Cassidy E Walker",
@@ -29768,12 +29986,12 @@
       ],
       "published_online": "2026-09-30",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-10-23",
       "first_seen": "2026-10-25T19:58:05Z",
-      "volume": null,
-      "issue": null,
+      "volume": "553",
+      "issue": "1",
       "article_number": "stag1866",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag1866/8855711",
+      "source_url": "https://academic.oup.com/mnras/article/doi/10.1093/mnras/stag1866/8855711",
       "kind": "research",
       "topic": "solar",
       "has_summary": false
@@ -31291,7 +31509,7 @@
     {
       "id": "fb699f5b8e0fb62a",
       "doi": "10.1093/mnras/stag1938",
-      "title": "Isophotal signatures of the Brightest Cluster Galaxy-Intracluster Light transition",
+      "title": "Isophotal signatures of the brightest cluster galaxy–intracluster light transition",
       "journal": "mnras",
       "authors": [
         "Giulia Golini",
@@ -31302,12 +31520,12 @@
       ],
       "published_online": "2026-10-12",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-10-23",
       "first_seen": "2026-10-25T19:58:05Z",
-      "volume": null,
-      "issue": null,
+      "volume": "553",
+      "issue": "1",
       "article_number": "stag1938",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag1938/8910746",
+      "source_url": "https://academic.oup.com/mnras/article/doi/10.1093/mnras/stag1938/8910746",
       "kind": "research",
       "topic": "cosmology",
       "has_summary": false
