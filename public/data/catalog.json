@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T10:21:34Z",
+  "generated_at": "2026-10-28T12:06:16Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-10-28T10:05:05Z",
-      "last_attempt": "2026-10-28T10:05:05Z",
+      "last_success": "2026-10-28T12:05:03Z",
+      "last_attempt": "2026-10-28T12:05:03Z",
       "error": null
     },
     {
@@ -18,8 +18,8 @@
       "short": "ApJ",
       "url": "https://journals.aas.org/astrophysical-journal/",
       "status": "ok",
-      "last_success": "2026-10-28T10:05:05Z",
-      "last_attempt": "2026-10-28T10:05:05Z",
+      "last_success": "2026-10-28T12:05:03Z",
+      "last_attempt": "2026-10-28T12:05:03Z",
       "error": null
     },
     {
@@ -28,8 +28,8 @@
       "short": "ApJL",
       "url": "https://journals.aas.org/astrophysical-journal-letters/",
       "status": "ok",
-      "last_success": "2026-10-28T10:05:05Z",
-      "last_attempt": "2026-10-28T10:05:05Z",
+      "last_success": "2026-10-28T12:05:03Z",
+      "last_attempt": "2026-10-28T12:05:03Z",
       "error": null
     },
     {
@@ -38,8 +38,8 @@
       "short": "ApJS",
       "url": "https://journals.aas.org/astrophysical-supplement-series/",
       "status": "ok",
-      "last_success": "2026-10-28T10:05:05Z",
-      "last_attempt": "2026-10-28T10:05:05Z",
+      "last_success": "2026-10-28T12:05:03Z",
+      "last_attempt": "2026-10-28T12:05:03Z",
       "error": null
     },
     {
@@ -48,8 +48,8 @@
       "short": "AJ",
       "url": "https://journals.aas.org/astronomical-journal/",
       "status": "ok",
-      "last_success": "2026-10-28T10:05:05Z",
-      "last_attempt": "2026-10-28T10:05:05Z",
+      "last_success": "2026-10-28T12:05:03Z",
+      "last_attempt": "2026-10-28T12:05:03Z",
       "error": null
     },
     {
@@ -58,12 +58,216 @@
       "short": "MNRAS",
       "url": "https://academic.oup.com/mnras",
       "status": "ok",
-      "last_success": "2026-10-28T10:05:05Z",
-      "last_attempt": "2026-10-28T10:05:05Z",
+      "last_success": "2026-10-28T12:05:03Z",
+      "last_attempt": "2026-10-28T12:05:03Z",
       "error": null
     }
   ],
   "papers": [
+    {
+      "id": "1287dc47c7e9eb2b",
+      "doi": "10.1093/mnras/stag1684",
+      "title": "Type Ia supernova population machine – I. A unified cosmological simulation–binary synthesis framework establishing non-universal delay-time distributions and cosmic progenitor-channel dominance crossover",
+      "journal": "mnras",
+      "authors": [
+        "Suk-Jin Yoon",
+        "Inhyuk Park",
+        "Woong-Bae G Zee",
+        "Chul Chung",
+        "Jun-Sung Moon",
+        "Sanjaya Paudel",
+        "Kiyun Yun",
+        "Myung-Hun Kim",
+        "Eun-Taek Gim"
+      ],
+      "published_online": "2026-10-28",
+      "online_date_precision": "day",
+      "issue_date": "2026-10-23",
+      "first_seen": "2026-10-28T12:00:04Z",
+      "volume": "553",
+      "issue": "1",
+      "article_number": "stag1684",
+      "source_url": "https://academic.oup.com/mnras/article/doi/10.1093/mnras/stag1684/9003548",
+      "kind": "research",
+      "topic": "cosmology",
+      "has_summary": false
+    },
+    {
+      "id": "2d757c8c38e918bb",
+      "doi": "10.3847/1538-3881/aeab9c",
+      "title": "PEACC—Precision Emitter for 21 cm Array Coherent Calibration",
+      "journal": "aj",
+      "authors": [
+        "Kalyani Bhopi",
+        "Morgan Cole",
+        "Mallory Helfenbein",
+        "Will Tyndall",
+        "Audrey Whitmer",
+        "Kevin Bandura",
+        "Laura Newburgh"
+      ],
+      "published_online": "2026-10-28T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": "2026-11-02",
+      "first_seen": "2026-10-28T12:00:04Z",
+      "volume": "172",
+      "issue": "5",
+      "article_number": "285",
+      "source_url": "https://iopscience.iop.org/article/10.3847/1538-3881/aeab9c",
+      "kind": "research",
+      "topic": "methods",
+      "has_summary": false
+    },
+    {
+      "id": "034f26e1504ed96b",
+      "doi": "10.3847/1538-3881/aead9d",
+      "title": "Investigating Stellar Limb-darkening Laws Using the Navy Precision Optical Interferometer Data Archive",
+      "journal": "aj",
+      "authors": [
+        "Ellyn K. Baines",
+        "James H. Clark",
+        "Bradley I. Kingsley",
+        "Henrique R. Schmitt",
+        "Jordan M. Stone"
+      ],
+      "published_online": "2026-10-28T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": "2026-11-02",
+      "first_seen": "2026-10-28T12:00:04Z",
+      "volume": "172",
+      "issue": "5",
+      "article_number": "284",
+      "source_url": "https://iopscience.iop.org/article/10.3847/1538-3881/aead9d",
+      "kind": "research",
+      "topic": "stars",
+      "has_summary": false
+    },
+    {
+      "id": "5d59a39e6184ddea",
+      "doi": "10.3847/1538-4357/ae9eaf",
+      "title": "Orbital Migration of Interacting Stellar Mass Black Holes in Disks around Supermassive Black Holes. III. Mass Distribution of Hierarchical Mergers",
+      "journal": "apj",
+      "authors": [
+        "Katherine L. Gonglewski, Amy Secunda, Mordecai-Mark Mac Low, K. E. Saavik Ford, Barry McKernan and Fabian R. N. Schneider"
+      ],
+      "published_online": "2026-10-28T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": null,
+      "first_seen": "2026-10-28T12:00:04Z",
+      "volume": "1011",
+      "issue": "1",
+      "article_number": "107",
+      "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/ae9eaf",
+      "kind": "research",
+      "topic": "compact",
+      "has_summary": false
+    },
+    {
+      "id": "69643538ede97259",
+      "doi": "10.3847/1538-4357/aea07c",
+      "title": "AI-based Compression of SDO/AIA for Solar Coronal Features",
+      "journal": "apj",
+      "authors": [
+        "Jaewon Lee",
+        "Yong-Jae Moon",
+        "Seong-Gyeong Jeon",
+        "Youngjae Kim",
+        "Daeil Kim"
+      ],
+      "published_online": "2026-10-28T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": "2026-11-01",
+      "first_seen": "2026-10-28T12:00:04Z",
+      "volume": "1011",
+      "issue": "1",
+      "article_number": "106",
+      "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aea07c",
+      "kind": "research",
+      "topic": "solar",
+      "has_summary": false
+    },
+    {
+      "id": "3de9cdb7a10121b2",
+      "doi": "10.3847/1538-4357/aeac4e",
+      "title": "A Split-Flux Method for Dust–Gas Two-fluid Simulations from Strong to Weak Coupling",
+      "journal": "apj",
+      "authors": [
+        "Kazunari Iwasaki"
+      ],
+      "published_online": "2026-10-28T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": null,
+      "first_seen": "2026-10-28T12:00:04Z",
+      "volume": "1011",
+      "issue": "1",
+      "article_number": "89",
+      "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aeac4e",
+      "kind": "research",
+      "topic": "stars",
+      "has_summary": false
+    },
+    {
+      "id": "3b8ca66fa16a389b",
+      "doi": "10.3847/1538-4357/aeacc8",
+      "title": "Proton Specific Entropy as a Proxy for the O7+/O6+ Charge State Ratio over Heliocentric Distance",
+      "journal": "apj",
+      "authors": [
+        "Jack D. Collard, Tamar Ervin, Ryan M. Dewey, Yeimy J. Rivera, Aidan J. Nakhleh, Jean-Baptiste Dakeyo, Samuel T. Badman, Trevor A. Bowen, John W. Bonnell, Nicholeen M. Viall, Susan T. Lepri, Jim M. Raines and Stuart D. Bale"
+      ],
+      "published_online": "2026-10-28T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": null,
+      "first_seen": "2026-10-28T12:00:04Z",
+      "volume": "1011",
+      "issue": "1",
+      "article_number": "86",
+      "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aeacc8",
+      "kind": "research",
+      "topic": "solar",
+      "has_summary": false
+    },
+    {
+      "id": "e26951bd6b1c11b0",
+      "doi": "10.1093/mnras/stag1881",
+      "title": "Correction to: Modelling δ Scuti pulsations: a new grid of p, g, and f modes across pre-main-sequence to post-main-sequence evolution",
+      "journal": "mnras",
+      "authors": [],
+      "published_online": "2026-10-28",
+      "online_date_precision": "day",
+      "issue_date": "2026-10-23",
+      "first_seen": "2026-10-28T11:00:04Z",
+      "volume": "553",
+      "issue": "1",
+      "article_number": "stag1881",
+      "source_url": "https://academic.oup.com/mnras/article/doi/10.1093/mnras/stag1881/9003542",
+      "kind": "correction",
+      "topic": "other",
+      "has_summary": false
+    },
+    {
+      "id": "b6b160486e99ef50",
+      "doi": "10.3847/1538-3881/aeb013",
+      "title": "Enhancing the Interpretability of Radial Velocity Analysis Using Leave-one-out Cross Validation",
+      "journal": "aj",
+      "authors": [
+        "Matthew C. Nixon",
+        "Ritvik Basant",
+        "Rafael Luque",
+        "Luis Welbanks",
+        "Pierrot Lamontagne"
+      ],
+      "published_online": "2026-10-28T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": "2026-11-02",
+      "first_seen": "2026-10-28T11:00:04Z",
+      "volume": "172",
+      "issue": "5",
+      "article_number": "283",
+      "source_url": "https://iopscience.iop.org/article/10.3847/1538-3881/aeb013",
+      "kind": "research",
+      "topic": "planets",
+      "has_summary": false
+    },
     {
       "id": "ddf57904d396b6ed",
       "doi": "10.1051/0004-6361/202556732",
@@ -2284,7 +2488,7 @@
       "article_number": "L18",
       "source_url": "https://iopscience.iop.org/article/10.3847/2041-8213/aeb37b",
       "kind": "letter",
-      "topic": "solar",
+      "topic": "planets",
       "has_summary": false
     },
     {
@@ -2349,7 +2553,7 @@
     {
       "id": "de2f8ac92fe29cc7",
       "doi": "10.3847/1538-4357/aeac55",
-      "title": "Properties of Circumfacular Regions Derived from H α and Ca ii K Synoptic Observations of the Sun",
+      "title": "Properties of Circumfacular Regions Derived from Hα and Ca ii K Synoptic Observations of the Sun",
       "journal": "apj",
       "authors": [
         "Serena Criscuoli",
@@ -2431,7 +2635,7 @@
       "article_number": "76",
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aeb024",
       "kind": "research",
-      "topic": "galaxies",
+      "topic": "cosmology",
       "has_summary": false
     },
     {
@@ -2455,7 +2659,7 @@
       "article_number": "L24",
       "source_url": "https://iopscience.iop.org/article/10.3847/2041-8213/aea97d",
       "kind": "letter",
-      "topic": "compact",
+      "topic": "cosmology",
       "has_summary": false
     },
     {
@@ -31092,7 +31296,7 @@
     {
       "id": "4c2e216fcea1c2e6",
       "doi": "10.1093/mnras/stag1822",
-      "title": "Detection of new Galactic Wolf-Rayet stars with SPHEREx",
+      "title": "Detection of new Galactic Wolf–Rayet stars with SPHEREx",
       "journal": "mnras",
       "authors": [
         "Paul A Crowther",
@@ -31100,12 +31304,12 @@
       ],
       "published_online": "2026-09-26",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-10-23",
       "first_seen": "2026-10-25T19:58:05Z",
-      "volume": null,
-      "issue": null,
+      "volume": "553",
+      "issue": "1",
       "article_number": "stag1822",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag1822/8836705",
+      "source_url": "https://academic.oup.com/mnras/article/doi/10.1093/mnras/stag1822/8836705",
       "kind": "research",
       "topic": "planets",
       "has_summary": false
@@ -32987,12 +33191,12 @@
       ],
       "published_online": "2026-10-07",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-10-23",
       "first_seen": "2026-10-25T19:58:05Z",
-      "volume": null,
-      "issue": null,
+      "volume": "553",
+      "issue": "1",
       "article_number": "stag1903",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag1903/8876086",
+      "source_url": "https://academic.oup.com/mnras/article/doi/10.1093/mnras/stag1903/8876086",
       "kind": "research",
       "topic": "solar",
       "has_summary": false
@@ -33788,7 +33992,7 @@
     {
       "id": "15557ed1b19261f0",
       "doi": "10.1093/mnras/stag1940",
-      "title": "Impact of Decay-Chain Feeding by Long-Lived Heavy Nuclei on Nuclear Cosmochronology",
+      "title": "Impact of decay-chain feeding by long-lived heavy nuclei on nuclear cosmochronology",
       "journal": "mnras",
       "authors": [
         "Qiu-Hong Chen",
@@ -33798,12 +34002,12 @@
       ],
       "published_online": "2026-10-13",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-10-23",
       "first_seen": "2026-10-25T19:58:05Z",
-      "volume": null,
-      "issue": null,
+      "volume": "553",
+      "issue": "1",
       "article_number": "stag1940",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag1940/8914590",
+      "source_url": "https://academic.oup.com/mnras/article/doi/10.1093/mnras/stag1940/8914590",
       "kind": "research",
       "topic": "compact",
       "has_summary": false
@@ -33929,7 +34133,7 @@
     {
       "id": "59e1f6839136ae9d",
       "doi": "10.1093/mnras/stag1946",
-      "title": "Constrain the Size of Broad Line Region in NGC 1068 Using Sub-millimeter Excess",
+      "title": "Constrain the size of broad-line region in NGC 1068 using submillimetre excess",
       "journal": "mnras",
       "authors": [
         "Qi Guo",
@@ -33941,12 +34145,12 @@
       ],
       "published_online": "2026-10-13",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-10-23",
       "first_seen": "2026-10-25T19:58:05Z",
-      "volume": null,
-      "issue": null,
+      "volume": "553",
+      "issue": "1",
       "article_number": "stag1946",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag1946/8914587",
+      "source_url": "https://academic.oup.com/mnras/article/doi/10.1093/mnras/stag1946/8914587",
       "kind": "research",
       "topic": "compact",
       "has_summary": false
