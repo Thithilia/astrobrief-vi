@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T13:05:50Z",
+  "generated_at": "2026-10-28T14:06:15Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-10-28T13:05:03Z",
-      "last_attempt": "2026-10-28T13:05:03Z",
+      "last_success": "2026-10-28T14:05:04Z",
+      "last_attempt": "2026-10-28T14:05:04Z",
       "error": null
     },
     {
@@ -18,8 +18,8 @@
       "short": "ApJ",
       "url": "https://journals.aas.org/astrophysical-journal/",
       "status": "ok",
-      "last_success": "2026-10-28T13:05:03Z",
-      "last_attempt": "2026-10-28T13:05:03Z",
+      "last_success": "2026-10-28T14:05:04Z",
+      "last_attempt": "2026-10-28T14:05:04Z",
       "error": null
     },
     {
@@ -28,8 +28,8 @@
       "short": "ApJL",
       "url": "https://journals.aas.org/astrophysical-journal-letters/",
       "status": "ok",
-      "last_success": "2026-10-28T13:05:03Z",
-      "last_attempt": "2026-10-28T13:05:03Z",
+      "last_success": "2026-10-28T14:05:04Z",
+      "last_attempt": "2026-10-28T14:05:04Z",
       "error": null
     },
     {
@@ -38,8 +38,8 @@
       "short": "ApJS",
       "url": "https://journals.aas.org/astrophysical-supplement-series/",
       "status": "ok",
-      "last_success": "2026-10-28T13:05:03Z",
-      "last_attempt": "2026-10-28T13:05:03Z",
+      "last_success": "2026-10-28T14:05:04Z",
+      "last_attempt": "2026-10-28T14:05:04Z",
       "error": null
     },
     {
@@ -48,8 +48,8 @@
       "short": "AJ",
       "url": "https://journals.aas.org/astronomical-journal/",
       "status": "ok",
-      "last_success": "2026-10-28T13:05:03Z",
-      "last_attempt": "2026-10-28T13:05:03Z",
+      "last_success": "2026-10-28T14:05:04Z",
+      "last_attempt": "2026-10-28T14:05:04Z",
       "error": null
     },
     {
@@ -58,12 +58,89 @@
       "short": "MNRAS",
       "url": "https://academic.oup.com/mnras",
       "status": "ok",
-      "last_success": "2026-10-28T13:05:03Z",
-      "last_attempt": "2026-10-28T13:05:03Z",
+      "last_success": "2026-10-28T14:05:04Z",
+      "last_attempt": "2026-10-28T14:05:04Z",
       "error": null
     }
   ],
   "papers": [
+    {
+      "id": "21bf38d816ca6630",
+      "doi": "10.3847/2041-8213/aeb122",
+      "title": "Rubin Observatory Reveals a Dust-shrouded Halo Globular Cluster in Ophiuchus",
+      "journal": "apjl",
+      "authors": [
+        "Aashay Pai",
+        "William Cerny",
+        "Andrew B. Pace",
+        "Alex Drlica-Wagner",
+        "Peter S. Ferguson",
+        "Marla Geha",
+        "Chin Yi Tan",
+        "Sasha N. Campana",
+        "Burçin Mutlu-Pakdil",
+        "Alexander H. Riley",
+        "Nora Shipp",
+        "Guy S. Stringfellow"
+      ],
+      "published_online": "2026-10-28",
+      "online_date_precision": "day",
+      "issue_date": "2026-11-01",
+      "first_seen": "2026-10-28T14:00:03Z",
+      "volume": "1011",
+      "issue": "1",
+      "article_number": "L28",
+      "source_url": "https://iopscience.iop.org/article/10.3847/2041-8213/aeb122",
+      "kind": "letter",
+      "topic": "galaxies",
+      "has_summary": false
+    },
+    {
+      "id": "17dde6fe828cd274",
+      "doi": "10.3847/2041-8213/aeb370",
+      "title": "The Origin of Isolated Millisecond Pulsars in Non-core-collapsed Globular Clusters",
+      "journal": "apjl",
+      "authors": [
+        "Raniere de Menezes"
+      ],
+      "published_online": "2026-10-28",
+      "online_date_precision": "day",
+      "issue_date": "2026-11-01",
+      "first_seen": "2026-10-28T14:00:03Z",
+      "volume": "1011",
+      "issue": "1",
+      "article_number": "L26",
+      "source_url": "https://iopscience.iop.org/article/10.3847/2041-8213/aeb370",
+      "kind": "letter",
+      "topic": "compact",
+      "has_summary": false
+    },
+    {
+      "id": "a29eafefca9317db",
+      "doi": "10.3847/2041-8213/aeb378",
+      "title": "HelioFill: History-conditioned Diffusion Estimation of Solar Far-side EUV Emission",
+      "journal": "apjl",
+      "authors": [
+        "Firas Ben Ameur",
+        "Rayan Dhib",
+        "Yahia Battach",
+        "Andrea Lani",
+        "Matteo Parsani",
+        "Omar Knio",
+        "Stefaan Poedts"
+      ],
+      "published_online": "2026-10-28",
+      "online_date_precision": "day",
+      "issue_date": "2026-11-01",
+      "first_seen": "2026-10-28T14:00:03Z",
+      "volume": "1011",
+      "issue": "1",
+      "article_number": "L27",
+      "source_url": "https://iopscience.iop.org/article/10.3847/2041-8213/aeb378",
+      "kind": "letter",
+      "topic": "solar",
+      "has_summary": false
+    },
     {
       "id": "73b09fd88e6b5366",
       "doi": "10.3847/1538-3881/aea84d",
@@ -101,7 +178,7 @@
         "Maria D. Kazachenko",
         "Viggo Hansteen"
       ],
-      "published_online": "2026-10-28",
+      "published_online": "2026-10-28T00:00:00Z",
       "online_date_precision": "day",
       "issue_date": "2026-11-01",
       "first_seen": "2026-10-28T13:00:04Z",
