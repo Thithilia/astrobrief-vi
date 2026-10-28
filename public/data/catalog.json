@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T08:05:54Z",
+  "generated_at": "2026-10-28T08:11:28Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -50384,7 +50384,8 @@
       "source_url": "https://iopscience.iop.org/article/10.3847/2041-8213/aeab9d",
       "kind": "letter",
       "topic": "planets",
-      "has_summary": false
+      "has_summary": true,
+      "summary_id": "f09c3cba475e9fa2"
     },
     {
       "id": "05debf57e7919721",
@@ -53557,6 +53558,24 @@
     }
   ],
   "summaries": [
+    {
+      "id": "f09c3cba475e9fa2",
+      "doi": "10.3847/2041-8213/aeab9d",
+      "title": "HD 3167: dữ liệu mới làm suy yếu bằng chứng về hai quỹ đạo vuông góc",
+      "dek": "Phân tích năm lần HD 3167 b đi qua trước sao không tái hiện kết quả góc lệch nhỏ từng công bố, làm mất chỗ dựa quan trọng của lập luận rằng hai quỹ đạo trong hệ gần vuông góc.",
+      "journal": "apjl",
+      "paper_title": "Does HD 3167 Have Planets with Perpendicular Orbits?",
+      "summary_date": "2026-10-28",
+      "generated_at": "2026-10-28T08:11:27.573460Z",
+      "topic": "planets",
+      "reading_minutes": 6,
+      "source": {
+        "kind": "publisher",
+        "url": "https://authors.library.caltech.edu/records/s3waw-xs654/files/Winn_2026_ApJL_1010_L22.pdf",
+        "version": null
+      },
+      "search_text": "Câu hỏi của bài báo rất cụ thể: hai hành tinh HD 3167 b và c có chuyển động trên hai mặt phẳng gần vuông góc? Hệ này cách chúng ta 46 pc. Hành tinh b có bán kính khoảng 1,7 lần Trái Đất, quay một vòng gần một ngày; c có bán kính khoảng 3 lần Trái Đất và chu kỳ 30 ngày. Cả hai đều có quá cảnh (transit): nhìn từ Trái Đất, hành tinh đi ngang trước đĩa sao và che một phần ánh sáng của nó. [P001-S007](#nguon-goc)\n\nPhần lớn các hệ nhiều hành tinh sát sao có quỹ đạo gần đồng phẳng (coplanar), tức gần cùng một mặt phẳng. Một hệ gần vuông góc sẽ đặt ra yêu cầu khác cho lý thuyết hình thành và tiến hóa hành tinh. Hơn nữa, quan sát được cả hai hành tinh quá cảnh trong cấu hình ấy đòi hỏi hướng nhìn đặc biệt phù hợp. Vì vậy, ngay một trường hợp cũng ảnh hưởng tới suy luận về số hệ lệch mạnh chưa được phát hiện. [P001-S003](#nguon-goc) [P001-S005](#nguon-goc)\nNgôi sao tự quay, nên một phía đĩa sao chuyển động về phía chúng ta, còn phía kia đi xa. Khi hành tinh che các vùng ấy, sự cân bằng ánh sáng thay đổi, tạo ra biến thiên biểu kiến trong vận tốc xuyên tâm (radial velocity, RV). Đó là hiệu ứng Rossiter–McLaughlin (Rossiter–McLaughlin effect, RM), cho phép suy ra hướng đường đi của hành tinh trên đĩa sao. Với b, tín hiệu dự kiến nhỏ hơn 1 m s⁻¹, khiến phép đo đặc biệt khó. [P001-S005](#nguon-goc)\n\nGóc lệch chiếu (sky-projected obliquity), ký hiệu λ, là góc giữa hình chiếu của trục quay sao và trục quỹ đạo lên mặt phẳng trời. Giá trị gần 0° biểu thị sự thẳng hàng trong hình chiếu; gần ±90° biểu thị hai hướng gần vuông góc. Trong khi đó, độ nghiêng tương hỗ (mutual inclination) so sánh hai trục quỹ đạo trong không gian ba chiều. Để suy ra quan hệ giữa b và c, cần kết hợp các góc lệch chiếu với hình học quá cảnh. [P006-S004](#nguon-goc) [P006-S006](#nguon-goc)\nNhóm Joshua N. Winn bổ sung ba lần quá cảnh của b bằng Keck Planet Finder (KPF) trong tháng 9–10/2023, rồi ghép với hai bộ ESPRESSO năm 2019 và 2022. Sai số RV trung vị là 0,6 m s⁻¹ với KPF, và lần lượt 0,8 cùng 0,5 m s⁻¹ với ESPRESSO. Sai số một phép đo cùng cỡ tín hiệu cần tìm; nhiều lần quan sát giúp kiểm tra tín hiệu có lặp lại hay không. [P002-S003](#nguon-goc) [P002-S004](#nguon-goc) [P002-S006](#nguon-goc)\n\nMô hình gồm chuyển động của sao do b, thành phần RM, cùng mức vận tốc gốc và xu hướng tuyến tính riêng cho từng đêm. Các thành phần riêng mô tả biến thiên chậm do hành tinh khác, hoạt động sao hoặc thiết bị. Nhóm còn tạo dữ liệu mô phỏng mang tín hiệu góc lệch nhỏ từng công bố, giữ thời điểm quan sát và thêm nhiễu theo sai số thực tế. Phân tích thu hồi \\(\\lambda_b=9^\\circ\\pm17^\\circ\\), chứng minh quy trình có thể nhận ra tín hiệu cũ trong điều kiện mô phỏng này. [P005-S001](#nguon-goc) [P005-S002](#nguon-goc) [P006-S002](#nguon-goc)\nVới năm bộ dữ liệu, nhóm báo cáo trung vị và khoảng khả tín (credible interval) trung tâm 68%: \\(\\lambda_b=-66^{+14}_{-12}\\) độ và \\(v\\sin i=2{,}54^{+0{,}93}_{-0{,}73}\\,\\mathrm{km\\,s^{-1}}\\). Đại lượng thứ hai là vận tốc quay chiếu (projected rotation velocity): v là tốc độ quay tại xích đạo sao, còn i là góc giữa trục quay và đường ngắm. [P005-S004](#nguon-goc)\n\nMô hình có RM cho χ² = 275,3 với 247 bậc tự do, p = 0,1. Mô hình bỏ RM nhưng vẫn giữ mức nền và xu hướng từng đêm cho χ² = 296,5 với 249 bậc tự do, p = 0,02. Chênh lệch Δχ² = 21,2 và ΔBIC = 10,1, theo tiêu chí thông tin Bayes (Bayesian information criterion, BIC), ưu tiên mô hình có RM. Đây là phép so sánh sự hiện diện của tín hiệu RM. [P005-S004](#nguon-goc) [P006-S001](#nguon-goc)\n\nGóc mới của b nằm gần miền đo \\(\\lambda_c=-97^\\circ\\pm23^\\circ\\) hơn kết quả b gần 0° trước đây. Nhóm kết luận kết quả tương thích với hai quỹ đạo đồng phẳng. Khi kết hợp hình học quá cảnh, họ tính giới hạn trên 66° ở mức tin cậy 90% cho độ nghiêng tương hỗ ba chiều. Giới hạn này vẫn cho phép hai quỹ đạo lệch nhau hàng chục độ. [P006-S005](#nguon-goc) [P006-S006](#nguon-goc)\nNhóm kiểm tra độc lập tốc độ quay bằng hàm tương quan chéo (cross-correlation function, CCF), một đại lượng tổng hợp thông tin từ nhiều vạch phổ. So sánh HD 3167 với bốn sao có khí quyển tương tự gợi ý v sin i khoảng 0,9–1,4 km s⁻¹ và khó vượt 1,6 km s⁻¹. Suy luận dựa trên độ rộng do thiết bị giống nhau và mức làm rộng vạch do chuyển động khí quyển tương tự. Chu kỳ quay khoảng 24 ngày cùng bán kính 0,87 lần Mặt Trời còn cho tốc độ xích đạo khoảng 1,8 km s⁻¹. Theo hình học, v sin i không thể vượt tốc độ xích đạo thực. [P004-S003](#nguon-goc) [P004-S005](#nguon-goc) [P004-S007](#nguon-goc)\n\nNghiệm RM dùng toàn bộ dữ liệu cao hơn kỳ vọng khoảng 1σ. Khi bỏ bộ KPF thứ hai, v sin i giảm khoảng 1σ và miền λ_b được phép mở rộng. Góc lệch và tốc độ quay vì thế cùng chi phối cách giải thích tín hiệu yếu; bỏ bộ dữ liệu gây bất đồng làm giảm căng thẳng về tốc độ quay nhưng giảm độ chính xác của góc. [P006-S003](#nguon-goc) [P006-S004](#nguon-goc) [P006-S006](#nguon-goc)\n\nCác khoảng sai số còn dựa trên giả thiết sai số đo độc lập, tuân theo phân bố chuẩn (Gaussian distribution), với độ lớn do quy trình xử lý dữ liệu báo cáo; nhóm không thêm nhiễu dư. Biên độ chuyển động do b được cố định ở K = 3,425 m s⁻¹, còn bất định của nó được hấp thụ vào xu hướng từng đêm. [P005-S002](#nguon-goc) [P005-S003](#nguon-goc)\nKết luận của bài gốc là độ nghiêng tương hỗ chưa được xác định vững chắc bằng dữ liệu hiện có. Về ý nghĩa vật lý, phát hiện một tín hiệu RM và xác định chắc cấu trúc ba chiều của hệ là hai bước khác nhau: bước thứ hai cần tách được ảnh hưởng của tốc độ quay và bề mặt sao khỏi hướng quỹ đạo. [P007-S001](#nguon-goc) [P007-S004](#nguon-goc)\n\nKhác biệt phương pháp là điểm cần kiểm tra. Phân tích năm 2021 mô hình hóa biến dạng CCF, về nguyên tắc khai thác nhiều thông tin hơn một RV tổng hợp. Tuy nhiên, biến dạng trong từng CCF của hệ này quá yếu để kiểm chứng riêng các thành phần vật lý đã đưa vào mô hình. Chúng gồm tốc độ quay thay đổi theo vĩ độ và độ tương phản vạch phụ thuộc vĩ độ. Nhóm đề xuất phân tích CCF trên toàn bộ dữ liệu mở rộng để kiểm tra liệu các thành phần ấy còn được đòi hỏi. Phép kiểm tra đó sẽ giúp phân định nguồn gốc bất đồng giữa hai cách suy ra hình học. [P007-S002](#nguon-goc) [P007-S003](#nguon-goc) [P007-S004](#nguon-goc)\n\nTổng hợp tự động bằng Codex từ bản nhà xuất bản của Joshua N. Winn và cộng sự, The Astrophysical Journal Letters (2026)."
+    },
     {
       "id": "321057e70a3a9663",
       "doi": "10.3847/1538-4357/aea0d5",
