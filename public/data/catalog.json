@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T15:21:04Z",
+  "generated_at": "2026-10-28T15:22:05Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-10-28T14:05:04Z",
-      "last_attempt": "2026-10-28T14:05:04Z",
+      "last_success": "2026-10-28T15:21:04Z",
+      "last_attempt": "2026-10-28T15:21:04Z",
       "error": null
     },
     {
@@ -18,8 +18,8 @@
       "short": "ApJ",
       "url": "https://journals.aas.org/astrophysical-journal/",
       "status": "ok",
-      "last_success": "2026-10-28T14:05:04Z",
-      "last_attempt": "2026-10-28T14:05:04Z",
+      "last_success": "2026-10-28T15:21:04Z",
+      "last_attempt": "2026-10-28T15:21:04Z",
       "error": null
     },
     {
@@ -28,8 +28,8 @@
       "short": "ApJL",
       "url": "https://journals.aas.org/astrophysical-journal-letters/",
       "status": "ok",
-      "last_success": "2026-10-28T14:05:04Z",
-      "last_attempt": "2026-10-28T14:05:04Z",
+      "last_success": "2026-10-28T15:21:04Z",
+      "last_attempt": "2026-10-28T15:21:04Z",
       "error": null
     },
     {
@@ -38,8 +38,8 @@
       "short": "ApJS",
       "url": "https://journals.aas.org/astrophysical-supplement-series/",
       "status": "ok",
-      "last_success": "2026-10-28T14:05:04Z",
-      "last_attempt": "2026-10-28T14:05:04Z",
+      "last_success": "2026-10-28T15:21:04Z",
+      "last_attempt": "2026-10-28T15:21:04Z",
       "error": null
     },
     {
@@ -48,8 +48,8 @@
       "short": "AJ",
       "url": "https://journals.aas.org/astronomical-journal/",
       "status": "ok",
-      "last_success": "2026-10-28T14:05:04Z",
-      "last_attempt": "2026-10-28T14:05:04Z",
+      "last_success": "2026-10-28T15:21:04Z",
+      "last_attempt": "2026-10-28T15:21:04Z",
       "error": null
     },
     {
@@ -58,12 +58,59 @@
       "short": "MNRAS",
       "url": "https://academic.oup.com/mnras",
       "status": "ok",
-      "last_success": "2026-10-28T14:05:04Z",
-      "last_attempt": "2026-10-28T14:05:04Z",
+      "last_success": "2026-10-28T15:21:04Z",
+      "last_attempt": "2026-10-28T15:21:04Z",
       "error": null
     }
   ],
   "papers": [
+    {
+      "id": "2052115d1720f0b2",
+      "doi": "10.3847/2041-8213/aead9e",
+      "title": "A First Global Full-vector Coronal Magnetic Field Inference Using MLSO CoMP and UCoMP Observations",
+      "journal": "apjl",
+      "authors": [
+        "Alin Razvan Paraschiv, Zihao Yang, Daniela Adriana Lacatus and Momchil Molnar"
+      ],
+      "published_online": "2026-10-28T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": null,
+      "first_seen": "2026-10-28T15:21:04Z",
+      "volume": "1011",
+      "issue": "1",
+      "article_number": "L23",
+      "source_url": "https://iopscience.iop.org/article/10.3847/2041-8213/aead9e",
+      "kind": "letter",
+      "topic": "solar",
+      "has_summary": false
+    },
+    {
+      "id": "f222443cafd4fb4c",
+      "doi": "10.3847/2041-8213/aeb301",
+      "title": "TESS Pulsation Timing Reveals the JWST Calibration Star HD 158485 as a Double-pulsator Binary",
+      "journal": "apjl",
+      "authors": [
+        "Chenglong Lv",
+        "Ali Esamdin",
+        "Shuguo Ma",
+        "Shahidin Yaqup",
+        "Haozhi Wang",
+        "Ayzada Jmahali",
+        "Jianwei Yao",
+        "Kedieryemu Kamili"
+      ],
+      "published_online": "2026-10-27T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": "2026-11-01",
+      "first_seen": "2026-10-28T15:21:04Z",
+      "volume": "1011",
+      "issue": "1",
+      "article_number": "L20",
+      "source_url": "https://iopscience.iop.org/article/10.3847/2041-8213/aeb301",
+      "kind": "letter",
+      "topic": "stars",
+      "has_summary": false
+    },
     {
       "id": "21bf38d816ca6630",
       "doi": "10.3847/2041-8213/aeb122",
@@ -83,7 +130,7 @@
         "Nora Shipp",
         "Guy S. Stringfellow"
       ],
-      "published_online": "2026-10-28",
+      "published_online": "2026-10-28T00:00:00Z",
       "online_date_precision": "day",
       "issue_date": "2026-11-01",
       "first_seen": "2026-10-28T14:00:03Z",
@@ -103,7 +150,7 @@
       "authors": [
         "Raniere de Menezes"
       ],
-      "published_online": "2026-10-28",
+      "published_online": "2026-10-28T00:00:00Z",
       "online_date_precision": "day",
       "issue_date": "2026-11-01",
       "first_seen": "2026-10-28T14:00:03Z",
@@ -129,7 +176,7 @@
         "Omar Knio",
         "Stefaan Poedts"
       ],
-      "published_online": "2026-10-28",
+      "published_online": "2026-10-28T00:00:00Z",
       "online_date_precision": "day",
       "issue_date": "2026-11-01",
       "first_seen": "2026-10-28T14:00:03Z",
