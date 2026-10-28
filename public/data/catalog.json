@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T16:00:09Z",
+  "generated_at": "2026-10-28T16:06:09Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-10-28T15:26:37Z",
-      "last_attempt": "2026-10-28T15:26:37Z",
+      "last_success": "2026-10-28T16:05:06Z",
+      "last_attempt": "2026-10-28T16:05:06Z",
       "error": null
     },
     {
@@ -18,8 +18,8 @@
       "short": "ApJ",
       "url": "https://journals.aas.org/astrophysical-journal/",
       "status": "ok",
-      "last_success": "2026-10-28T15:26:37Z",
-      "last_attempt": "2026-10-28T15:26:37Z",
+      "last_success": "2026-10-28T16:05:06Z",
+      "last_attempt": "2026-10-28T16:05:06Z",
       "error": null
     },
     {
@@ -28,8 +28,8 @@
       "short": "ApJL",
       "url": "https://journals.aas.org/astrophysical-journal-letters/",
       "status": "ok",
-      "last_success": "2026-10-28T15:26:37Z",
-      "last_attempt": "2026-10-28T15:26:37Z",
+      "last_success": "2026-10-28T16:05:06Z",
+      "last_attempt": "2026-10-28T16:05:06Z",
       "error": null
     },
     {
@@ -38,8 +38,8 @@
       "short": "ApJS",
       "url": "https://journals.aas.org/astrophysical-supplement-series/",
       "status": "ok",
-      "last_success": "2026-10-28T15:26:37Z",
-      "last_attempt": "2026-10-28T15:26:37Z",
+      "last_success": "2026-10-28T16:05:06Z",
+      "last_attempt": "2026-10-28T16:05:06Z",
       "error": null
     },
     {
@@ -48,8 +48,8 @@
       "short": "AJ",
       "url": "https://journals.aas.org/astronomical-journal/",
       "status": "ok",
-      "last_success": "2026-10-28T15:26:37Z",
-      "last_attempt": "2026-10-28T15:26:37Z",
+      "last_success": "2026-10-28T16:05:06Z",
+      "last_attempt": "2026-10-28T16:05:06Z",
       "error": null
     },
     {
@@ -58,23 +58,83 @@
       "short": "MNRAS",
       "url": "https://academic.oup.com/mnras",
       "status": "ok",
-      "last_success": "2026-10-28T15:26:37Z",
-      "last_attempt": "2026-10-28T15:26:37Z",
+      "last_success": "2026-10-28T16:05:06Z",
+      "last_attempt": "2026-10-28T16:05:06Z",
       "error": null
     }
   ],
   "papers": [
+    {
+      "id": "a685362bea09396f",
+      "doi": "10.1093/mnras/stag2033",
+      "title": "Signatures of an Earth-class Planet in the Distant Solar System",
+      "journal": "mnras",
+      "authors": [
+        "Patryk Sofia Lykawka",
+        "Pedro Bernardinelli",
+        "Jonathan Horner"
+      ],
+      "published_online": "2026-10-28",
+      "online_date_precision": "day",
+      "issue_date": null,
+      "first_seen": "2026-10-28T16:05:06Z",
+      "volume": null,
+      "issue": null,
+      "article_number": "stag2033",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2033/9003824",
+      "kind": "research",
+      "topic": "cosmology",
+      "has_summary": false
+    },
+    {
+      "id": "832144b110066657",
+      "doi": "10.1093/mnras/stag2055",
+      "title": "A clear detection of proper motion confirms that the claimed z ≃ 32 galaxy candidate, “Capotauro”, is a Y-type brown dwarf",
+      "journal": "mnras",
+      "authors": [
+        "F-Y F Liu",
+        "D J McLeod",
+        "B J Sutlieff",
+        "T J Dupuy",
+        "J S Dunlop",
+        "X Chen",
+        "R J McLure",
+        "H-H Leung",
+        "S Antonogiannaki",
+        "C Bondestam",
+        "E Laplace",
+        "R Begley",
+        "A C Carnall",
+        "F Cullen",
+        "C T Donnan",
+        "R S Ellis"
+      ],
+      "published_online": "2026-10-28",
+      "online_date_precision": "day",
+      "issue_date": null,
+      "first_seen": "2026-10-28T16:05:06Z",
+      "volume": null,
+      "issue": null,
+      "article_number": "stag2055",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2055/9003823",
+      "kind": "research",
+      "topic": "compact",
+      "has_summary": false
+    },
     {
       "id": "2052115d1720f0b2",
       "doi": "10.3847/2041-8213/aead9e",
       "title": "A First Global Full-vector Coronal Magnetic Field Inference Using MLSO CoMP and UCoMP Observations",
       "journal": "apjl",
       "authors": [
-        "Alin Razvan Paraschiv, Zihao Yang, Daniela Adriana Lacatus and Momchil Molnar"
+        "Alin Razvan Paraschiv",
+        "Zihao Yang",
+        "Daniela Adriana Lacatus",
+        "Momchil Molnar"
       ],
       "published_online": "2026-10-28T00:00:00Z",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-11-01",
       "first_seen": "2026-10-28T15:21:04Z",
       "volume": "1011",
       "issue": "1",
