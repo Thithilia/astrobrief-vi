@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T14:05:42Z",
+  "generated_at": "2026-10-28T06:55:39Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-10-27T14:05:03Z",
-      "last_attempt": "2026-10-27T14:05:03Z",
+      "last_success": "2026-10-28T06:54:31Z",
+      "last_attempt": "2026-10-28T06:54:31Z",
       "error": null
     },
     {
@@ -18,8 +18,8 @@
       "short": "ApJ",
       "url": "https://journals.aas.org/astrophysical-journal/",
       "status": "ok",
-      "last_success": "2026-10-27T14:05:03Z",
-      "last_attempt": "2026-10-27T14:05:03Z",
+      "last_success": "2026-10-28T06:54:31Z",
+      "last_attempt": "2026-10-28T06:54:31Z",
       "error": null
     },
     {
@@ -28,8 +28,8 @@
       "short": "ApJL",
       "url": "https://journals.aas.org/astrophysical-journal-letters/",
       "status": "ok",
-      "last_success": "2026-10-27T14:05:03Z",
-      "last_attempt": "2026-10-27T14:05:03Z",
+      "last_success": "2026-10-28T06:54:31Z",
+      "last_attempt": "2026-10-28T06:54:31Z",
       "error": null
     },
     {
@@ -38,8 +38,8 @@
       "short": "ApJS",
       "url": "https://journals.aas.org/astrophysical-supplement-series/",
       "status": "ok",
-      "last_success": "2026-10-27T14:05:03Z",
-      "last_attempt": "2026-10-27T14:05:03Z",
+      "last_success": "2026-10-28T06:54:31Z",
+      "last_attempt": "2026-10-28T06:54:31Z",
       "error": null
     },
     {
@@ -48,8 +48,8 @@
       "short": "AJ",
       "url": "https://journals.aas.org/astronomical-journal/",
       "status": "ok",
-      "last_success": "2026-10-27T14:05:03Z",
-      "last_attempt": "2026-10-27T14:05:03Z",
+      "last_success": "2026-10-28T06:54:31Z",
+      "last_attempt": "2026-10-28T06:54:31Z",
       "error": null
     },
     {
@@ -58,12 +58,192 @@
       "short": "MNRAS",
       "url": "https://academic.oup.com/mnras",
       "status": "ok",
-      "last_success": "2026-10-27T14:05:03Z",
-      "last_attempt": "2026-10-27T14:05:03Z",
+      "last_success": "2026-10-28T06:54:31Z",
+      "last_attempt": "2026-10-28T06:54:31Z",
       "error": null
     }
   ],
   "papers": [
+    {
+      "id": "dd93b40c3234c7b9",
+      "doi": "10.1093/mnras/stag2029",
+      "title": "A candidate ∼270-d γ-ray periodic modulation in the FSRQ 4FGL J0038.2−2459",
+      "journal": "mnras",
+      "authors": [
+        "Jin Min",
+        "Fengrong Zhu",
+        "Peng Zong",
+        "Bingkai Zhang"
+      ],
+      "published_online": "2026-10-27T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": null,
+      "first_seen": "2026-10-28T06:48:47Z",
+      "volume": null,
+      "issue": null,
+      "article_number": "stag2029",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2029/9003261",
+      "kind": "research",
+      "topic": "compact",
+      "has_summary": false
+    },
+    {
+      "id": "7657d4890e910fa2",
+      "doi": "10.1093/mnras/stag2042",
+      "title": "Effects of Synchrotron Self-Absorption on Polarization Diagnostics of MHD Turbulence",
+      "journal": "mnras",
+      "authors": [
+        "Ning-Ning Guo",
+        "Jian-Fu Zhang",
+        "Hua-Ping Xiao",
+        "Qing-Zhong Liu"
+      ],
+      "published_online": "2026-10-27T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": null,
+      "first_seen": "2026-10-28T06:48:47Z",
+      "volume": null,
+      "issue": null,
+      "article_number": "stag2042",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2042/9003271",
+      "kind": "research",
+      "topic": "methods",
+      "has_summary": false
+    },
+    {
+      "id": "88363caf019c651f",
+      "doi": "10.1093/mnras/stag2043",
+      "title": "The ALMA Survey of Gas Evolution of PROtoplanetary disks (AGE-PRO): Evolution of dust properties from multi-wavelength observations",
+      "journal": "mnras",
+      "authors": [
+        "Camila Pulgarés",
+        "Laura M Pérez",
+        "Carolina Agurto-Gangas",
+        "Lilian Luo",
+        "Paola Pinilla",
+        "Anibal Sierra",
+        "Miguel Vioque",
+        "Nicolás Kurtovic",
+        "Rossella Anania",
+        "John Carpenter",
+        "Lucas Cieza",
+        "Dingshan Deng",
+        "Camilo González-Ruilova",
+        "Michiel R Hogerheijde",
+        "James Miley",
+        "Ke Zhang"
+      ],
+      "published_online": "2026-10-27T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": null,
+      "first_seen": "2026-10-28T06:48:47Z",
+      "volume": null,
+      "issue": null,
+      "article_number": "stag2043",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2043/9003263",
+      "kind": "research",
+      "topic": "planets",
+      "has_summary": false
+    },
+    {
+      "id": "022e6b99cb44ddb0",
+      "doi": "10.1093/mnras/stag2045",
+      "title": "Non-thermal emission in jets and winds: Expected emission and spectral index distributions",
+      "journal": "mnras",
+      "authors": [
+        "M Meenakshi",
+        "D Mukherjee",
+        "G Bodo",
+        "P Rossi",
+        "C M Harrison",
+        "L K Morabito",
+        "P Kharb",
+        "S Silpa"
+      ],
+      "published_online": "2026-10-27T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": null,
+      "first_seen": "2026-10-28T06:48:47Z",
+      "volume": null,
+      "issue": null,
+      "article_number": "stag2045",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2045/9003264",
+      "kind": "research",
+      "topic": "galaxies",
+      "has_summary": false
+    },
+    {
+      "id": "817c7bc772cf8411",
+      "doi": "10.1093/mnras/stag2048",
+      "title": "Lens Modeling and Cosmological Inference from an Impure Sample of Galaxy-Galaxy Strong Lenses",
+      "journal": "mnras",
+      "authors": [
+        "Philip Holloway",
+        "Aprajita Verma",
+        "Philip J Marshall",
+        "Padmavathi Venkatraman",
+        "Sydney Erickson",
+        "Tian Li",
+        "Simon Birrer",
+        "Steven Dillmann",
+        "Thomas E Collett"
+      ],
+      "published_online": "2026-10-27T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": null,
+      "first_seen": "2026-10-28T06:48:47Z",
+      "volume": null,
+      "issue": null,
+      "article_number": "stag2048",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2048/9003266",
+      "kind": "research",
+      "topic": "cosmology",
+      "has_summary": false
+    },
+    {
+      "id": "5b33f5eb0afbce5b",
+      "doi": "10.1093/mnras/stag2050",
+      "title": "The formation of silicon-carbon chain molecules in IRC+10216",
+      "journal": "mnras",
+      "authors": [
+        "T J Millar"
+      ],
+      "published_online": "2026-10-27T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": null,
+      "first_seen": "2026-10-28T06:48:47Z",
+      "volume": null,
+      "issue": null,
+      "article_number": "stag2050",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2050/9003260",
+      "kind": "research",
+      "topic": "stars",
+      "has_summary": false
+    },
+    {
+      "id": "692ec1a396f73594",
+      "doi": "10.3847/1538-4365/aea83e",
+      "title": "Stellar Parameters and Magnetic Activity of Eruptive Variable Stars Based on TESS Light Curves and the LAMOST Spectral Survey",
+      "journal": "apjs",
+      "authors": [
+        "Yanan Wang",
+        "Li-yun Zhang",
+        "Tianhao Su",
+        "Xianming L. Han",
+        "Prabhakar Misra"
+      ],
+      "published_online": "2026-10-27T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": "2026-11-01",
+      "first_seen": "2026-10-28T06:48:47Z",
+      "volume": "287",
+      "issue": "1",
+      "article_number": "22",
+      "source_url": "https://iopscience.iop.org/article/10.3847/1538-4365/aea83e",
+      "kind": "research",
+      "topic": "stars",
+      "has_summary": false
+    },
     {
       "id": "03f866c9fcf47a39",
       "doi": "10.3847/2041-8213/aeb37b",
@@ -2097,7 +2277,7 @@
     {
       "id": "16bc55235d75a7bb",
       "doi": "10.3847/1538-4365/aea220",
-      "title": "Improved Hot Line Lists for Minor CN Isotopologues in the X 2 Σ + , A 2 Π, and B 2 Σ + Systems Using Diagonal Born–Oppenheimer Corrections",
+      "title": "Improved Hot Line Lists for Minor CN Isotopologues in the X 2Σ+, A 2Π, and B 2Σ+ Systems Using Diagonal Born–Oppenheimer Corrections",
       "journal": "apjs",
       "authors": [
         "V. A. Terashkevich",
@@ -2175,13 +2355,13 @@
       "article_number": "23",
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-4365/aea991",
       "kind": "research",
-      "topic": "galaxies",
+      "topic": "cosmology",
       "has_summary": false
     },
     {
       "id": "f1b041e2ff2be9b1",
       "doi": "10.3847/1538-4365/aeac1e",
-      "title": "SACRA-K : A Performance-portable Numerical Relativity Code with Kokkos",
+      "title": "SACRA-K: A Performance-portable Numerical Relativity Code with Kokkos",
       "journal": "apjs",
       "authors": [
         "Ming-Zhe Han",
@@ -2217,7 +2397,7 @@
       "volume": null,
       "issue": null,
       "article_number": "stag2036",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2036/9002452",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2036/9002452?rss=1",
       "kind": "research",
       "topic": "stars",
       "has_summary": false
@@ -2238,7 +2418,7 @@
       "volume": null,
       "issue": null,
       "article_number": "stag2041",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2041/9002451",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2041/9002451?rss=1",
       "kind": "research",
       "topic": "compact",
       "has_summary": false
@@ -3002,7 +3182,7 @@
       "article_number": "27",
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aea150",
       "kind": "research",
-      "topic": "methods",
+      "topic": "stars",
       "has_summary": false
     },
     {
@@ -3063,7 +3243,7 @@
     {
       "id": "89375700df233b9f",
       "doi": "10.3847/2041-8213/aea156",
-      "title": "H β Spicules, Small-scale Jets, and H β Microflashes: Subarcsecond Dynamic Events and Their Magnetic Origins in the Lower Solar Chromosphere Observed by DKIST",
+      "title": "Hβ Spicules, Small-scale Jets, and Hβ Microflashes: Subarcsecond Dynamic Events and Their Magnetic Origins in the Lower Solar Chromosphere Observed by DKIST",
       "journal": "apjl",
       "authors": [
         "Navdeep K. Panesar",
