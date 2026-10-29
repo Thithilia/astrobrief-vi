@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T11:21:48Z",
+  "generated_at": "2026-10-29T12:05:33Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-10-29T11:05:04Z",
-      "last_attempt": "2026-10-29T11:05:04Z",
+      "last_success": "2026-10-29T12:05:02Z",
+      "last_attempt": "2026-10-29T12:05:02Z",
       "error": null
     },
     {
@@ -18,8 +18,8 @@
       "short": "ApJ",
       "url": "https://journals.aas.org/astrophysical-journal/",
       "status": "ok",
-      "last_success": "2026-10-29T11:05:04Z",
-      "last_attempt": "2026-10-29T11:05:04Z",
+      "last_success": "2026-10-29T12:05:02Z",
+      "last_attempt": "2026-10-29T12:05:02Z",
       "error": null
     },
     {
@@ -28,8 +28,8 @@
       "short": "ApJL",
       "url": "https://journals.aas.org/astrophysical-journal-letters/",
       "status": "ok",
-      "last_success": "2026-10-29T11:05:04Z",
-      "last_attempt": "2026-10-29T11:05:04Z",
+      "last_success": "2026-10-29T12:05:02Z",
+      "last_attempt": "2026-10-29T12:05:02Z",
       "error": null
     },
     {
@@ -38,8 +38,8 @@
       "short": "ApJS",
       "url": "https://journals.aas.org/astrophysical-supplement-series/",
       "status": "ok",
-      "last_success": "2026-10-29T11:05:04Z",
-      "last_attempt": "2026-10-29T11:05:04Z",
+      "last_success": "2026-10-29T12:05:02Z",
+      "last_attempt": "2026-10-29T12:05:02Z",
       "error": null
     },
     {
@@ -48,8 +48,8 @@
       "short": "AJ",
       "url": "https://journals.aas.org/astronomical-journal/",
       "status": "ok",
-      "last_success": "2026-10-29T11:05:04Z",
-      "last_attempt": "2026-10-29T11:05:04Z",
+      "last_success": "2026-10-29T12:05:02Z",
+      "last_attempt": "2026-10-29T12:05:02Z",
       "error": null
     },
     {
@@ -58,12 +58,34 @@
       "short": "MNRAS",
       "url": "https://academic.oup.com/mnras",
       "status": "ok",
-      "last_success": "2026-10-29T11:05:04Z",
-      "last_attempt": "2026-10-29T11:05:04Z",
+      "last_success": "2026-10-29T12:05:02Z",
+      "last_attempt": "2026-10-29T12:05:02Z",
       "error": null
     }
   ],
   "papers": [
+    {
+      "id": "e4241115886add2c",
+      "doi": "10.3847/2041-8213/aeb1cf",
+      "title": "A Recurrent Infrared Modulation in the Warm Postimpact Debris Disk NGC 2547 ID8",
+      "journal": "apjl",
+      "authors": [
+        "Xiaodian Chen",
+        "Shu Wang",
+        "Zhuochao Huang"
+      ],
+      "published_online": "2026-10-29T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": "2026-11-01",
+      "first_seen": "2026-10-29T12:00:03Z",
+      "volume": "1011",
+      "issue": "1",
+      "article_number": "L30",
+      "source_url": "https://iopscience.iop.org/article/10.3847/2041-8213/aeb1cf",
+      "kind": "letter",
+      "topic": "stars",
+      "has_summary": false
+    },
     {
       "id": "70d8c3f3ce139ba6",
       "doi": "10.1051/0004-6361/202659783",
