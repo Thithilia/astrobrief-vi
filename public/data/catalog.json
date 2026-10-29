@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T12:12:53Z",
+  "generated_at": "2026-10-29T13:05:51Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-10-29T12:05:02Z",
-      "last_attempt": "2026-10-29T12:05:02Z",
+      "last_success": "2026-10-29T13:05:04Z",
+      "last_attempt": "2026-10-29T13:05:04Z",
       "error": null
     },
     {
@@ -18,8 +18,8 @@
       "short": "ApJ",
       "url": "https://journals.aas.org/astrophysical-journal/",
       "status": "ok",
-      "last_success": "2026-10-29T12:05:02Z",
-      "last_attempt": "2026-10-29T12:05:02Z",
+      "last_success": "2026-10-29T13:05:04Z",
+      "last_attempt": "2026-10-29T13:05:04Z",
       "error": null
     },
     {
@@ -28,8 +28,8 @@
       "short": "ApJL",
       "url": "https://journals.aas.org/astrophysical-journal-letters/",
       "status": "ok",
-      "last_success": "2026-10-29T12:05:02Z",
-      "last_attempt": "2026-10-29T12:05:02Z",
+      "last_success": "2026-10-29T13:05:04Z",
+      "last_attempt": "2026-10-29T13:05:04Z",
       "error": null
     },
     {
@@ -38,8 +38,8 @@
       "short": "ApJS",
       "url": "https://journals.aas.org/astrophysical-supplement-series/",
       "status": "ok",
-      "last_success": "2026-10-29T12:05:02Z",
-      "last_attempt": "2026-10-29T12:05:02Z",
+      "last_success": "2026-10-29T13:05:04Z",
+      "last_attempt": "2026-10-29T13:05:04Z",
       "error": null
     },
     {
@@ -48,8 +48,8 @@
       "short": "AJ",
       "url": "https://journals.aas.org/astronomical-journal/",
       "status": "ok",
-      "last_success": "2026-10-29T12:05:02Z",
-      "last_attempt": "2026-10-29T12:05:02Z",
+      "last_success": "2026-10-29T13:05:04Z",
+      "last_attempt": "2026-10-29T13:05:04Z",
       "error": null
     },
     {
@@ -58,8 +58,8 @@
       "short": "MNRAS",
       "url": "https://academic.oup.com/mnras",
       "status": "ok",
-      "last_success": "2026-10-29T12:05:02Z",
-      "last_attempt": "2026-10-29T12:05:02Z",
+      "last_success": "2026-10-29T13:05:04Z",
+      "last_attempt": "2026-10-29T13:05:04Z",
       "error": null
     }
   ],
@@ -2130,7 +2130,7 @@
     {
       "id": "73b09fd88e6b5366",
       "doi": "10.3847/1538-3881/aea84d",
-      "title": "Deep H α Imaging Survey of IC 348 with the Hubble Space Telescope. I. Accretion Properties of Stellar and Substellar Objects",
+      "title": "Deep Hα Imaging Survey of IC 348 with the Hubble Space Telescope. I. Accretion Properties of Stellar and Substellar Objects",
       "journal": "aj",
       "authors": [
         "Lillian Yushu Jiang",
@@ -2174,7 +2174,7 @@
       "article_number": "L25",
       "source_url": "https://iopscience.iop.org/article/10.3847/2041-8213/aeb4a6",
       "kind": "letter",
-      "topic": "methods",
+      "topic": "solar",
       "has_summary": false
     },
     {
@@ -2327,7 +2327,7 @@
     {
       "id": "3b8ca66fa16a389b",
       "doi": "10.3847/1538-4357/aeacc8",
-      "title": "Proton Specific Entropy as a Proxy for the O 7+ /O 6+ Charge State Ratio over Heliocentric Distance",
+      "title": "Proton Specific Entropy as a Proxy for the O7+/O6+ Charge State Ratio over Heliocentric Distance",
       "journal": "apj",
       "authors": [
         "Jack D. Collard",
@@ -4127,7 +4127,7 @@
       "article_number": "90",
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aeac4b",
       "kind": "research",
-      "topic": "galaxies",
+      "topic": "cosmology",
       "has_summary": false
     },
     {
