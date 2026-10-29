@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T14:12:23Z",
+  "generated_at": "2026-10-29T15:35:24Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-10-29T14:05:03Z",
-      "last_attempt": "2026-10-29T14:05:03Z",
+      "last_success": "2026-10-29T15:34:22Z",
+      "last_attempt": "2026-10-29T15:34:22Z",
       "error": null
     },
     {
@@ -18,8 +18,8 @@
       "short": "ApJ",
       "url": "https://journals.aas.org/astrophysical-journal/",
       "status": "ok",
-      "last_success": "2026-10-29T14:05:03Z",
-      "last_attempt": "2026-10-29T14:05:03Z",
+      "last_success": "2026-10-29T15:34:22Z",
+      "last_attempt": "2026-10-29T15:34:22Z",
       "error": null
     },
     {
@@ -28,8 +28,8 @@
       "short": "ApJL",
       "url": "https://journals.aas.org/astrophysical-journal-letters/",
       "status": "ok",
-      "last_success": "2026-10-29T14:05:03Z",
-      "last_attempt": "2026-10-29T14:05:03Z",
+      "last_success": "2026-10-29T15:34:22Z",
+      "last_attempt": "2026-10-29T15:34:22Z",
       "error": null
     },
     {
@@ -38,8 +38,8 @@
       "short": "ApJS",
       "url": "https://journals.aas.org/astrophysical-supplement-series/",
       "status": "ok",
-      "last_success": "2026-10-29T14:05:03Z",
-      "last_attempt": "2026-10-29T14:05:03Z",
+      "last_success": "2026-10-29T15:34:22Z",
+      "last_attempt": "2026-10-29T15:34:22Z",
       "error": null
     },
     {
@@ -48,8 +48,8 @@
       "short": "AJ",
       "url": "https://journals.aas.org/astronomical-journal/",
       "status": "ok",
-      "last_success": "2026-10-29T14:05:03Z",
-      "last_attempt": "2026-10-29T14:05:03Z",
+      "last_success": "2026-10-29T15:34:22Z",
+      "last_attempt": "2026-10-29T15:34:22Z",
       "error": null
     },
     {
@@ -58,12 +58,108 @@
       "short": "MNRAS",
       "url": "https://academic.oup.com/mnras",
       "status": "ok",
-      "last_success": "2026-10-29T14:05:03Z",
-      "last_attempt": "2026-10-29T14:05:03Z",
+      "last_success": "2026-10-29T15:34:22Z",
+      "last_attempt": "2026-10-29T15:34:22Z",
       "error": null
     }
   ],
   "papers": [
+    {
+      "id": "2a9e0b70b500df0c",
+      "doi": "10.3847/1538-4357/aeac16",
+      "title": "Short Spike, Long Story: Episode-dependent Shifts of Long-duration Type-I Gamma-Ray Bursts on the E p,z – E iso Plane",
+      "journal": "apj",
+      "authors": [
+        "Ya-Hui Jiang",
+        "Run-Chao Chen",
+        "Zhen-Yu Yan",
+        "Kamil Nadaf",
+        "Xiao-Hong Zhao",
+        "Bin-Bin Zhang"
+      ],
+      "published_online": "2026-10-29T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": "2026-11-01",
+      "first_seen": "2026-10-29T15:34:22Z",
+      "volume": "1011",
+      "issue": "1",
+      "article_number": "125",
+      "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aeac16",
+      "kind": "research",
+      "topic": "compact",
+      "has_summary": false
+    },
+    {
+      "id": "2afc6e056baa7f0e",
+      "doi": "10.3847/1538-4357/aeac1c",
+      "title": "Mrk 382: A Narrow-line Seyfert 1 Galaxy with Recurrent X-Ray State Transitions",
+      "journal": "apj",
+      "authors": [
+        "YanLi Ai",
+        "WenFeng Wen",
+        "Liming Dou",
+        "Jiahua Wu",
+        "Chen Hu",
+        "Tinggui Wang",
+        "XiaoHui Yang",
+        "Jing Wang",
+        "Xue-Bing Wu",
+        "Qiusheng Gu",
+        "Xinwen Shu",
+        "Pu Du",
+        "Jian-Min Wang"
+      ],
+      "published_online": "2026-10-29T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": "2026-11-01",
+      "first_seen": "2026-10-29T15:34:22Z",
+      "volume": "1011",
+      "issue": "1",
+      "article_number": "117",
+      "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aeac1c",
+      "kind": "research",
+      "topic": "galaxies",
+      "has_summary": false
+    },
+    {
+      "id": "950a350593606591",
+      "doi": "10.3847/2041-8213/aea0cb",
+      "title": "ALMA Observations of DEM L241/LMC P3 in the Large Magellanic Cloud: Evidence for the Formation of Cool Molecular Jets Driven by a Microquasar",
+      "journal": "apjl",
+      "authors": [
+        "Yasuo Fukui",
+        "Bhuvana G. R.",
+        "Hidetoshi Sano",
+        "Kisetsu Tsuge",
+        "Rami Z. E. Alsaberi",
+        "Rin Yamada",
+        "Yuya Asano",
+        "Aya Bamba",
+        "Miroslav Filipovic",
+        "Charles Law",
+        "Norikazu Mizuno",
+        "Toshikazu Onishi",
+        "Paul Plucinsky",
+        "Gavin Rowell",
+        "Manami Sasaki",
+        "Piyush Sharda",
+        "Hiromasa Suzuki",
+        "Kengo Tachihara",
+        "Kazuki Tokuda",
+        "Yumiko Yamane"
+      ],
+      "published_online": "2026-10-29T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": "2026-11-01",
+      "first_seen": "2026-10-29T15:34:22Z",
+      "volume": "1011",
+      "issue": "1",
+      "article_number": "L36",
+      "source_url": "https://iopscience.iop.org/article/10.3847/2041-8213/aea0cb",
+      "kind": "letter",
+      "topic": "compact",
+      "has_summary": false
+    },
     {
       "id": "4037d706f75d6c40",
       "doi": "10.1051/0004-6361/202555511",
