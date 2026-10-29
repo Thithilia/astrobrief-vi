@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T10:29:22Z",
+  "generated_at": "2026-10-29T10:34:59Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-10-29T10:28:27Z",
-      "last_attempt": "2026-10-29T10:28:27Z",
+      "last_success": "2026-10-29T10:34:13Z",
+      "last_attempt": "2026-10-29T10:34:13Z",
       "error": null
     },
     {
@@ -18,8 +18,8 @@
       "short": "ApJ",
       "url": "https://journals.aas.org/astrophysical-journal/",
       "status": "ok",
-      "last_success": "2026-10-29T10:28:27Z",
-      "last_attempt": "2026-10-29T10:28:27Z",
+      "last_success": "2026-10-29T10:34:13Z",
+      "last_attempt": "2026-10-29T10:34:13Z",
       "error": null
     },
     {
@@ -28,8 +28,8 @@
       "short": "ApJL",
       "url": "https://journals.aas.org/astrophysical-journal-letters/",
       "status": "ok",
-      "last_success": "2026-10-29T10:28:27Z",
-      "last_attempt": "2026-10-29T10:28:27Z",
+      "last_success": "2026-10-29T10:34:13Z",
+      "last_attempt": "2026-10-29T10:34:13Z",
       "error": null
     },
     {
@@ -38,8 +38,8 @@
       "short": "ApJS",
       "url": "https://journals.aas.org/astrophysical-supplement-series/",
       "status": "ok",
-      "last_success": "2026-10-29T10:28:27Z",
-      "last_attempt": "2026-10-29T10:28:27Z",
+      "last_success": "2026-10-29T10:34:13Z",
+      "last_attempt": "2026-10-29T10:34:13Z",
       "error": null
     },
     {
@@ -48,8 +48,8 @@
       "short": "AJ",
       "url": "https://journals.aas.org/astronomical-journal/",
       "status": "ok",
-      "last_success": "2026-10-29T10:28:27Z",
-      "last_attempt": "2026-10-29T10:28:27Z",
+      "last_success": "2026-10-29T10:34:13Z",
+      "last_attempt": "2026-10-29T10:34:13Z",
       "error": null
     },
     {
@@ -58,8 +58,8 @@
       "short": "MNRAS",
       "url": "https://academic.oup.com/mnras",
       "status": "ok",
-      "last_success": "2026-10-29T10:28:27Z",
-      "last_attempt": "2026-10-29T10:28:27Z",
+      "last_success": "2026-10-29T10:34:13Z",
+      "last_attempt": "2026-10-29T10:34:13Z",
       "error": null
     }
   ],
@@ -1849,11 +1849,16 @@
       "title": "Little Red Dots are Direct-collapse Black Hole–forming Galaxies",
       "journal": "apjl",
       "authors": [
-        "Daniel J. Whalen, Muhammad A. Latif, Konstantinos Topalakis, Fergus Cullen, Devesh Nandal and Sadegh Khochfar"
+        "Daniel J. Whalen",
+        "Muhammad A. Latif",
+        "Konstantinos Topalakis",
+        "Fergus Cullen",
+        "Devesh Nandal",
+        "Sadegh Khochfar"
       ],
       "published_online": "2026-10-29T00:00:00Z",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-11-01",
       "first_seen": "2026-10-29T10:28:27Z",
       "volume": "1011",
       "issue": "1",
@@ -3520,7 +3525,7 @@
     {
       "id": "cdcf0d3f6462d88b",
       "doi": "10.1051/0004-6361/202660266",
-      "title": "C3NN-SBI: Learning hierarchies of N -point statistics from cosmological fields with physics-informed neural networks",
+      "title": "C3NN-SBI: Learning hierarchies of N-point statistics from cosmological fields with physics-informed neural networks",
       "journal": "aa",
       "authors": [
         "Kai Lehman",
@@ -3531,7 +3536,7 @@
       ],
       "published_online": "2026-10-28",
       "online_date_precision": "day",
-      "issue_date": "2026-10",
+      "issue_date": "2026-11",
       "first_seen": "2026-10-28T08:00:06Z",
       "volume": "715",
       "issue": null,
@@ -3694,7 +3699,7 @@
       "article_number": "102",
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aea6a5",
       "kind": "research",
-      "topic": "galaxies",
+      "topic": "cosmology",
       "has_summary": false
     },
     {
@@ -3739,13 +3744,13 @@
       "article_number": "100",
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aea976",
       "kind": "research",
-      "topic": "galaxies",
+      "topic": "cosmology",
       "has_summary": false
     },
     {
       "id": "02e72f0b773bd335",
       "doi": "10.3847/1538-4357/aeaa2f",
-      "title": "A Possible Hadronic Explanation for the Ultra-high-energy γ -Ray Emission from 1LHAASO J0056+6346u",
+      "title": "A Possible Hadronic Explanation for the Ultra-high-energy γ-Ray Emission from 1LHAASO J0056+6346u",
       "journal": "apj",
       "authors": [
         "Chunhui He",
@@ -3994,7 +3999,7 @@
       "article_number": "94",
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aeac1f",
       "kind": "research",
-      "topic": "galaxies",
+      "topic": "cosmology",
       "has_summary": false
     },
     {
@@ -4194,7 +4199,7 @@
       "article_number": "85",
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aeaccd",
       "kind": "research",
-      "topic": "galaxies",
+      "topic": "cosmology",
       "has_summary": false
     },
     {
@@ -4218,7 +4223,7 @@
       "article_number": "84",
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aeacce",
       "kind": "research",
-      "topic": "compact",
+      "topic": "cosmology",
       "has_summary": false
     },
     {
@@ -4242,7 +4247,7 @@
       "article_number": "83",
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aeace0",
       "kind": "research",
-      "topic": "galaxies",
+      "topic": "cosmology",
       "has_summary": false
     },
     {
@@ -4295,7 +4300,7 @@
       "article_number": "81",
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aeb022",
       "kind": "research",
-      "topic": "galaxies",
+      "topic": "cosmology",
       "has_summary": false
     },
     {
@@ -4332,7 +4337,7 @@
     {
       "id": "750af8e19c79fedd",
       "doi": "10.3847/1538-4365/aeab87",
-      "title": "Model-driven Stellar Spectroscopy with the Total Differential Spectral Model ( TDSM ): Framework and Its Application to 11 Million LAMOST Low-resolution Spectra",
+      "title": "Model-driven Stellar Spectroscopy with the Total Differential Spectral Model (TDSM): Framework and Its Application to 11 Million LAMOST Low-resolution Spectra",
       "journal": "apjs",
       "authors": [
         "Lanya Mou",
@@ -4371,7 +4376,7 @@
       "volume": null,
       "issue": null,
       "article_number": "stag2029",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2029/9003261",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2029/9003261?rss=1",
       "kind": "research",
       "topic": "compact",
       "has_summary": false
@@ -4394,7 +4399,7 @@
       "volume": null,
       "issue": null,
       "article_number": "stag2042",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2042/9003271",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2042/9003271?rss=1",
       "kind": "research",
       "topic": "methods",
       "has_summary": false
@@ -4429,7 +4434,7 @@
       "volume": null,
       "issue": null,
       "article_number": "stag2043",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2043/9003263",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2043/9003263?rss=1",
       "kind": "research",
       "topic": "planets",
       "has_summary": true,
@@ -4457,7 +4462,7 @@
       "volume": null,
       "issue": null,
       "article_number": "stag2045",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2045/9003264",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2045/9003264?rss=1",
       "kind": "research",
       "topic": "galaxies",
       "has_summary": false
@@ -4485,7 +4490,7 @@
       "volume": null,
       "issue": null,
       "article_number": "stag2048",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2048/9003266",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2048/9003266?rss=1",
       "kind": "research",
       "topic": "cosmology",
       "has_summary": false
@@ -4505,7 +4510,7 @@
       "volume": null,
       "issue": null,
       "article_number": "stag2050",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2050/9003260",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2050/9003260?rss=1",
       "kind": "research",
       "topic": "stars",
       "has_summary": false
@@ -9489,7 +9494,7 @@
       "article_number": "A14",
       "source_url": "https://www.aanda.org/10.1051/0004-6361/202556682",
       "kind": "research",
-      "topic": "cosmology",
+      "topic": "galaxies",
       "has_summary": false
     },
     {
@@ -23057,7 +23062,7 @@
     {
       "id": "1332d537caadec63",
       "doi": "10.1051/0004-6361/202661083",
-      "title": "Cosmic web Ly α emission in a sample of overdense regions",
+      "title": "Cosmic web Lyα emission in a sample of overdense regions",
       "journal": "aa",
       "authors": [
         "Davide Tornotti",
@@ -23080,7 +23085,7 @@
       "article_number": "A59",
       "source_url": "https://www.aanda.org/10.1051/0004-6361/202661083",
       "kind": "research",
-      "topic": "cosmology",
+      "topic": "galaxies",
       "has_summary": false
     },
     {
@@ -23947,7 +23952,7 @@
     {
       "id": "f89133194b424130",
       "doi": "10.1051/0004-6361/202661225",
-      "title": "Euclid : Disky titans – surprisingly high star formation activity and gas content in two brightest group galaxies at z ∼ 0.75",
+      "title": "Euclid: Disky titans – surprisingly high star formation activity and gas content in two brightest group galaxies at z ∼ 0.75",
       "journal": "aa",
       "authors": [
         "F. Gentile",
@@ -25683,7 +25688,7 @@
     {
       "id": "e75c830d2089a7c5",
       "doi": "10.1051/0004-6361/202661437",
-      "title": "The X-ray and optical emission of the intermediate polar Swift J0614.0+1709",
+      "title": "The X-ray and optical emission of the intermediate polar Swift J0614.0+1709★",
       "journal": "aa",
       "authors": [
         "Nikita Rawat",
@@ -26048,7 +26053,7 @@
       "article_number": "A12",
       "source_url": "https://www.aanda.org/10.1051/0004-6361/202661476",
       "kind": "research",
-      "topic": "solar",
+      "topic": "compact",
       "has_summary": false
     },
     {
@@ -26716,7 +26721,7 @@
     {
       "id": "c2a39917da60428e",
       "doi": "10.1051/0004-6361/202661554",
-      "title": "Wolf-Rayet formation through L / M -dependent superwinds",
+      "title": "Wolf-Rayet formation through L/M-dependent superwinds",
       "journal": "aa",
       "authors": [
         "Aisling McKeown",
@@ -26733,7 +26738,7 @@
       "article_number": "L1",
       "source_url": "https://www.aanda.org/10.1051/0004-6361/202661554",
       "kind": "letter",
-      "topic": "compact",
+      "topic": "stars",
       "has_summary": false
     },
     {
@@ -30715,7 +30720,7 @@
     {
       "id": "0301ff845d3a09b3",
       "doi": "10.1051/0004-6361/202662175",
-      "title": "A statistical hardness classification of ultraluminous X-ray sources using long-term Swift /XRT monitoring",
+      "title": "A statistical hardness classification of ultraluminous X-ray sources using long-term Swift/XRT monitoring",
       "journal": "aa",
       "authors": [
         "Sinan Allak",
@@ -30733,7 +30738,7 @@
       "article_number": "A36",
       "source_url": "https://www.aanda.org/10.1051/0004-6361/202662175",
       "kind": "research",
-      "topic": "methods",
+      "topic": "compact",
       "has_summary": false
     },
     {
@@ -32322,7 +32327,7 @@
     {
       "id": "d2088fbe5c6ec185",
       "doi": "10.1051/0004-6361/202662697",
-      "title": "Physics-induced impact on the properties of Kepler /K2 solar analogs in light of PLATO requirements",
+      "title": "Physics-induced impact on the properties of Kepler/K2 solar analogs in light of PLATO requirements",
       "journal": "aa",
       "authors": [
         "S. Khan",
@@ -32340,7 +32345,7 @@
       "article_number": "A9",
       "source_url": "https://www.aanda.org/10.1051/0004-6361/202662697",
       "kind": "research",
-      "topic": "solar",
+      "topic": "stars",
       "has_summary": false
     },
     {
