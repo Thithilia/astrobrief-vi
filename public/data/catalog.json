@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T15:51:56Z",
+  "generated_at": "2026-10-29T16:01:19Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-10-29T15:37:53Z",
-      "last_attempt": "2026-10-29T15:37:53Z",
+      "last_success": "2026-10-29T16:00:08Z",
+      "last_attempt": "2026-10-29T16:00:08Z",
       "error": null
     },
     {
@@ -18,8 +18,8 @@
       "short": "ApJ",
       "url": "https://journals.aas.org/astrophysical-journal/",
       "status": "ok",
-      "last_success": "2026-10-29T15:37:53Z",
-      "last_attempt": "2026-10-29T15:37:53Z",
+      "last_success": "2026-10-29T16:00:08Z",
+      "last_attempt": "2026-10-29T16:00:08Z",
       "error": null
     },
     {
@@ -28,8 +28,8 @@
       "short": "ApJL",
       "url": "https://journals.aas.org/astrophysical-journal-letters/",
       "status": "ok",
-      "last_success": "2026-10-29T15:37:53Z",
-      "last_attempt": "2026-10-29T15:37:53Z",
+      "last_success": "2026-10-29T16:00:08Z",
+      "last_attempt": "2026-10-29T16:00:08Z",
       "error": null
     },
     {
@@ -38,8 +38,8 @@
       "short": "ApJS",
       "url": "https://journals.aas.org/astrophysical-supplement-series/",
       "status": "ok",
-      "last_success": "2026-10-29T15:37:53Z",
-      "last_attempt": "2026-10-29T15:37:53Z",
+      "last_success": "2026-10-29T16:00:08Z",
+      "last_attempt": "2026-10-29T16:00:08Z",
       "error": null
     },
     {
@@ -48,8 +48,8 @@
       "short": "AJ",
       "url": "https://journals.aas.org/astronomical-journal/",
       "status": "ok",
-      "last_success": "2026-10-29T15:37:53Z",
-      "last_attempt": "2026-10-29T15:37:53Z",
+      "last_success": "2026-10-29T16:00:08Z",
+      "last_attempt": "2026-10-29T16:00:08Z",
       "error": null
     },
     {
@@ -58,8 +58,8 @@
       "short": "MNRAS",
       "url": "https://academic.oup.com/mnras",
       "status": "ok",
-      "last_success": "2026-10-29T15:37:53Z",
-      "last_attempt": "2026-10-29T15:37:53Z",
+      "last_success": "2026-10-29T16:00:08Z",
+      "last_attempt": "2026-10-29T16:00:08Z",
       "error": null
     }
   ],
@@ -74,7 +74,7 @@
         "Patcharapol Wachiraphan",
         "Catriona A. Murray"
       ],
-      "published_online": "2026-10-29",
+      "published_online": "2026-10-29T00:00:00Z",
       "online_date_precision": "day",
       "issue_date": "2026-11-01",
       "first_seen": "2026-10-29T15:37:53Z",
@@ -123,7 +123,7 @@
         "Ilaria Villani",
         "James N. Reeves"
       ],
-      "published_online": "2026-10-29",
+      "published_online": "2026-10-29T00:00:00Z",
       "online_date_precision": "day",
       "issue_date": "2026-11-01",
       "first_seen": "2026-10-29T15:37:53Z",
@@ -161,7 +161,7 @@
         "Johanna M. Vos",
         "Niall Whiteford"
       ],
-      "published_online": "2026-10-29",
+      "published_online": "2026-10-29T00:00:00Z",
       "online_date_precision": "day",
       "issue_date": "2026-11-01",
       "first_seen": "2026-10-29T15:37:53Z",
@@ -2540,7 +2540,7 @@
       "volume": null,
       "issue": null,
       "article_number": "stag2033",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2033/9003824",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2033/9003824?rss=1",
       "kind": "research",
       "topic": "cosmology",
       "has_summary": false
@@ -2575,7 +2575,7 @@
       "volume": null,
       "issue": null,
       "article_number": "stag2055",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2055/9003823",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2055/9003823?rss=1",
       "kind": "research",
       "topic": "compact",
       "has_summary": false
