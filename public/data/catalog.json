@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T10:34:59Z",
+  "generated_at": "2026-10-29T11:05:28Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-10-29T10:34:13Z",
-      "last_attempt": "2026-10-29T10:34:13Z",
+      "last_success": "2026-10-29T11:05:04Z",
+      "last_attempt": "2026-10-29T11:05:04Z",
       "error": null
     },
     {
@@ -18,8 +18,8 @@
       "short": "ApJ",
       "url": "https://journals.aas.org/astrophysical-journal/",
       "status": "ok",
-      "last_success": "2026-10-29T10:34:13Z",
-      "last_attempt": "2026-10-29T10:34:13Z",
+      "last_success": "2026-10-29T11:05:04Z",
+      "last_attempt": "2026-10-29T11:05:04Z",
       "error": null
     },
     {
@@ -28,8 +28,8 @@
       "short": "ApJL",
       "url": "https://journals.aas.org/astrophysical-journal-letters/",
       "status": "ok",
-      "last_success": "2026-10-29T10:34:13Z",
-      "last_attempt": "2026-10-29T10:34:13Z",
+      "last_success": "2026-10-29T11:05:04Z",
+      "last_attempt": "2026-10-29T11:05:04Z",
       "error": null
     },
     {
@@ -38,8 +38,8 @@
       "short": "ApJS",
       "url": "https://journals.aas.org/astrophysical-supplement-series/",
       "status": "ok",
-      "last_success": "2026-10-29T10:34:13Z",
-      "last_attempt": "2026-10-29T10:34:13Z",
+      "last_success": "2026-10-29T11:05:04Z",
+      "last_attempt": "2026-10-29T11:05:04Z",
       "error": null
     },
     {
@@ -48,8 +48,8 @@
       "short": "AJ",
       "url": "https://journals.aas.org/astronomical-journal/",
       "status": "ok",
-      "last_success": "2026-10-29T10:34:13Z",
-      "last_attempt": "2026-10-29T10:34:13Z",
+      "last_success": "2026-10-29T11:05:04Z",
+      "last_attempt": "2026-10-29T11:05:04Z",
       "error": null
     },
     {
@@ -58,8 +58,8 @@
       "short": "MNRAS",
       "url": "https://academic.oup.com/mnras",
       "status": "ok",
-      "last_success": "2026-10-29T10:34:13Z",
-      "last_attempt": "2026-10-29T10:34:13Z",
+      "last_success": "2026-10-29T11:05:04Z",
+      "last_attempt": "2026-10-29T11:05:04Z",
       "error": null
     }
   ],
@@ -36596,19 +36596,19 @@
         "Gustavo F Gonçalves",
         "Ilaria Marini",
         "A Fraser-McKelvie",
-        "Natan de Isídio",
+        "Natan de Isídio",
         "Rubens E G Machado",
         "Richards P Albuquerque",
         "Daudi T Mazengo"
       ],
       "published_online": "2026-10-15",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-10-23",
       "first_seen": "2026-10-25T19:58:05Z",
-      "volume": null,
-      "issue": null,
+      "volume": "553",
+      "issue": "1",
       "article_number": "stag1960",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag1960/8917826",
+      "source_url": "https://academic.oup.com/mnras/article/doi/10.1093/mnras/stag1960/8917826",
       "kind": "research",
       "topic": "galaxies",
       "has_summary": false
