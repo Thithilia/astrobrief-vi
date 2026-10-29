@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T17:00:07Z",
+  "generated_at": "2026-10-29T17:05:55Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-10-29T16:05:04Z",
-      "last_attempt": "2026-10-29T16:05:04Z",
+      "last_success": "2026-10-29T17:05:06Z",
+      "last_attempt": "2026-10-29T17:05:06Z",
       "error": null
     },
     {
@@ -18,8 +18,8 @@
       "short": "ApJ",
       "url": "https://journals.aas.org/astrophysical-journal/",
       "status": "ok",
-      "last_success": "2026-10-29T16:05:04Z",
-      "last_attempt": "2026-10-29T16:05:04Z",
+      "last_success": "2026-10-29T17:05:06Z",
+      "last_attempt": "2026-10-29T17:05:06Z",
       "error": null
     },
     {
@@ -28,8 +28,8 @@
       "short": "ApJL",
       "url": "https://journals.aas.org/astrophysical-journal-letters/",
       "status": "ok",
-      "last_success": "2026-10-29T16:05:04Z",
-      "last_attempt": "2026-10-29T16:05:04Z",
+      "last_success": "2026-10-29T17:05:06Z",
+      "last_attempt": "2026-10-29T17:05:06Z",
       "error": null
     },
     {
@@ -38,8 +38,8 @@
       "short": "ApJS",
       "url": "https://journals.aas.org/astrophysical-supplement-series/",
       "status": "ok",
-      "last_success": "2026-10-29T16:05:04Z",
-      "last_attempt": "2026-10-29T16:05:04Z",
+      "last_success": "2026-10-29T17:05:06Z",
+      "last_attempt": "2026-10-29T17:05:06Z",
       "error": null
     },
     {
@@ -48,8 +48,8 @@
       "short": "AJ",
       "url": "https://journals.aas.org/astronomical-journal/",
       "status": "ok",
-      "last_success": "2026-10-29T16:05:04Z",
-      "last_attempt": "2026-10-29T16:05:04Z",
+      "last_success": "2026-10-29T17:05:06Z",
+      "last_attempt": "2026-10-29T17:05:06Z",
       "error": null
     },
     {
@@ -58,12 +58,32 @@
       "short": "MNRAS",
       "url": "https://academic.oup.com/mnras",
       "status": "ok",
-      "last_success": "2026-10-29T16:05:04Z",
-      "last_attempt": "2026-10-29T16:05:04Z",
+      "last_success": "2026-10-29T17:05:06Z",
+      "last_attempt": "2026-10-29T17:05:06Z",
       "error": null
     }
   ],
   "papers": [
+    {
+      "id": "29590694ecd86319",
+      "doi": "10.3847/1538-4357/aea97f",
+      "title": "Pixelated Posterior Sampling of Point-spread Functions in Astronomical Images",
+      "journal": "apj",
+      "authors": [
+        "Connor Stone, Ronan Legin, Alexandre Adam, Esmeralda Whitammer, Gabriel Missael Barco, Laurence Perreault-Levasseur and Yashar Hezaveh"
+      ],
+      "published_online": "2026-10-29T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": null,
+      "first_seen": "2026-10-29T17:05:06Z",
+      "volume": "1011",
+      "issue": "1",
+      "article_number": "129",
+      "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aea97f",
+      "kind": "research",
+      "topic": "methods",
+      "has_summary": false
+    },
     {
       "id": "e14d39bb95e98f40",
       "doi": "10.3847/1538-4357/ae77fd",
