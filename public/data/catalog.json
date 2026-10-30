@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T10:05:21Z",
+  "generated_at": "2026-10-30T11:00:56Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-10-30T10:05:04Z",
-      "last_attempt": "2026-10-30T10:05:04Z",
+      "last_success": "2026-10-30T11:00:11Z",
+      "last_attempt": "2026-10-30T11:00:11Z",
       "error": null
     },
     {
@@ -18,8 +18,8 @@
       "short": "ApJ",
       "url": "https://journals.aas.org/astrophysical-journal/",
       "status": "ok",
-      "last_success": "2026-10-30T10:05:04Z",
-      "last_attempt": "2026-10-30T10:05:04Z",
+      "last_success": "2026-10-30T11:00:11Z",
+      "last_attempt": "2026-10-30T11:00:11Z",
       "error": null
     },
     {
@@ -28,8 +28,8 @@
       "short": "ApJL",
       "url": "https://journals.aas.org/astrophysical-journal-letters/",
       "status": "ok",
-      "last_success": "2026-10-30T10:05:04Z",
-      "last_attempt": "2026-10-30T10:05:04Z",
+      "last_success": "2026-10-30T11:00:11Z",
+      "last_attempt": "2026-10-30T11:00:11Z",
       "error": null
     },
     {
@@ -37,10 +37,10 @@
       "name": "The Astrophysical Journal Supplement Series",
       "short": "ApJS",
       "url": "https://journals.aas.org/astrophysical-supplement-series/",
-      "status": "ok",
-      "last_success": "2026-10-30T10:05:04Z",
-      "last_attempt": "2026-10-30T10:05:04Z",
-      "error": null
+      "status": "partial",
+      "last_success": "2026-10-30T11:00:11Z",
+      "last_attempt": "2026-10-30T11:00:11Z",
+      "error": "RSS: Network error: RemoteProtocolError"
     },
     {
       "id": "aj",
@@ -48,8 +48,8 @@
       "short": "AJ",
       "url": "https://journals.aas.org/astronomical-journal/",
       "status": "ok",
-      "last_success": "2026-10-30T10:05:04Z",
-      "last_attempt": "2026-10-30T10:05:04Z",
+      "last_success": "2026-10-30T11:00:11Z",
+      "last_attempt": "2026-10-30T11:00:11Z",
       "error": null
     },
     {
@@ -58,12 +58,32 @@
       "short": "MNRAS",
       "url": "https://academic.oup.com/mnras",
       "status": "ok",
-      "last_success": "2026-10-30T10:05:04Z",
-      "last_attempt": "2026-10-30T10:05:04Z",
+      "last_success": "2026-10-30T11:00:11Z",
+      "last_attempt": "2026-10-30T11:00:11Z",
       "error": null
     }
   ],
   "papers": [
+    {
+      "id": "17491576b8ad3c59",
+      "doi": "10.3847/1538-3881/aeb1d3",
+      "title": "POSEIDON. III. The Aligned Orbit of the Hot Neptune around the Hot Star WASP-195",
+      "journal": "aj",
+      "authors": [
+        "Juan I. Espinoza-Retamal, Joshua N. Winn, Rafael Brahm, Luke B. Handley, Elise Koo, Caleb Lammers, Cristobal Petrovich, Guðmundur Stefánsson, Andrés Jordán, Xian-Yu Wang, Songhu Wang, Nicholas Saunders, Erik A. Petigura, Lauren M. Weiss, Ashley D. Baker, Theron W. Carmichael, Fei Dai, Jerry Edelstein, Jack Foley, Benjamin J. Fulton, Steven Giacalone, Steven R. Gibson, Samuel Halverson, Andrew W. Howard, Howard Isaacson, Emma McIntyre, Pranav H. Premnath, Maleah Rhem, Kodi Rider, Ryan A. Rubenzahl, Arpita Roy, Christopher Smith, Judah Van Zandt, Josh Walawender, Elina Y. Zhang and Jingyi Zhang"
+      ],
+      "published_online": "2026-10-30T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": null,
+      "first_seen": "2026-10-30T11:00:11Z",
+      "volume": "172",
+      "issue": "6",
+      "article_number": "291",
+      "source_url": "https://iopscience.iop.org/article/10.3847/1538-3881/aeb1d3",
+      "kind": "research",
+      "topic": "planets",
+      "has_summary": false
+    },
     {
       "id": "ec92378f8c8bd1d6",
       "doi": "10.1051/0004-6361/202557252",
