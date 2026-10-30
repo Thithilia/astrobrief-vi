@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T06:32:59Z",
+  "generated_at": "2026-10-30T07:00:46Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-10-30T06:32:30Z",
-      "last_attempt": "2026-10-30T06:32:30Z",
+      "last_success": "2026-10-30T07:00:06Z",
+      "last_attempt": "2026-10-30T07:00:06Z",
       "error": null
     },
     {
@@ -18,8 +18,8 @@
       "short": "ApJ",
       "url": "https://journals.aas.org/astrophysical-journal/",
       "status": "ok",
-      "last_success": "2026-10-30T06:32:30Z",
-      "last_attempt": "2026-10-30T06:32:30Z",
+      "last_success": "2026-10-30T07:00:06Z",
+      "last_attempt": "2026-10-30T07:00:06Z",
       "error": null
     },
     {
@@ -28,8 +28,8 @@
       "short": "ApJL",
       "url": "https://journals.aas.org/astrophysical-journal-letters/",
       "status": "ok",
-      "last_success": "2026-10-30T06:32:30Z",
-      "last_attempt": "2026-10-30T06:32:30Z",
+      "last_success": "2026-10-30T07:00:06Z",
+      "last_attempt": "2026-10-30T07:00:06Z",
       "error": null
     },
     {
@@ -38,8 +38,8 @@
       "short": "ApJS",
       "url": "https://journals.aas.org/astrophysical-supplement-series/",
       "status": "ok",
-      "last_success": "2026-10-30T06:32:30Z",
-      "last_attempt": "2026-10-30T06:32:30Z",
+      "last_success": "2026-10-30T07:00:06Z",
+      "last_attempt": "2026-10-30T07:00:06Z",
       "error": null
     },
     {
@@ -48,8 +48,8 @@
       "short": "AJ",
       "url": "https://journals.aas.org/astronomical-journal/",
       "status": "ok",
-      "last_success": "2026-10-30T06:32:30Z",
-      "last_attempt": "2026-10-30T06:32:30Z",
+      "last_success": "2026-10-30T07:00:06Z",
+      "last_attempt": "2026-10-30T07:00:06Z",
       "error": null
     },
     {
@@ -58,8 +58,8 @@
       "short": "MNRAS",
       "url": "https://academic.oup.com/mnras",
       "status": "ok",
-      "last_success": "2026-10-30T06:32:30Z",
-      "last_attempt": "2026-10-30T06:32:30Z",
+      "last_success": "2026-10-30T07:00:06Z",
+      "last_attempt": "2026-10-30T07:00:06Z",
       "error": null
     }
   ],
@@ -18315,13 +18315,13 @@
         "Junjie Wu",
         "Jifeng Liu"
       ],
-      "published_online": "2026-10-12",
+      "published_online": "2026-10-30",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-10",
       "first_seen": "2026-10-25T19:58:05Z",
-      "volume": null,
+      "volume": "714",
       "issue": null,
-      "article_number": null,
+      "article_number": "A518",
       "source_url": "https://www.aanda.org/10.1051/0004-6361/202660239",
       "kind": "research",
       "topic": "compact",
