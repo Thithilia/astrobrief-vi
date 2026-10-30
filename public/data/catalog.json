@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T08:00:47Z",
+  "generated_at": "2026-10-30T08:05:42Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-10-30T08:00:03Z",
-      "last_attempt": "2026-10-30T08:00:03Z",
+      "last_success": "2026-10-30T08:05:04Z",
+      "last_attempt": "2026-10-30T08:05:04Z",
       "error": null
     },
     {
@@ -18,8 +18,8 @@
       "short": "ApJ",
       "url": "https://journals.aas.org/astrophysical-journal/",
       "status": "ok",
-      "last_success": "2026-10-30T08:00:03Z",
-      "last_attempt": "2026-10-30T08:00:03Z",
+      "last_success": "2026-10-30T08:05:04Z",
+      "last_attempt": "2026-10-30T08:05:04Z",
       "error": null
     },
     {
@@ -28,8 +28,8 @@
       "short": "ApJL",
       "url": "https://journals.aas.org/astrophysical-journal-letters/",
       "status": "ok",
-      "last_success": "2026-10-30T08:00:03Z",
-      "last_attempt": "2026-10-30T08:00:03Z",
+      "last_success": "2026-10-30T08:05:04Z",
+      "last_attempt": "2026-10-30T08:05:04Z",
       "error": null
     },
     {
@@ -38,8 +38,8 @@
       "short": "ApJS",
       "url": "https://journals.aas.org/astrophysical-supplement-series/",
       "status": "ok",
-      "last_success": "2026-10-30T08:00:03Z",
-      "last_attempt": "2026-10-30T08:00:03Z",
+      "last_success": "2026-10-30T08:05:04Z",
+      "last_attempt": "2026-10-30T08:05:04Z",
       "error": null
     },
     {
@@ -48,8 +48,8 @@
       "short": "AJ",
       "url": "https://journals.aas.org/astronomical-journal/",
       "status": "ok",
-      "last_success": "2026-10-30T08:00:03Z",
-      "last_attempt": "2026-10-30T08:00:03Z",
+      "last_success": "2026-10-30T08:05:04Z",
+      "last_attempt": "2026-10-30T08:05:04Z",
       "error": null
     },
     {
@@ -58,8 +58,8 @@
       "short": "MNRAS",
       "url": "https://academic.oup.com/mnras",
       "status": "ok",
-      "last_success": "2026-10-30T08:00:03Z",
-      "last_attempt": "2026-10-30T08:00:03Z",
+      "last_success": "2026-10-30T08:05:04Z",
+      "last_attempt": "2026-10-30T08:05:04Z",
       "error": null
     }
   ],
@@ -2739,7 +2739,7 @@
     {
       "id": "6d0935f146a41686",
       "doi": "10.3847/1538-4357/aea60f",
-      "title": "The Dense Gas Structures around MMS 2/OMC-3 Traced by C 18 O Emission",
+      "title": "The Dense Gas Structures around MMS 2/OMC-3 Traced by C18O Emission",
       "journal": "apj",
       "authors": [
         "Yuhua 玉华 Liu 柳",
@@ -2836,7 +2836,7 @@
       "article_number": "120",
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aeaa42",
       "kind": "research",
-      "topic": "compact",
+      "topic": "cosmology",
       "has_summary": false
     },
     {
@@ -3014,7 +3014,7 @@
       "article_number": "115",
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aeae22",
       "kind": "research",
-      "topic": "compact",
+      "topic": "cosmology",
       "has_summary": false
     },
     {
@@ -3104,7 +3104,7 @@
       "article_number": "111",
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aeb1a6",
       "kind": "research",
-      "topic": "methods",
+      "topic": "solar",
       "has_summary": false
     },
     {
