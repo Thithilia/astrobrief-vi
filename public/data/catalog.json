@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T11:09:43Z",
+  "generated_at": "2026-10-31T11:15:53Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-10-31T11:09:01Z",
-      "last_attempt": "2026-10-31T11:09:01Z",
+      "last_success": "2026-10-31T11:15:17Z",
+      "last_attempt": "2026-10-31T11:15:17Z",
       "error": null
     },
     {
@@ -17,50 +17,50 @@
       "name": "The Astrophysical Journal",
       "short": "ApJ",
       "url": "https://journals.aas.org/astrophysical-journal/",
-      "status": "partial",
-      "last_success": "2026-10-31T11:09:01Z",
-      "last_attempt": "2026-10-31T11:09:01Z",
-      "error": "Crossref: Network error: RemoteProtocolError"
+      "status": "ok",
+      "last_success": "2026-10-31T11:15:17Z",
+      "last_attempt": "2026-10-31T11:15:17Z",
+      "error": null
     },
     {
       "id": "apjl",
       "name": "The Astrophysical Journal Letters",
       "short": "ApJL",
       "url": "https://journals.aas.org/astrophysical-journal-letters/",
-      "status": "error",
-      "last_success": "2026-10-31T10:05:03Z",
-      "last_attempt": "2026-10-31T11:09:01Z",
-      "error": "RSS: Network error: ConnectError; Crossref: Network error: ConnectError"
+      "status": "ok",
+      "last_success": "2026-10-31T11:15:17Z",
+      "last_attempt": "2026-10-31T11:15:17Z",
+      "error": null
     },
     {
       "id": "apjs",
       "name": "The Astrophysical Journal Supplement Series",
       "short": "ApJS",
       "url": "https://journals.aas.org/astrophysical-supplement-series/",
-      "status": "error",
-      "last_success": "2026-10-31T10:05:03Z",
-      "last_attempt": "2026-10-31T11:09:01Z",
-      "error": "RSS: Network error: ConnectError; Crossref: Network error: ConnectError"
+      "status": "ok",
+      "last_success": "2026-10-31T11:15:17Z",
+      "last_attempt": "2026-10-31T11:15:17Z",
+      "error": null
     },
     {
       "id": "aj",
       "name": "The Astronomical Journal",
       "short": "AJ",
       "url": "https://journals.aas.org/astronomical-journal/",
-      "status": "error",
-      "last_success": "2026-10-31T10:05:03Z",
-      "last_attempt": "2026-10-31T11:09:01Z",
-      "error": "RSS: Network error: ConnectError; Crossref: Network error: ConnectError"
+      "status": "ok",
+      "last_success": "2026-10-31T11:15:17Z",
+      "last_attempt": "2026-10-31T11:15:17Z",
+      "error": null
     },
     {
       "id": "mnras",
       "name": "Monthly Notices of the Royal Astronomical Society",
       "short": "MNRAS",
       "url": "https://academic.oup.com/mnras",
-      "status": "partial",
-      "last_success": "2026-10-31T11:09:01Z",
-      "last_attempt": "2026-10-31T11:09:01Z",
-      "error": "RSS: Network error: ConnectError"
+      "status": "ok",
+      "last_success": "2026-10-31T11:15:17Z",
+      "last_attempt": "2026-10-31T11:15:17Z",
+      "error": null
     }
   ],
   "papers": [
