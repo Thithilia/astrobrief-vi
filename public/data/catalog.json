@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T11:15:53Z",
+  "generated_at": "2026-10-31T12:00:54Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-10-31T11:15:17Z",
-      "last_attempt": "2026-10-31T11:15:17Z",
+      "last_success": "2026-10-31T12:00:05Z",
+      "last_attempt": "2026-10-31T12:00:05Z",
       "error": null
     },
     {
@@ -18,8 +18,8 @@
       "short": "ApJ",
       "url": "https://journals.aas.org/astrophysical-journal/",
       "status": "ok",
-      "last_success": "2026-10-31T11:15:17Z",
-      "last_attempt": "2026-10-31T11:15:17Z",
+      "last_success": "2026-10-31T12:00:05Z",
+      "last_attempt": "2026-10-31T12:00:05Z",
       "error": null
     },
     {
@@ -28,8 +28,8 @@
       "short": "ApJL",
       "url": "https://journals.aas.org/astrophysical-journal-letters/",
       "status": "ok",
-      "last_success": "2026-10-31T11:15:17Z",
-      "last_attempt": "2026-10-31T11:15:17Z",
+      "last_success": "2026-10-31T12:00:05Z",
+      "last_attempt": "2026-10-31T12:00:05Z",
       "error": null
     },
     {
@@ -38,8 +38,8 @@
       "short": "ApJS",
       "url": "https://journals.aas.org/astrophysical-supplement-series/",
       "status": "ok",
-      "last_success": "2026-10-31T11:15:17Z",
-      "last_attempt": "2026-10-31T11:15:17Z",
+      "last_success": "2026-10-31T12:00:05Z",
+      "last_attempt": "2026-10-31T12:00:05Z",
       "error": null
     },
     {
@@ -48,8 +48,8 @@
       "short": "AJ",
       "url": "https://journals.aas.org/astronomical-journal/",
       "status": "ok",
-      "last_success": "2026-10-31T11:15:17Z",
-      "last_attempt": "2026-10-31T11:15:17Z",
+      "last_success": "2026-10-31T12:00:05Z",
+      "last_attempt": "2026-10-31T12:00:05Z",
       "error": null
     },
     {
@@ -58,8 +58,8 @@
       "short": "MNRAS",
       "url": "https://academic.oup.com/mnras",
       "status": "ok",
-      "last_success": "2026-10-31T11:15:17Z",
-      "last_attempt": "2026-10-31T11:15:17Z",
+      "last_success": "2026-10-31T12:00:05Z",
+      "last_attempt": "2026-10-31T12:00:05Z",
       "error": null
     }
   ],
@@ -37422,12 +37422,12 @@
       ],
       "published_online": "2026-09-29",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-10-23",
       "first_seen": "2026-10-25T19:58:05Z",
-      "volume": null,
-      "issue": null,
+      "volume": "553",
+      "issue": "1",
       "article_number": "stag1861",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag1861/8845836",
+      "source_url": "https://academic.oup.com/mnras/article/doi/10.1093/mnras/stag1861/8845836",
       "kind": "research",
       "topic": "compact",
       "has_summary": false
@@ -38436,12 +38436,12 @@
       ],
       "published_online": "2026-10-08",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-10-23",
       "first_seen": "2026-10-25T19:58:05Z",
-      "volume": null,
-      "issue": null,
+      "volume": "553",
+      "issue": "1",
       "article_number": "stag1909",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag1909/8885812",
+      "source_url": "https://academic.oup.com/mnras/article/doi/10.1093/mnras/stag1909/8885812",
       "kind": "research",
       "topic": "stars",
       "has_summary": false
@@ -39438,7 +39438,7 @@
     {
       "id": "90f4a21f335cba1b",
       "doi": "10.1093/mnras/stag1953",
-      "title": "First Light and Reionization Epoch Simulations (FLARES) XXII: UV-dust spatial offsets at the Epoch of Reionisation",
+      "title": "First Light and Reionization Epoch Simulations ( flares ) – XXII: UV-dust spatial offsets at the Epoch of Reionization",
       "journal": "mnras",
       "authors": [
         "Paurush Punyasheel",
@@ -39455,12 +39455,12 @@
       ],
       "published_online": "2026-10-14",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-10-23",
       "first_seen": "2026-10-25T19:58:05Z",
-      "volume": null,
-      "issue": null,
+      "volume": "553",
+      "issue": "1",
       "article_number": "stag1953",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag1953/8916625",
+      "source_url": "https://academic.oup.com/mnras/article/doi/10.1093/mnras/stag1953/8916625",
       "kind": "research",
       "topic": "cosmology",
       "has_summary": false
@@ -39802,7 +39802,7 @@
     {
       "id": "46a759bd5ce77119",
       "doi": "10.1093/mnras/stag1969",
-      "title": "Taxonomic Classification of some Members of the NEOs Atiras Population",
+      "title": "Taxonomic classification of some members of the NEOs Atiras population",
       "journal": "mnras",
       "authors": [
         "Eduardo Rondón",
@@ -39817,12 +39817,12 @@
       ],
       "published_online": "2026-10-16",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-10-23",
       "first_seen": "2026-10-25T19:58:05Z",
-      "volume": null,
-      "issue": null,
+      "volume": "553",
+      "issue": "1",
       "article_number": "stag1969",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag1969/8931744",
+      "source_url": "https://academic.oup.com/mnras/article/doi/10.1093/mnras/stag1969/8931744",
       "kind": "research",
       "topic": "solar",
       "has_summary": false
