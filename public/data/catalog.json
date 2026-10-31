@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T06:25:36Z",
+  "generated_at": "2026-10-31T06:31:01Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-10-31T06:24:46Z",
-      "last_attempt": "2026-10-31T06:24:46Z",
+      "last_success": "2026-10-31T06:30:34Z",
+      "last_attempt": "2026-10-31T06:30:34Z",
       "error": null
     },
     {
@@ -18,8 +18,8 @@
       "short": "ApJ",
       "url": "https://journals.aas.org/astrophysical-journal/",
       "status": "ok",
-      "last_success": "2026-10-31T06:24:46Z",
-      "last_attempt": "2026-10-31T06:24:46Z",
+      "last_success": "2026-10-31T06:30:34Z",
+      "last_attempt": "2026-10-31T06:30:34Z",
       "error": null
     },
     {
@@ -28,8 +28,8 @@
       "short": "ApJL",
       "url": "https://journals.aas.org/astrophysical-journal-letters/",
       "status": "ok",
-      "last_success": "2026-10-31T06:24:46Z",
-      "last_attempt": "2026-10-31T06:24:46Z",
+      "last_success": "2026-10-31T06:30:34Z",
+      "last_attempt": "2026-10-31T06:30:34Z",
       "error": null
     },
     {
@@ -38,8 +38,8 @@
       "short": "ApJS",
       "url": "https://journals.aas.org/astrophysical-supplement-series/",
       "status": "ok",
-      "last_success": "2026-10-31T06:24:46Z",
-      "last_attempt": "2026-10-31T06:24:46Z",
+      "last_success": "2026-10-31T06:30:34Z",
+      "last_attempt": "2026-10-31T06:30:34Z",
       "error": null
     },
     {
@@ -48,8 +48,8 @@
       "short": "AJ",
       "url": "https://journals.aas.org/astronomical-journal/",
       "status": "ok",
-      "last_success": "2026-10-31T06:24:46Z",
-      "last_attempt": "2026-10-31T06:24:46Z",
+      "last_success": "2026-10-31T06:30:34Z",
+      "last_attempt": "2026-10-31T06:30:34Z",
       "error": null
     },
     {
@@ -58,8 +58,8 @@
       "short": "MNRAS",
       "url": "https://academic.oup.com/mnras",
       "status": "ok",
-      "last_success": "2026-10-31T06:24:46Z",
-      "last_attempt": "2026-10-31T06:24:46Z",
+      "last_success": "2026-10-31T06:30:34Z",
+      "last_attempt": "2026-10-31T06:30:34Z",
       "error": null
     }
   ],
@@ -1936,7 +1936,7 @@
       "volume": null,
       "issue": null,
       "article_number": "stag2028",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2028/9004843",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2028/9004843?rss=1",
       "kind": "research",
       "topic": "cosmology",
       "has_summary": false
@@ -1964,7 +1964,7 @@
       "volume": null,
       "issue": null,
       "article_number": "stag2046",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2046/9004848",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2046/9004848?rss=1",
       "kind": "research",
       "topic": "stars",
       "has_summary": false
@@ -1985,7 +1985,7 @@
       "volume": null,
       "issue": null,
       "article_number": "stag2062",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2062/9004842",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2062/9004842?rss=1",
       "kind": "research",
       "topic": "compact",
       "has_summary": false
@@ -2010,7 +2010,7 @@
       "volume": null,
       "issue": null,
       "article_number": "stag2064",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2064/9004845",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2064/9004845?rss=1",
       "kind": "research",
       "topic": "galaxies",
       "has_summary": false
@@ -2036,7 +2036,7 @@
       "volume": null,
       "issue": null,
       "article_number": "stag2070",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2070/9004846",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2070/9004846?rss=1",
       "kind": "research",
       "topic": "galaxies",
       "has_summary": false
@@ -2063,7 +2063,7 @@
       "volume": null,
       "issue": null,
       "article_number": "stag2071",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2071/9004840",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2071/9004840?rss=1",
       "kind": "research",
       "topic": "cosmology",
       "has_summary": false
@@ -2086,7 +2086,7 @@
       "volume": null,
       "issue": null,
       "article_number": "stag2072",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2072/9004847",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2072/9004847?rss=1",
       "kind": "research",
       "topic": "compact",
       "has_summary": false
@@ -2534,7 +2534,7 @@
       "article_number": "134",
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/ae96b4",
       "kind": "research",
-      "topic": "galaxies",
+      "topic": "cosmology",
       "has_summary": false
     },
     {
@@ -2578,7 +2578,7 @@
     {
       "id": "2a9e0b70b500df0c",
       "doi": "10.3847/1538-4357/aeac16",
-      "title": "Short Spike, Long Story: Episode-dependent Shifts of Long-duration Type-I Gamma-Ray Bursts on the E p,z – E iso Plane",
+      "title": "Short Spike, Long Story: Episode-dependent Shifts of Long-duration Type-I Gamma-Ray Bursts on the E p,z–E iso Plane",
       "journal": "apj",
       "authors": [
         "Ya-Hui Jiang",
