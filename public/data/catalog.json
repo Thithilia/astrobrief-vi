@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T07:12:42Z",
+  "generated_at": "2026-11-01T07:18:09Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-11-01T07:12:11Z",
-      "last_attempt": "2026-11-01T07:12:11Z",
+      "last_success": "2026-11-01T07:17:55Z",
+      "last_attempt": "2026-11-01T07:17:55Z",
       "error": null
     },
     {
@@ -18,8 +18,8 @@
       "short": "ApJ",
       "url": "https://journals.aas.org/astrophysical-journal/",
       "status": "ok",
-      "last_success": "2026-11-01T07:12:11Z",
-      "last_attempt": "2026-11-01T07:12:11Z",
+      "last_success": "2026-11-01T07:17:55Z",
+      "last_attempt": "2026-11-01T07:17:55Z",
       "error": null
     },
     {
@@ -28,8 +28,8 @@
       "short": "ApJL",
       "url": "https://journals.aas.org/astrophysical-journal-letters/",
       "status": "ok",
-      "last_success": "2026-11-01T07:12:11Z",
-      "last_attempt": "2026-11-01T07:12:11Z",
+      "last_success": "2026-11-01T07:17:55Z",
+      "last_attempt": "2026-11-01T07:17:55Z",
       "error": null
     },
     {
@@ -38,8 +38,8 @@
       "short": "ApJS",
       "url": "https://journals.aas.org/astrophysical-supplement-series/",
       "status": "ok",
-      "last_success": "2026-11-01T07:12:11Z",
-      "last_attempt": "2026-11-01T07:12:11Z",
+      "last_success": "2026-11-01T07:17:55Z",
+      "last_attempt": "2026-11-01T07:17:55Z",
       "error": null
     },
     {
@@ -48,8 +48,8 @@
       "short": "AJ",
       "url": "https://journals.aas.org/astronomical-journal/",
       "status": "ok",
-      "last_success": "2026-11-01T07:12:11Z",
-      "last_attempt": "2026-11-01T07:12:11Z",
+      "last_success": "2026-11-01T07:17:55Z",
+      "last_attempt": "2026-11-01T07:17:55Z",
       "error": null
     },
     {
@@ -58,8 +58,8 @@
       "short": "MNRAS",
       "url": "https://academic.oup.com/mnras",
       "status": "ok",
-      "last_success": "2026-11-01T07:12:11Z",
-      "last_attempt": "2026-11-01T07:12:11Z",
+      "last_success": "2026-11-01T07:17:55Z",
+      "last_attempt": "2026-11-01T07:17:55Z",
       "error": null
     }
   ],
@@ -500,7 +500,7 @@
       "volume": null,
       "issue": null,
       "article_number": "stag2001",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2001/9005618",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2001/9005618?rss=1",
       "kind": "research",
       "topic": "stars",
       "has_summary": false
@@ -522,7 +522,7 @@
       "volume": null,
       "issue": null,
       "article_number": "stag2044",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2044/9005620",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2044/9005620?rss=1",
       "kind": "research",
       "topic": "other",
       "has_summary": false
@@ -547,7 +547,7 @@
       "volume": null,
       "issue": null,
       "article_number": "stag2049",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2049/9005619",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2049/9005619?rss=1",
       "kind": "research",
       "topic": "cosmology",
       "has_summary": false
@@ -573,7 +573,7 @@
       "volume": null,
       "issue": null,
       "article_number": "stag2063",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2063/9005623",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2063/9005623?rss=1",
       "kind": "research",
       "topic": "cosmology",
       "has_summary": false
@@ -601,7 +601,7 @@
       "volume": null,
       "issue": null,
       "article_number": "stag2073",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2073/9005629",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2073/9005629?rss=1",
       "kind": "research",
       "topic": "methods",
       "has_summary": false
@@ -609,7 +609,7 @@
     {
       "id": "023511391e6d05d3",
       "doi": "10.1093/mnras/stag2074",
-      "title": "pop-cosmos : Galaxy size evolution across structural and star-formation classifications in COSMOS-Web",
+      "title": "pop-cosmos: Galaxy size evolution across structural and star-formation classifications in COSMOS-Web",
       "journal": "mnras",
       "authors": [
         "Madalina N Tudorache",
@@ -630,7 +630,7 @@
       "volume": null,
       "issue": null,
       "article_number": "stag2074",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2074/9005624",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2074/9005624?rss=1",
       "kind": "research",
       "topic": "galaxies",
       "has_summary": false
@@ -638,7 +638,7 @@
     {
       "id": "79d40eec7f26e7f7",
       "doi": "10.1093/mnras/stag2075",
-      "title": "First rotational (de-)excitation of HOCS+( X 1 A ′) by collision with He(1S): rate coefficients and potential energy surface",
+      "title": "First rotational (de-)excitation of HOCS+(X1A′) by collision with He(1S): rate coefficients and potential energy surface",
       "journal": "mnras",
       "authors": [
         "I Ben Salem",
@@ -655,7 +655,7 @@
       "volume": null,
       "issue": null,
       "article_number": "stag2075",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2075/9005625",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2075/9005625?rss=1",
       "kind": "research",
       "topic": "stars",
       "has_summary": false
@@ -695,7 +695,7 @@
       "volume": null,
       "issue": null,
       "article_number": "stag2076",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2076/9005627",
+      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2076/9005627?rss=1",
       "kind": "research",
       "topic": "galaxies",
       "has_summary": false
@@ -831,7 +831,7 @@
       "article_number": "L35",
       "source_url": "https://iopscience.iop.org/article/10.3847/2041-8213/aea0cd",
       "kind": "letter",
-      "topic": "compact",
+      "topic": "cosmology",
       "has_summary": false
     },
     {
