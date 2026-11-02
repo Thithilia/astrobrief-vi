@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T08:05:41Z",
+  "generated_at": "2026-11-02T09:00:51Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-11-02T08:05:04Z",
-      "last_attempt": "2026-11-02T08:05:04Z",
+      "last_success": "2026-11-02T09:00:11Z",
+      "last_attempt": "2026-11-02T09:00:11Z",
       "error": null
     },
     {
@@ -18,8 +18,8 @@
       "short": "ApJ",
       "url": "https://journals.aas.org/astrophysical-journal/",
       "status": "ok",
-      "last_success": "2026-11-02T08:05:04Z",
-      "last_attempt": "2026-11-02T08:05:04Z",
+      "last_success": "2026-11-02T09:00:11Z",
+      "last_attempt": "2026-11-02T09:00:11Z",
       "error": null
     },
     {
@@ -28,8 +28,8 @@
       "short": "ApJL",
       "url": "https://journals.aas.org/astrophysical-journal-letters/",
       "status": "ok",
-      "last_success": "2026-11-02T08:05:04Z",
-      "last_attempt": "2026-11-02T08:05:04Z",
+      "last_success": "2026-11-02T09:00:11Z",
+      "last_attempt": "2026-11-02T09:00:11Z",
       "error": null
     },
     {
@@ -38,8 +38,8 @@
       "short": "ApJS",
       "url": "https://journals.aas.org/astrophysical-supplement-series/",
       "status": "ok",
-      "last_success": "2026-11-02T08:05:04Z",
-      "last_attempt": "2026-11-02T08:05:04Z",
+      "last_success": "2026-11-02T09:00:11Z",
+      "last_attempt": "2026-11-02T09:00:11Z",
       "error": null
     },
     {
@@ -48,8 +48,8 @@
       "short": "AJ",
       "url": "https://journals.aas.org/astronomical-journal/",
       "status": "ok",
-      "last_success": "2026-11-02T08:05:04Z",
-      "last_attempt": "2026-11-02T08:05:04Z",
+      "last_success": "2026-11-02T09:00:11Z",
+      "last_attempt": "2026-11-02T09:00:11Z",
       "error": null
     },
     {
@@ -58,12 +58,40 @@
       "short": "MNRAS",
       "url": "https://academic.oup.com/mnras",
       "status": "ok",
-      "last_success": "2026-11-02T08:05:04Z",
-      "last_attempt": "2026-11-02T08:05:04Z",
+      "last_success": "2026-11-02T09:00:11Z",
+      "last_attempt": "2026-11-02T09:00:11Z",
       "error": null
     }
   ],
   "papers": [
+    {
+      "id": "0a8396130d495826",
+      "doi": "10.3847/1538-4365/aeae25",
+      "title": "Black Hole Astrometric Binaries in the Roman Galactic Bulge Time Domain Survey",
+      "journal": "apjs",
+      "authors": [
+        "Casey Y. Lam",
+        "Jessica R. Lu",
+        "Kareem El-Badry",
+        "Anil Seth",
+        "Joshua D. Simon",
+        "Natasha S. Abrams",
+        "Andrea Bellini",
+        "Matthew W. Hosek",
+        "Peter McGill"
+      ],
+      "published_online": "2026-11-02T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": "2026-11-01",
+      "first_seen": "2026-11-02T09:00:11Z",
+      "volume": "287",
+      "issue": "1",
+      "article_number": "30",
+      "source_url": "https://iopscience.iop.org/article/10.3847/1538-4365/aeae25",
+      "kind": "research",
+      "topic": "compact",
+      "has_summary": false
+    },
     {
       "id": "9e5564b43951cfdf",
       "doi": "10.3847/1538-4357/aea292",
@@ -75,7 +103,7 @@
         "A-Li Luo",
         "Bo Qiu"
       ],
-      "published_online": "2026-11-02",
+      "published_online": "2026-11-02T00:00:00Z",
       "online_date_precision": "day",
       "issue_date": "2026-11-10",
       "first_seen": "2026-11-02T08:00:06Z",
@@ -95,7 +123,7 @@
       "authors": [
         "Vaibhav Tiwari"
       ],
-      "published_online": "2026-11-02",
+      "published_online": "2026-11-02T00:00:00Z",
       "online_date_precision": "day",
       "issue_date": "2026-11-10",
       "first_seen": "2026-11-02T08:00:06Z",
@@ -116,7 +144,7 @@
         "Songyan Dai",
         "Renyue Cen"
       ],
-      "published_online": "2026-11-02",
+      "published_online": "2026-11-02T00:00:00Z",
       "online_date_precision": "day",
       "issue_date": "2026-11-10",
       "first_seen": "2026-11-02T08:00:06Z",
@@ -158,7 +186,7 @@
         "Przemek Mróz",
         "Andong 安东 Xu 徐"
       ],
-      "published_online": "2026-11-02",
+      "published_online": "2026-11-02T00:00:00Z",
       "online_date_precision": "day",
       "issue_date": "2026-11-10",
       "first_seen": "2026-11-02T08:00:06Z",
@@ -181,7 +209,7 @@
         "Henggeng Han",
         "Wenyuan Cui"
       ],
-      "published_online": "2026-11-02",
+      "published_online": "2026-11-02T00:00:00Z",
       "online_date_precision": "day",
       "issue_date": "2026-11-10",
       "first_seen": "2026-11-02T08:00:06Z",
@@ -204,7 +232,7 @@
         "Aaron Zimmerman",
         "Snehal Tibrewal"
       ],
-      "published_online": "2026-11-02",
+      "published_online": "2026-11-02T00:00:00Z",
       "online_date_precision": "day",
       "issue_date": "2026-11-10",
       "first_seen": "2026-11-02T08:00:06Z",
@@ -275,7 +303,7 @@
         "Chris Willott",
         "Adi Zitrin"
       ],
-      "published_online": "2026-11-02",
+      "published_online": "2026-11-02T00:00:00Z",
       "online_date_precision": "day",
       "issue_date": "2026-11-10",
       "first_seen": "2026-11-02T08:00:06Z",
@@ -298,7 +326,7 @@
         "Ying Zhang",
         "Hong Shen"
       ],
-      "published_online": "2026-11-02",
+      "published_online": "2026-11-02T00:00:00Z",
       "online_date_precision": "day",
       "issue_date": "2026-11-10",
       "first_seen": "2026-11-02T08:00:06Z",
@@ -324,7 +352,7 @@
         "Mikhail Yu. Kovalev",
         "Ergang Zhao"
       ],
-      "published_online": "2026-11-02",
+      "published_online": "2026-11-02T00:00:00Z",
       "online_date_precision": "day",
       "issue_date": "2026-11-10",
       "first_seen": "2026-11-02T08:00:06Z",
@@ -347,7 +375,7 @@
         "Janet N.Y. Chang",
         "Tsang Keung Chan"
       ],
-      "published_online": "2026-11-02",
+      "published_online": "2026-11-02T00:00:00Z",
       "online_date_precision": "day",
       "issue_date": "2026-11-10",
       "first_seen": "2026-11-02T08:00:06Z",
@@ -374,7 +402,7 @@
         "Doyeon A. Kim",
         "Arianna S. Long"
       ],
-      "published_online": "2026-11-02",
+      "published_online": "2026-11-02T00:00:00Z",
       "online_date_precision": "day",
       "issue_date": "2026-11-10",
       "first_seen": "2026-11-02T08:00:06Z",
@@ -402,7 +430,7 @@
         "Tomomi Shimoikura",
         "Jonathan C. Tan"
       ],
-      "published_online": "2026-11-02",
+      "published_online": "2026-11-02T00:00:00Z",
       "online_date_precision": "day",
       "issue_date": "2026-11-10",
       "first_seen": "2026-11-02T08:00:06Z",
@@ -424,7 +452,7 @@
         "Hao-Bin Liu",
         "Wei-Min Gu"
       ],
-      "published_online": "2026-11-02",
+      "published_online": "2026-11-02T00:00:00Z",
       "online_date_precision": "day",
       "issue_date": "2026-11-10",
       "first_seen": "2026-11-02T08:00:06Z",
@@ -449,7 +477,7 @@
         "Kenji Furuya",
         "Naoki Watanabe"
       ],
-      "published_online": "2026-11-02",
+      "published_online": "2026-11-02T00:00:00Z",
       "online_date_precision": "day",
       "issue_date": "2026-11-10",
       "first_seen": "2026-11-02T08:00:06Z",
@@ -478,7 +506,7 @@
         "Chervin F. P. Laporte",
         "The EXP Collaboration"
       ],
-      "published_online": "2026-11-02",
+      "published_online": "2026-11-02T00:00:00Z",
       "online_date_precision": "day",
       "issue_date": "2026-11-10",
       "first_seen": "2026-11-02T08:00:06Z",
@@ -503,7 +531,7 @@
         "Lan Zhang",
         "Gang Zhao"
       ],
-      "published_online": "2026-11-02",
+      "published_online": "2026-11-02T00:00:00Z",
       "online_date_precision": "day",
       "issue_date": "2026-11-10",
       "first_seen": "2026-11-02T08:00:06Z",
@@ -531,7 +559,7 @@
         "Ji Yao",
         "Ming Li"
       ],
-      "published_online": "2026-11-02",
+      "published_online": "2026-11-02T00:00:00Z",
       "online_date_precision": "day",
       "issue_date": "2026-11-10",
       "first_seen": "2026-11-02T08:00:06Z",
@@ -556,7 +584,7 @@
         "Kareem El-Badry",
         "Pranav Nagarajan"
       ],
-      "published_online": "2026-11-02",
+      "published_online": "2026-11-02T00:00:00Z",
       "online_date_precision": "day",
       "issue_date": "2026-11-10",
       "first_seen": "2026-11-02T08:00:06Z",
