@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T13:05:11Z",
+  "generated_at": "2026-11-02T14:00:28Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-11-02T13:04:52Z",
-      "last_attempt": "2026-11-02T13:04:52Z",
+      "last_success": "2026-11-02T14:00:05Z",
+      "last_attempt": "2026-11-02T14:00:05Z",
       "error": null
     },
     {
@@ -18,8 +18,8 @@
       "short": "ApJ",
       "url": "https://journals.aas.org/astrophysical-journal/",
       "status": "ok",
-      "last_success": "2026-11-02T13:04:52Z",
-      "last_attempt": "2026-11-02T13:04:52Z",
+      "last_success": "2026-11-02T14:00:05Z",
+      "last_attempt": "2026-11-02T14:00:05Z",
       "error": null
     },
     {
@@ -28,8 +28,8 @@
       "short": "ApJL",
       "url": "https://journals.aas.org/astrophysical-journal-letters/",
       "status": "ok",
-      "last_success": "2026-11-02T13:04:52Z",
-      "last_attempt": "2026-11-02T13:04:52Z",
+      "last_success": "2026-11-02T14:00:05Z",
+      "last_attempt": "2026-11-02T14:00:05Z",
       "error": null
     },
     {
@@ -38,8 +38,8 @@
       "short": "ApJS",
       "url": "https://journals.aas.org/astrophysical-supplement-series/",
       "status": "ok",
-      "last_success": "2026-11-02T13:04:52Z",
-      "last_attempt": "2026-11-02T13:04:52Z",
+      "last_success": "2026-11-02T14:00:05Z",
+      "last_attempt": "2026-11-02T14:00:05Z",
       "error": null
     },
     {
@@ -48,8 +48,8 @@
       "short": "AJ",
       "url": "https://journals.aas.org/astronomical-journal/",
       "status": "ok",
-      "last_success": "2026-11-02T13:04:52Z",
-      "last_attempt": "2026-11-02T13:04:52Z",
+      "last_success": "2026-11-02T14:00:05Z",
+      "last_attempt": "2026-11-02T14:00:05Z",
       "error": null
     },
     {
@@ -58,12 +58,132 @@
       "short": "MNRAS",
       "url": "https://academic.oup.com/mnras",
       "status": "ok",
-      "last_success": "2026-11-02T13:04:52Z",
-      "last_attempt": "2026-11-02T13:04:52Z",
+      "last_success": "2026-11-02T14:00:05Z",
+      "last_attempt": "2026-11-02T14:00:05Z",
       "error": null
     }
   ],
   "papers": [
+    {
+      "id": "0ff2a53c0dd4e9a4",
+      "doi": "10.1051/0004-6361/202659113",
+      "title": "Galaxy clusters in the VIDEO fields: Detection and characterisation in the context of MOONRISE",
+      "journal": "aa",
+      "authors": [
+        "P. Galois",
+        "C. Benoist",
+        "G. Castignani",
+        "M. Maturi",
+        "S. Maurogordato",
+        "et al."
+      ],
+      "published_online": "2026-11-03",
+      "online_date_precision": "day",
+      "issue_date": null,
+      "first_seen": "2026-11-02T14:00:05Z",
+      "volume": null,
+      "issue": null,
+      "article_number": null,
+      "source_url": "https://www.aanda.org/10.1051/0004-6361/202659113",
+      "kind": "research",
+      "topic": "cosmology",
+      "has_summary": false
+    },
+    {
+      "id": "a6c494146dbe8df5",
+      "doi": "10.1051/0004-6361/202661529",
+      "title": "Torque lags from magnetic unlocking in neutron stars and gravitational-wave smearing",
+      "journal": "aa",
+      "authors": [
+        "Arthur G. Suvorov",
+        "Armen Sedrakian"
+      ],
+      "published_online": "2026-11-03",
+      "online_date_precision": "day",
+      "issue_date": null,
+      "first_seen": "2026-11-02T14:00:05Z",
+      "volume": null,
+      "issue": null,
+      "article_number": null,
+      "source_url": "https://www.aanda.org/10.1051/0004-6361/202661529",
+      "kind": "research",
+      "topic": "compact",
+      "has_summary": false
+    },
+    {
+      "id": "cf7fa01b88f7c0dd",
+      "doi": "10.1051/0004-6361/202661923",
+      "title": "LACHESIS: Robust stellar parameters through Bayesian model averaging of isochrone grids",
+      "journal": "aa",
+      "authors": [
+        "José I. Vines",
+        "Austin T. Ware"
+      ],
+      "published_online": "2026-11-03",
+      "online_date_precision": "day",
+      "issue_date": null,
+      "first_seen": "2026-11-02T14:00:05Z",
+      "volume": null,
+      "issue": null,
+      "article_number": null,
+      "source_url": "https://www.aanda.org/10.1051/0004-6361/202661923",
+      "kind": "research",
+      "topic": "planets",
+      "has_summary": false
+    },
+    {
+      "id": "9da560bf2fe81c64",
+      "doi": "10.1051/0004-6361/202661941",
+      "title": "Dark matter density profiles of the Milky Way satellite population: Reconciling simulations and observations",
+      "journal": "aa",
+      "authors": [
+        "J. Sarrato-Alós",
+        "J. M. Arroyo-Polonio"
+      ],
+      "published_online": "2026-11-03",
+      "online_date_precision": "day",
+      "issue_date": null,
+      "first_seen": "2026-11-02T14:00:05Z",
+      "volume": null,
+      "issue": null,
+      "article_number": null,
+      "source_url": "https://www.aanda.org/10.1051/0004-6361/202661941",
+      "kind": "research",
+      "topic": "cosmology",
+      "has_summary": false
+    },
+    {
+      "id": "d136ddb3a8d749a6",
+      "doi": "10.1051/0004-6361/202662819",
+      "title": "Inside the cocoon: A comprehensive explanation of the spectra of little red dots",
+      "journal": "aa",
+      "authors": [
+        "A. Sneppen",
+        "D. Watson",
+        "J. H. Matthews",
+        "G. Nikopoulos",
+        "N. Allen",
+        "G. Brammer",
+        "R. Damgaard",
+        "K. E. Heintz",
+        "C. Knigge",
+        "K. S. Long",
+        "V. Rusakov",
+        "S. A. Sim",
+        "J. Witstok"
+      ],
+      "published_online": "2026-11-03",
+      "online_date_precision": "day",
+      "issue_date": null,
+      "first_seen": "2026-11-02T14:00:05Z",
+      "volume": null,
+      "issue": null,
+      "article_number": null,
+      "source_url": "https://www.aanda.org/10.1051/0004-6361/202662819",
+      "kind": "research",
+      "topic": "compact",
+      "has_summary": false
+    },
     {
       "id": "868f6eb8ce832f77",
       "doi": "10.1051/0004-6361/202558818",
@@ -1908,7 +2028,7 @@
     {
       "id": "979ddb4e4c7635f6",
       "doi": "10.3847/1538-3881/aeb098",
-      "title": "An Updated Model for ϵ Eridani b and Prospects for Imaging with the Roman Coronagraph",
+      "title": "An Updated Model for Eridani b and Prospects for Imaging with the Roman Coronagraph",
       "journal": "aj",
       "authors": [
         "Jorge Llop-Sayson",
