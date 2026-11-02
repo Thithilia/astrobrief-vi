@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T14:05:29Z",
+  "generated_at": "2026-11-02T16:23:18Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-11-02T14:05:04Z",
-      "last_attempt": "2026-11-02T14:05:04Z",
+      "last_success": "2026-11-02T16:22:53Z",
+      "last_attempt": "2026-11-02T16:22:53Z",
       "error": null
     },
     {
@@ -18,8 +18,8 @@
       "short": "ApJ",
       "url": "https://journals.aas.org/astrophysical-journal/",
       "status": "ok",
-      "last_success": "2026-11-02T14:05:04Z",
-      "last_attempt": "2026-11-02T14:05:04Z",
+      "last_success": "2026-11-02T16:22:53Z",
+      "last_attempt": "2026-11-02T16:22:53Z",
       "error": null
     },
     {
@@ -28,8 +28,8 @@
       "short": "ApJL",
       "url": "https://journals.aas.org/astrophysical-journal-letters/",
       "status": "ok",
-      "last_success": "2026-11-02T14:05:04Z",
-      "last_attempt": "2026-11-02T14:05:04Z",
+      "last_success": "2026-11-02T16:22:53Z",
+      "last_attempt": "2026-11-02T16:22:53Z",
       "error": null
     },
     {
@@ -38,8 +38,8 @@
       "short": "ApJS",
       "url": "https://journals.aas.org/astrophysical-supplement-series/",
       "status": "ok",
-      "last_success": "2026-11-02T14:05:04Z",
-      "last_attempt": "2026-11-02T14:05:04Z",
+      "last_success": "2026-11-02T16:22:53Z",
+      "last_attempt": "2026-11-02T16:22:53Z",
       "error": null
     },
     {
@@ -48,8 +48,8 @@
       "short": "AJ",
       "url": "https://journals.aas.org/astronomical-journal/",
       "status": "ok",
-      "last_success": "2026-11-02T14:05:04Z",
-      "last_attempt": "2026-11-02T14:05:04Z",
+      "last_success": "2026-11-02T16:22:53Z",
+      "last_attempt": "2026-11-02T16:22:53Z",
       "error": null
     },
     {
@@ -58,12 +58,106 @@
       "short": "MNRAS",
       "url": "https://academic.oup.com/mnras",
       "status": "ok",
-      "last_success": "2026-11-02T14:05:04Z",
-      "last_attempt": "2026-11-02T14:05:04Z",
+      "last_success": "2026-11-02T16:22:53Z",
+      "last_attempt": "2026-11-02T16:22:53Z",
       "error": null
     }
   ],
   "papers": [
+    {
+      "id": "49a2ca3ec968a83d",
+      "doi": "10.3847/1538-4357/ae93a6",
+      "title": "GLOW. II. A Census of Oxygen in Low-mass Galaxies*",
+      "journal": "apj",
+      "authors": [
+        "Kristen B. W. McQuinn",
+        "O. Grace Telford",
+        "Andrey V. Kravtsov",
+        "Joseph Burchett",
+        "Roger Cohen",
+        "Laura Hunter",
+        "Evan D. Skillman",
+        "Julia Roman-Duval",
+        "Danielle A. Berg",
+        "John M. Cannon",
+        "John Chisholm",
+        "Julianne J. Dalcanton",
+        "Andrew E. Dolphin",
+        "Liese van Zee",
+        "Benjamin Williams"
+      ],
+      "published_online": "2026-11-02T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": "2026-11-10",
+      "first_seen": "2026-11-02T16:22:53Z",
+      "volume": "1011",
+      "issue": "2",
+      "article_number": "158",
+      "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/ae93a6",
+      "kind": "research",
+      "topic": "galaxies",
+      "has_summary": false
+    },
+    {
+      "id": "dc2808e001a78059",
+      "doi": "10.3847/1538-4357/ae93a9",
+      "title": "Radial Stellar Age Gradients in 42 Local Volume Dwarf Galaxies",
+      "journal": "apj",
+      "authors": [
+        "Roger E. Cohen",
+        "Kristen B. W. McQuinn",
+        "O. Grace Telford",
+        "Liese van Zee",
+        "Laura Congreve Hunter",
+        "Andrew E. Dolphin",
+        "Suchindram Dasgupta"
+      ],
+      "published_online": "2026-11-02T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": "2026-11-10",
+      "first_seen": "2026-11-02T16:22:53Z",
+      "volume": "1011",
+      "issue": "2",
+      "article_number": "157",
+      "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/ae93a9",
+      "kind": "research",
+      "topic": "cosmology",
+      "has_summary": false
+    },
+    {
+      "id": "949361290343f565",
+      "doi": "10.3847/1538-4365/ae93a8",
+      "title": "GLOW. I. Comprehensive Measurements of Gas-rich, Star-forming, Low-mass Galaxies in the Nearby Universe*",
+      "journal": "apjs",
+      "authors": [
+        "Kristen B. W. McQuinn",
+        "O. Grace Telford",
+        "Roger Cohen",
+        "Liese van Zee",
+        "Laura C. Hunter",
+        "Madison Smith",
+        "Evan D. Skillman",
+        "Benjamin Williams",
+        "John M. Cannon",
+        "Joseph Burchett",
+        "Danielle A. Berg",
+        "Julianne J. Dalcanton",
+        "Andrew E. Dolphin",
+        "Suchindram Dasgupta",
+        "Avery Kiihne"
+      ],
+      "published_online": "2026-11-02T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": "2026-11-01",
+      "first_seen": "2026-11-02T16:22:53Z",
+      "volume": "287",
+      "issue": "1",
+      "article_number": "29",
+      "source_url": "https://iopscience.iop.org/article/10.3847/1538-4365/ae93a8",
+      "kind": "research",
+      "topic": "galaxies",
+      "has_summary": false
+    },
     {
       "id": "0ff2a53c0dd4e9a4",
       "doi": "10.1051/0004-6361/202659113",
@@ -2028,7 +2122,7 @@
     {
       "id": "979ddb4e4c7635f6",
       "doi": "10.3847/1538-3881/aeb098",
-      "title": "An Updated Model for Eridani b and Prospects for Imaging with the Roman Coronagraph",
+      "title": "An Updated Model for ϵ Eridani b and Prospects for Imaging with the Roman Coronagraph",
       "journal": "aj",
       "authors": [
         "Jorge Llop-Sayson",
