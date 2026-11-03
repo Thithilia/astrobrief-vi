@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T06:27:21Z",
+  "generated_at": "2026-11-03T07:00:35Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-11-03T06:26:44Z",
-      "last_attempt": "2026-11-03T06:26:44Z",
+      "last_success": "2026-11-03T07:00:03Z",
+      "last_attempt": "2026-11-03T07:00:03Z",
       "error": null
     },
     {
@@ -18,8 +18,8 @@
       "short": "ApJ",
       "url": "https://journals.aas.org/astrophysical-journal/",
       "status": "ok",
-      "last_success": "2026-11-03T06:26:44Z",
-      "last_attempt": "2026-11-03T06:26:44Z",
+      "last_success": "2026-11-03T07:00:03Z",
+      "last_attempt": "2026-11-03T07:00:03Z",
       "error": null
     },
     {
@@ -28,8 +28,8 @@
       "short": "ApJL",
       "url": "https://journals.aas.org/astrophysical-journal-letters/",
       "status": "ok",
-      "last_success": "2026-11-03T06:26:44Z",
-      "last_attempt": "2026-11-03T06:26:44Z",
+      "last_success": "2026-11-03T07:00:03Z",
+      "last_attempt": "2026-11-03T07:00:03Z",
       "error": null
     },
     {
@@ -38,8 +38,8 @@
       "short": "ApJS",
       "url": "https://journals.aas.org/astrophysical-supplement-series/",
       "status": "ok",
-      "last_success": "2026-11-03T06:26:44Z",
-      "last_attempt": "2026-11-03T06:26:44Z",
+      "last_success": "2026-11-03T07:00:03Z",
+      "last_attempt": "2026-11-03T07:00:03Z",
       "error": null
     },
     {
@@ -48,8 +48,8 @@
       "short": "AJ",
       "url": "https://journals.aas.org/astronomical-journal/",
       "status": "ok",
-      "last_success": "2026-11-03T06:26:44Z",
-      "last_attempt": "2026-11-03T06:26:44Z",
+      "last_success": "2026-11-03T07:00:03Z",
+      "last_attempt": "2026-11-03T07:00:03Z",
       "error": null
     },
     {
@@ -58,12 +58,61 @@
       "short": "MNRAS",
       "url": "https://academic.oup.com/mnras",
       "status": "ok",
-      "last_success": "2026-11-03T06:26:44Z",
-      "last_attempt": "2026-11-03T06:26:44Z",
+      "last_success": "2026-11-03T07:00:03Z",
+      "last_attempt": "2026-11-03T07:00:03Z",
       "error": null
     }
   ],
   "papers": [
+    {
+      "id": "6a432f015281732e",
+      "doi": "10.3847/1538-4365/aeac28",
+      "title": "Catalog of Solar Radio Bursts Detected by the LOFAR LV614 Station at the Irbene Observatory during Solar Cycle 25",
+      "journal": "apjs",
+      "authors": [
+        "Jānis Šteinbergs",
+        "Dmitrii Kolotkov",
+        "Valery M. Nakariakov",
+        "Vladislavs Bezrukovs",
+        "Pietro Zucca",
+        "Jānis Kaminskis"
+      ],
+      "published_online": "2026-11-03",
+      "online_date_precision": "day",
+      "issue_date": "2026-11-01",
+      "first_seen": "2026-11-03T07:00:03Z",
+      "volume": "287",
+      "issue": "1",
+      "article_number": "32",
+      "source_url": "https://iopscience.iop.org/article/10.3847/1538-4365/aeac28",
+      "kind": "research",
+      "topic": "other",
+      "has_summary": false
+    },
+    {
+      "id": "1c952d904412830f",
+      "doi": "10.3847/1538-4365/aead92",
+      "title": "Trigonometric Parallaxes of Maser Sources toward the Far Side of the Milky Way",
+      "journal": "apjs",
+      "authors": [
+        "Z. H. Lin",
+        "Y. Xu",
+        "M. Reid",
+        "J. J. Li",
+        "S. B. Bian"
+      ],
+      "published_online": "2026-11-03",
+      "online_date_precision": "day",
+      "issue_date": "2026-11-01",
+      "first_seen": "2026-11-03T07:00:03Z",
+      "volume": "287",
+      "issue": "1",
+      "article_number": "31",
+      "source_url": "https://iopscience.iop.org/article/10.3847/1538-4365/aead92",
+      "kind": "research",
+      "topic": "galaxies",
+      "has_summary": false
+    },
     {
       "id": "fffe07074b9fbc08",
       "doi": "10.1051/0004-6361/202659514",
