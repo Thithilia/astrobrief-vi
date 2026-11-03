@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T12:05:46Z",
+  "generated_at": "2026-11-03T13:01:08Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-11-03T12:05:05Z",
-      "last_attempt": "2026-11-03T12:05:05Z",
+      "last_success": "2026-11-03T13:00:04Z",
+      "last_attempt": "2026-11-03T13:00:04Z",
       "error": null
     },
     {
@@ -18,8 +18,8 @@
       "short": "ApJ",
       "url": "https://journals.aas.org/astrophysical-journal/",
       "status": "ok",
-      "last_success": "2026-11-03T12:05:05Z",
-      "last_attempt": "2026-11-03T12:05:05Z",
+      "last_success": "2026-11-03T13:00:04Z",
+      "last_attempt": "2026-11-03T13:00:04Z",
       "error": null
     },
     {
@@ -28,8 +28,8 @@
       "short": "ApJL",
       "url": "https://journals.aas.org/astrophysical-journal-letters/",
       "status": "ok",
-      "last_success": "2026-11-03T12:05:05Z",
-      "last_attempt": "2026-11-03T12:05:05Z",
+      "last_success": "2026-11-03T13:00:04Z",
+      "last_attempt": "2026-11-03T13:00:04Z",
       "error": null
     },
     {
@@ -38,8 +38,8 @@
       "short": "ApJS",
       "url": "https://journals.aas.org/astrophysical-supplement-series/",
       "status": "ok",
-      "last_success": "2026-11-03T12:05:05Z",
-      "last_attempt": "2026-11-03T12:05:05Z",
+      "last_success": "2026-11-03T13:00:04Z",
+      "last_attempt": "2026-11-03T13:00:04Z",
       "error": null
     },
     {
@@ -48,8 +48,8 @@
       "short": "AJ",
       "url": "https://journals.aas.org/astronomical-journal/",
       "status": "ok",
-      "last_success": "2026-11-03T12:05:05Z",
-      "last_attempt": "2026-11-03T12:05:05Z",
+      "last_success": "2026-11-03T13:00:04Z",
+      "last_attempt": "2026-11-03T13:00:04Z",
       "error": null
     },
     {
@@ -58,12 +58,38 @@
       "short": "MNRAS",
       "url": "https://academic.oup.com/mnras",
       "status": "ok",
-      "last_success": "2026-11-03T12:05:05Z",
-      "last_attempt": "2026-11-03T12:05:05Z",
+      "last_success": "2026-11-03T13:00:04Z",
+      "last_attempt": "2026-11-03T13:00:04Z",
       "error": null
     }
   ],
   "papers": [
+    {
+      "id": "1e26e51b1edf6953",
+      "doi": "10.3847/2041-8213/aeb26b",
+      "title": "Redshifted Cool Gas in the Disturbed H i Disk of the Starburst Dwarf NGC 4214",
+      "journal": "apjl",
+      "authors": [
+        "Shulan 淑澜 Yan 鄢",
+        "Taotao 陶陶 Fang 方",
+        "Xiaochuan 小川 Jiang 姜",
+        "Junfeng 俊峰 Wang 王",
+        "Qingzheng 清正 Yu 余",
+        "Chuanpeng 传朋 Zhang 张",
+        "Ming 明 Zhu 朱"
+      ],
+      "published_online": "2026-11-03T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": "2026-11-10",
+      "first_seen": "2026-11-03T13:00:04Z",
+      "volume": "1011",
+      "issue": "2",
+      "article_number": "L43",
+      "source_url": "https://iopscience.iop.org/article/10.3847/2041-8213/aeb26b",
+      "kind": "letter",
+      "topic": "galaxies",
+      "has_summary": false
+    },
     {
       "id": "3afa4f2c826a2fc2",
       "doi": "10.3847/1538-3881/adb1b1",
@@ -174,7 +200,7 @@
         "Stanislav Boldyrev",
         "Vadim Roytershteyn"
       ],
-      "published_online": "2026-11-03",
+      "published_online": "2026-11-03T00:00:00Z",
       "online_date_precision": "day",
       "issue_date": "2026-11-10",
       "first_seen": "2026-11-03T11:38:32Z",
@@ -4388,7 +4414,7 @@
     {
       "id": "979ddb4e4c7635f6",
       "doi": "10.3847/1538-3881/aeb098",
-      "title": "An Updated Model for ϵ Eridani b and Prospects for Imaging with the Roman Coronagraph",
+      "title": "An Updated Model for Eridani b and Prospects for Imaging with the Roman Coronagraph",
       "journal": "aj",
       "authors": [
         "Jorge Llop-Sayson",
