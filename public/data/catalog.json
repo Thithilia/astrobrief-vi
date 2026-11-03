@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T14:02:06Z",
+  "generated_at": "2026-11-03T14:05:30Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-11-03T14:00:04Z",
-      "last_attempt": "2026-11-03T14:00:04Z",
+      "last_success": "2026-11-03T14:05:04Z",
+      "last_attempt": "2026-11-03T14:05:04Z",
       "error": null
     },
     {
@@ -18,8 +18,8 @@
       "short": "ApJ",
       "url": "https://journals.aas.org/astrophysical-journal/",
       "status": "ok",
-      "last_success": "2026-11-03T14:00:04Z",
-      "last_attempt": "2026-11-03T14:00:04Z",
+      "last_success": "2026-11-03T14:05:04Z",
+      "last_attempt": "2026-11-03T14:05:04Z",
       "error": null
     },
     {
@@ -28,8 +28,8 @@
       "short": "ApJL",
       "url": "https://journals.aas.org/astrophysical-journal-letters/",
       "status": "ok",
-      "last_success": "2026-11-03T14:00:04Z",
-      "last_attempt": "2026-11-03T14:00:04Z",
+      "last_success": "2026-11-03T14:05:04Z",
+      "last_attempt": "2026-11-03T14:05:04Z",
       "error": null
     },
     {
@@ -37,10 +37,10 @@
       "name": "The Astrophysical Journal Supplement Series",
       "short": "ApJS",
       "url": "https://journals.aas.org/astrophysical-supplement-series/",
-      "status": "partial",
-      "last_success": "2026-11-03T14:00:04Z",
-      "last_attempt": "2026-11-03T14:00:04Z",
-      "error": "RSS: Network error: ReadTimeout"
+      "status": "ok",
+      "last_success": "2026-11-03T14:05:04Z",
+      "last_attempt": "2026-11-03T14:05:04Z",
+      "error": null
     },
     {
       "id": "aj",
@@ -48,8 +48,8 @@
       "short": "AJ",
       "url": "https://journals.aas.org/astronomical-journal/",
       "status": "partial",
-      "last_success": "2026-11-03T14:00:04Z",
-      "last_attempt": "2026-11-03T14:00:04Z",
+      "last_success": "2026-11-03T14:05:04Z",
+      "last_attempt": "2026-11-03T14:05:04Z",
       "error": "RSS: Feed is not valid XML (publisher may be blocking access)"
     },
     {
@@ -58,8 +58,8 @@
       "short": "MNRAS",
       "url": "https://academic.oup.com/mnras",
       "status": "ok",
-      "last_success": "2026-11-03T14:00:04Z",
-      "last_attempt": "2026-11-03T14:00:04Z",
+      "last_success": "2026-11-03T14:05:04Z",
+      "last_attempt": "2026-11-03T14:05:04Z",
       "error": null
     }
   ],
