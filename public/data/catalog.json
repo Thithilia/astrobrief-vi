@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T07:05:24Z",
+  "generated_at": "2026-11-03T08:00:45Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-11-03T07:05:03Z",
-      "last_attempt": "2026-11-03T07:05:03Z",
+      "last_success": "2026-11-03T08:00:04Z",
+      "last_attempt": "2026-11-03T08:00:04Z",
       "error": null
     },
     {
@@ -18,8 +18,8 @@
       "short": "ApJ",
       "url": "https://journals.aas.org/astrophysical-journal/",
       "status": "ok",
-      "last_success": "2026-11-03T07:05:03Z",
-      "last_attempt": "2026-11-03T07:05:03Z",
+      "last_success": "2026-11-03T08:00:04Z",
+      "last_attempt": "2026-11-03T08:00:04Z",
       "error": null
     },
     {
@@ -28,8 +28,8 @@
       "short": "ApJL",
       "url": "https://journals.aas.org/astrophysical-journal-letters/",
       "status": "ok",
-      "last_success": "2026-11-03T07:05:03Z",
-      "last_attempt": "2026-11-03T07:05:03Z",
+      "last_success": "2026-11-03T08:00:04Z",
+      "last_attempt": "2026-11-03T08:00:04Z",
       "error": null
     },
     {
@@ -38,8 +38,8 @@
       "short": "ApJS",
       "url": "https://journals.aas.org/astrophysical-supplement-series/",
       "status": "ok",
-      "last_success": "2026-11-03T07:05:03Z",
-      "last_attempt": "2026-11-03T07:05:03Z",
+      "last_success": "2026-11-03T08:00:04Z",
+      "last_attempt": "2026-11-03T08:00:04Z",
       "error": null
     },
     {
@@ -48,8 +48,8 @@
       "short": "AJ",
       "url": "https://journals.aas.org/astronomical-journal/",
       "status": "ok",
-      "last_success": "2026-11-03T07:05:03Z",
-      "last_attempt": "2026-11-03T07:05:03Z",
+      "last_success": "2026-11-03T08:00:04Z",
+      "last_attempt": "2026-11-03T08:00:04Z",
       "error": null
     },
     {
@@ -58,12 +58,57 @@
       "short": "MNRAS",
       "url": "https://academic.oup.com/mnras",
       "status": "ok",
-      "last_success": "2026-11-03T07:05:03Z",
-      "last_attempt": "2026-11-03T07:05:03Z",
+      "last_success": "2026-11-03T08:00:04Z",
+      "last_attempt": "2026-11-03T08:00:04Z",
       "error": null
     }
   ],
   "papers": [
+    {
+      "id": "2c7fee229797fc0b",
+      "doi": "10.3847/1538-4357/ae9a7a",
+      "title": "First Measurement of the Hubble Constant from Gravitational Wave–Galaxy Cross Correlations",
+      "journal": "apj",
+      "authors": [
+        "Isabela Santiago de Matos",
+        "Charles Dalang",
+        "Tessa Baker",
+        "Raul Abramo",
+        "João Ferri",
+        "Miguel Quartin"
+      ],
+      "published_online": "2026-11-02",
+      "online_date_precision": "day",
+      "issue_date": "2026-11-10",
+      "first_seen": "2026-11-03T08:00:04Z",
+      "volume": "1011",
+      "issue": "2",
+      "article_number": "175",
+      "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/ae9a7a",
+      "kind": "research",
+      "topic": "cosmology",
+      "has_summary": false
+    },
+    {
+      "id": "bde50dee60c70d53",
+      "doi": "10.3847/2041-8213/aeaae4",
+      "title": "Multiepoch Stability in the Rotational Modulation of the Planetary-mass Companion Ross 458C",
+      "journal": "apjl",
+      "authors": [
+        "Elena Manjavacas, Jared Bull, Paulo Miles-Paéz, Natalia Oliveros- Gomez, Theodora Karalidi, Ben W. P. Lew, Zhoujian Zhang, Yifan Zhou, Daniel Apai and Xianyu Tan"
+      ],
+      "published_online": "2026-11-02T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": null,
+      "first_seen": "2026-11-03T08:00:04Z",
+      "volume": "1011",
+      "issue": "2",
+      "article_number": "L37",
+      "source_url": "https://iopscience.iop.org/article/10.3847/2041-8213/aeaae4",
+      "kind": "letter",
+      "topic": "planets",
+      "has_summary": false
+    },
     {
       "id": "6a432f015281732e",
       "doi": "10.3847/1538-4365/aeac28",
@@ -77,7 +122,7 @@
         "Pietro Zucca",
         "Jānis Kaminskis"
       ],
-      "published_online": "2026-11-03",
+      "published_online": "2026-11-03T00:00:00Z",
       "online_date_precision": "day",
       "issue_date": "2026-11-01",
       "first_seen": "2026-11-03T07:00:03Z",
@@ -86,7 +131,7 @@
       "article_number": "32",
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-4365/aeac28",
       "kind": "research",
-      "topic": "other",
+      "topic": "solar",
       "has_summary": false
     },
     {
@@ -101,7 +146,7 @@
         "J. J. Li",
         "S. B. Bian"
       ],
-      "published_online": "2026-11-03",
+      "published_online": "2026-11-03T00:00:00Z",
       "online_date_precision": "day",
       "issue_date": "2026-11-01",
       "first_seen": "2026-11-03T07:00:03Z",
@@ -40388,7 +40433,7 @@
     {
       "id": "bba5850ef23e2d38",
       "doi": "10.1093/mnras/stag1902",
-      "title": "From protogalaxy through thick and thin: Why did the Milky Way evolve in three kinematic phases?",
+      "title": "From protogalaxy through thick and thin: why did the Milky Way evolve in three kinematic phases?",
       "journal": "mnras",
       "authors": [
         "Olti Myrtaj",
@@ -40406,12 +40451,12 @@
       ],
       "published_online": "2026-10-10",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-10-23",
       "first_seen": "2026-10-25T19:58:05Z",
-      "volume": null,
-      "issue": null,
+      "volume": "553",
+      "issue": "1",
       "article_number": "stag1902",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag1902/8907363",
+      "source_url": "https://academic.oup.com/mnras/article/doi/10.1093/mnras/stag1902/8907363",
       "kind": "research",
       "topic": "cosmology",
       "has_summary": false
@@ -42117,7 +42162,7 @@
     {
       "id": "0c6f46f20ccdd828",
       "doi": "10.1093/mnras/stag1979",
-      "title": "Lattice Boltzmann Methods for Compressible Magnetohydrodynamics",
+      "title": "Lattice Boltzmann Methods for compressible magnetohydrodynamics",
       "journal": "mnras",
       "authors": [
         "Fedor Bukreev",
@@ -42126,12 +42171,12 @@
       ],
       "published_online": "2026-10-19",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-10-23",
       "first_seen": "2026-10-25T19:58:05Z",
-      "volume": null,
-      "issue": null,
+      "volume": "553",
+      "issue": "1",
       "article_number": "stag1979",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag1979/8943796",
+      "source_url": "https://academic.oup.com/mnras/article/doi/10.1093/mnras/stag1979/8943796",
       "kind": "research",
       "topic": "planets",
       "has_summary": false
@@ -42284,7 +42329,7 @@
     {
       "id": "3d90dfc45c99b571",
       "doi": "10.1093/mnras/stag1987",
-      "title": "The Impact of Cosmic Variance and Satellites on JWST Clustering Measurements at redshift ≈6",
+      "title": "The impact of cosmic variance and satellites on JWST clustering measurements at redshift ≈ 6",
       "journal": "mnras",
       "authors": [
         "Jiamu Huang",
@@ -42298,12 +42343,12 @@
       ],
       "published_online": "2026-10-19",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-10-23",
       "first_seen": "2026-10-25T19:58:05Z",
-      "volume": null,
-      "issue": null,
+      "volume": "553",
+      "issue": "1",
       "article_number": "stag1987",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag1987/8943794",
+      "source_url": "https://academic.oup.com/mnras/article/doi/10.1093/mnras/stag1987/8943794",
       "kind": "research",
       "topic": "cosmology",
       "has_summary": false
@@ -42413,12 +42458,12 @@
       ],
       "published_online": "2026-10-21",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-10-23",
       "first_seen": "2026-10-25T19:58:05Z",
-      "volume": null,
-      "issue": null,
+      "volume": "553",
+      "issue": "1",
       "article_number": "stag1993",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag1993/8965442",
+      "source_url": "https://academic.oup.com/mnras/article/doi/10.1093/mnras/stag1993/8965442",
       "kind": "research",
       "topic": "galaxies",
       "has_summary": false
@@ -60761,7 +60806,7 @@
     {
       "id": "5f747320f950e5ad",
       "doi": "10.1093/mnras/stag1974",
-      "title": "Sea Ice as an Origin of Life Location for Hycean and Ocean Worlds",
+      "title": "Sea ice as an origin of life location for hycean and ocean worlds",
       "journal": "mnras",
       "authors": [
         "Edouard F L Barrier",
@@ -60770,12 +60815,12 @@
       ],
       "published_online": "2026-10-23T00:00:00Z",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-10-23",
       "first_seen": "2026-10-25T19:55:31Z",
-      "volume": null,
-      "issue": null,
+      "volume": "553",
+      "issue": "1",
       "article_number": "stag1974",
-      "source_url": "https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag1974/8994298?rss=1",
+      "source_url": "https://academic.oup.com/mnras/article/doi/10.1093/mnras/stag1974/8994298",
       "kind": "research",
       "topic": "planets",
       "has_summary": false
