@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T08:21:25Z",
+  "generated_at": "2026-11-04T09:06:04Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-11-04T08:05:03Z",
-      "last_attempt": "2026-11-04T08:05:03Z",
+      "last_success": "2026-11-04T09:05:03Z",
+      "last_attempt": "2026-11-04T09:05:03Z",
       "error": null
     },
     {
@@ -18,8 +18,8 @@
       "short": "ApJ",
       "url": "https://journals.aas.org/astrophysical-journal/",
       "status": "ok",
-      "last_success": "2026-11-04T08:05:03Z",
-      "last_attempt": "2026-11-04T08:05:03Z",
+      "last_success": "2026-11-04T09:05:03Z",
+      "last_attempt": "2026-11-04T09:05:03Z",
       "error": null
     },
     {
@@ -28,8 +28,8 @@
       "short": "ApJL",
       "url": "https://journals.aas.org/astrophysical-journal-letters/",
       "status": "ok",
-      "last_success": "2026-11-04T08:05:03Z",
-      "last_attempt": "2026-11-04T08:05:03Z",
+      "last_success": "2026-11-04T09:05:03Z",
+      "last_attempt": "2026-11-04T09:05:03Z",
       "error": null
     },
     {
@@ -38,8 +38,8 @@
       "short": "ApJS",
       "url": "https://journals.aas.org/astrophysical-supplement-series/",
       "status": "ok",
-      "last_success": "2026-11-04T08:05:03Z",
-      "last_attempt": "2026-11-04T08:05:03Z",
+      "last_success": "2026-11-04T09:05:03Z",
+      "last_attempt": "2026-11-04T09:05:03Z",
       "error": null
     },
     {
@@ -48,8 +48,8 @@
       "short": "AJ",
       "url": "https://journals.aas.org/astronomical-journal/",
       "status": "ok",
-      "last_success": "2026-11-04T08:05:03Z",
-      "last_attempt": "2026-11-04T08:05:03Z",
+      "last_success": "2026-11-04T09:05:03Z",
+      "last_attempt": "2026-11-04T09:05:03Z",
       "error": null
     },
     {
@@ -58,8 +58,8 @@
       "short": "MNRAS",
       "url": "https://academic.oup.com/mnras",
       "status": "ok",
-      "last_success": "2026-11-04T08:05:03Z",
-      "last_attempt": "2026-11-04T08:05:03Z",
+      "last_success": "2026-11-04T09:05:03Z",
+      "last_attempt": "2026-11-04T09:05:03Z",
       "error": null
     }
   ],
@@ -487,11 +487,12 @@
       "title": "Filament-Arm Node Systems (FANS): A New Probe of the Winding and Chirality of the Cosmic Web",
       "journal": "apjl",
       "authors": [
-        "Pedro da Silveira Ferreira and Renyue Cen"
+        "Pedro da Silveira Ferreira",
+        "Renyue Cen"
       ],
       "published_online": "2026-11-04T00:00:00Z",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-11-10",
       "first_seen": "2026-11-04T08:00:05Z",
       "volume": "1011",
       "issue": "2",
@@ -2896,7 +2897,7 @@
       "article_number": "173",
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aea69f",
       "kind": "research",
-      "topic": "galaxies",
+      "topic": "cosmology",
       "has_summary": false
     },
     {
@@ -2983,7 +2984,7 @@
       "article_number": "182",
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aeaffc",
       "kind": "research",
-      "topic": "galaxies",
+      "topic": "cosmology",
       "has_summary": false
     },
     {
@@ -3010,7 +3011,7 @@
     {
       "id": "6f90d513ca761290",
       "doi": "10.3847/1538-4357/aeb020",
-      "title": "r -Process as Production of Lanthanides from Compact Object Mergers",
+      "title": "r-Process as Production of Lanthanides from Compact Object Mergers",
       "journal": "apj",
       "authors": [
         "Li-Ming Zhuo",
@@ -3068,13 +3069,13 @@
       "article_number": "179",
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aeb023",
       "kind": "research",
-      "topic": "galaxies",
+      "topic": "cosmology",
       "has_summary": false
     },
     {
       "id": "dba1e37540f6d700",
       "doi": "10.3847/1538-4357/aeb11b",
-      "title": "The [O III ] λ 5007 Equivalent Width as an Ionization-parameter Diagnostic across Cosmic Time",
+      "title": "The [O III]λ5007 Equivalent Width as an Ionization-parameter Diagnostic across Cosmic Time",
       "journal": "apj",
       "authors": [
         "Dian P. Triani",
@@ -3089,7 +3090,7 @@
       "article_number": "178",
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aeb11b",
       "kind": "research",
-      "topic": "galaxies",
+      "topic": "cosmology",
       "has_summary": false
     },
     {
@@ -3114,7 +3115,7 @@
       "article_number": "176",
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aeb40e",
       "kind": "research",
-      "topic": "solar",
+      "topic": "planets",
       "has_summary": false
     },
     {
