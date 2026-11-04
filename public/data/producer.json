@@ -5,16 +5,15 @@
   "reserve_target": 35,
   "processed": 1,
   "held": [],
-  "stage": "repair",
-  "heartbeat_at": "2026-11-04T12:07:27.892319Z",
+  "stage": "review",
+  "heartbeat_at": "2026-11-04T12:10:27.023641Z",
   "doi": "10.3847/1538-4357/aea6ca",
   "queue": {
-    "approved": 1,
     "needs_attention": 1,
-    "pending": 1959,
-    "published": 18,
-    "repairing": 1,
+    "pending": 1955,
+    "published": 19,
+    "reviewing": 1,
     "source_ready": 13,
-    "waiting_source": 72
+    "waiting_source": 76
   }
 }
