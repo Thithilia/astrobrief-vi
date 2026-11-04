@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "releases": [
+    {
+      "id": "f3f3582d6e289392",
+      "doi": "10.1093/mnras/stag2090",
+      "summary_date": "2026-11-04",
+      "content_hash": "882d6779bef3572a4292b49aa5332488f0b136dab630bd9bd450b34e482a8d5d",
+      "published_at": null,
+      "verified_at": "2026-11-04T10:48:02.874146Z",
+      "deployment": "legacy-live-verification",
+      "publication_time_precision": "day"
+    },
+    {
+      "id": "e3be8c4e719f0867",
+      "doi": "10.3847/1538-3881/aeada0",
+      "summary_date": "2026-10-29",
+      "content_hash": "8619d29367e0b89f6681c4f6c52cb79e5582e8e6b8e88eb5f3c3b7165af6b65d",
+      "published_at": null,
+      "verified_at": "2026-11-04T10:48:03.213630Z",
+      "deployment": "legacy-live-verification",
+      "publication_time_precision": "day"
+    },
+    {
+      "id": "c36f469ae207a08a",
+      "doi": "10.3847/2041-8213/aeb267",
+      "summary_date": "2026-10-28",
+      "content_hash": "0c27e461818e12f26fb0df10491a7c69ce83e66f29bc6559504aaae0afc75cd9",
+      "published_at": null,
+      "verified_at": "2026-11-04T10:48:03.608842Z",
+      "deployment": "legacy-live-verification",
+      "publication_time_precision": "day"
+    },
+    {
+      "id": "73b09fd88e6b5366",
+      "doi": "10.3847/1538-3881/aea84d",
+      "summary_date": "2026-10-28",
+      "content_hash": "1e4ed941286e9c784ae488fd80dba88b7726d04b1accbce4318c8fd2e5a55558",
+      "published_at": null,
+      "verified_at": "2026-11-04T10:48:03.943928Z",
+      "deployment": "legacy-live-verification",
+      "publication_time_precision": "day"
+    },
+    {
+      "id": "88363caf019c651f",
+      "doi": "10.1093/mnras/stag2043",
+      "summary_date": "2026-10-28",
+      "content_hash": "f8bd8ebbc9d4f20679bda74bc0e97574edfde1375988814742f2cb92a9ce42a3",
+      "published_at": null,
+      "verified_at": "2026-11-04T10:48:04.246333Z",
+      "deployment": "legacy-live-verification",
+      "publication_time_precision": "day"
+    },
+    {
+      "id": "1031592ff81e45b2",
+      "doi": "10.1051/0004-6361/202661190",
+      "summary_date": "2026-10-28",
+      "content_hash": "ce2eb407917bddc839adbcfdfe9b536c94cd116bef6165444df690879a03ef43",
+      "published_at": null,
+      "verified_at": "2026-11-04T10:48:04.924428Z",
+      "deployment": "legacy-live-verification",
+      "publication_time_precision": "day"
+    },
+    {
+      "id": "f09c3cba475e9fa2",
+      "doi": "10.3847/2041-8213/aeab9d",
+      "summary_date": "2026-10-28",
+      "content_hash": "b9fdc9e0f6e1733b617863ce12e1f061dc077bec00bb8a46e66babe67bacadf3",
+      "published_at": null,
+      "verified_at": "2026-11-04T10:48:05.317550Z",
+      "deployment": "legacy-live-verification",
+      "publication_time_precision": "day"
+    },
+    {
+      "id": "321057e70a3a9663",
+      "doi": "10.3847/1538-4357/aea0d5",
+      "summary_date": "2026-10-27",
+      "content_hash": "f2d9cc892c1f32d9aee396e2beb40b2b32add40f698a78122ccfb9b886d36786",
+      "published_at": null,
+      "verified_at": "2026-11-04T10:48:05.762288Z",
+      "deployment": "legacy-live-verification",
+      "publication_time_precision": "day"
+    },
+    {
+      "id": "d9e7df9b19b6bda1",
+      "doi": "10.3847/1538-4357/aea56e",
+      "summary_date": "2026-10-27",
+      "content_hash": "96454d3bdacd0505518482b3d10751785491a0381a780bac287c939e614bd25a",
+      "published_at": null,
+      "verified_at": "2026-11-04T10:48:06.071839Z",
+      "deployment": "legacy-live-verification",
+      "publication_time_precision": "day"
+    },
+    {
+      "id": "9d1a5f439bed47f4",
+      "doi": "10.3847/2041-8213/aea60d",
+      "summary_date": "2026-10-27",
+      "content_hash": "2a1098d989ce52244a87aff8c7b688113fe96552185e222cdaaea8efdc277acb",
+      "published_at": null,
+      "verified_at": "2026-11-04T10:48:06.383191Z",
+      "deployment": "legacy-live-verification",
+      "publication_time_precision": "day"
+    },
+    {
+      "id": "ea38fd6ffc83f0cd",
+      "doi": "10.3847/1538-4357/aeaa36",
+      "summary_date": "2026-10-27",
+      "content_hash": "cc3d62c8fca97709a00b96ba442e9443b160a3b90355d8e096ef639778a1f122",
+      "published_at": null,
+      "verified_at": "2026-11-04T10:48:06.682151Z",
+      "deployment": "legacy-live-verification",
+      "publication_time_precision": "day"
+    },
+    {
+      "id": "c7a0b747174ac43b",
+      "doi": "10.1051/0004-6361/202661292",
+      "summary_date": "2026-10-27",
+      "content_hash": "cc90b0094763fe41e210c9852b08fb37671ee6584a3f3a44e6928b661c41763e",
+      "published_at": null,
+      "verified_at": "2026-11-04T10:48:06.990843Z",
+      "deployment": "legacy-live-verification",
+      "publication_time_precision": "day"
+    },
+    {
+      "id": "7af88e279b8ddaf6",
+      "doi": "10.1051/0004-6361/202558662",
+      "summary_date": "2026-10-26",
+      "content_hash": "2e2852b579f81c4bd8962e166ccc0b45b48bcb3755ecb15c99b05f8957632cfe",
+      "published_at": null,
+      "verified_at": "2026-11-04T10:48:07.295417Z",
+      "deployment": "legacy-live-verification",
+      "publication_time_precision": "day"
+    },
+    {
+      "id": "4e09623a5f5f4147",
+      "doi": "10.3847/1538-4357/ae9869",
+      "summary_date": "2026-10-26",
+      "content_hash": "4a7a43263e5c71511bac53848296602aceb50bf79769638f2aa1fd01b6ad351a",
+      "published_at": null,
+      "verified_at": "2026-11-04T10:48:07.616559Z",
+      "deployment": "legacy-live-verification",
+      "publication_time_precision": "day"
+    },
+    {
+      "id": "bd50cbfca8485f0d",
+      "doi": "10.3847/1538-4357/ae91e7",
+      "summary_date": "2026-10-26",
+      "content_hash": "1869289f3e30c731c2ba978b6aabbe6d6107f323989ac825902f53299ba519ec",
+      "published_at": null,
+      "verified_at": "2026-11-04T10:48:07.935303Z",
+      "deployment": "legacy-live-verification",
+      "publication_time_precision": "day"
+    },
+    {
+      "id": "c147e3f7e8d4b727",
+      "doi": "10.3847/1538-4357/ae9d7c",
+      "summary_date": "2026-10-26",
+      "content_hash": "a385511a8cc7f79246a168e1d95d363d9010cf6d696611d17525510550171e58",
+      "published_at": null,
+      "verified_at": "2026-11-04T10:48:08.278702Z",
+      "deployment": "legacy-live-verification",
+      "publication_time_precision": "day"
+    },
+    {
+      "id": "b23b1a96807b53ae",
+      "doi": "10.3847/1538-3881/ae9d73",
+      "summary_date": "2026-10-26",
+      "content_hash": "97089357a5e765d9696b6d0b3ce46db7076ec2acaf4bb8ed1f0df95b161b4c4c",
+      "published_at": null,
+      "verified_at": "2026-11-04T10:48:08.578095Z",
+      "deployment": "legacy-live-verification",
+      "publication_time_precision": "day"
+    }
+  ]
+}

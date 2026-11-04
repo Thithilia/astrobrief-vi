@@ -1,12 +1,17 @@
-name: Build and deploy AstroBrief Việt
+name: Publish and deploy AstroBrief Việt
 
 on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+    - cron: '17,47 * * * *'
+    - cron: '30 16 * * *'
 
 permissions:
-  contents: read
+  contents: write
+  actions: read
   pages: write
   id-token: write
 
@@ -15,35 +20,81 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
     steps:
-      - name: Checkout
+      - name: Checkout current main
         uses: actions/checkout@v7.0.1
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+          cache: pip
+      - name: Install publisher dependencies
+        run: pip install -r requirements.txt
+      - name: Configure publication identity
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+      - name: Reconcile and reserve today's remaining articles
+        id: preflight
+        run: python -m pipeline.cloud preflight --event '${{ github.event_name }}'
+      - name: Materialize approved release
+        if: steps.preflight.outputs.build == 'true'
+        run: python -m pipeline.cloud materialize
       - name: Set up Node.js
+        if: steps.preflight.outputs.build == 'true'
         uses: actions/setup-node@v7.1.0
         with:
           node-version: '24'
           cache: npm
       - name: Install dependencies
+        if: steps.preflight.outputs.build == 'true'
         run: npm ci
       - name: Check content and types
+        if: steps.preflight.outputs.build == 'true'
         run: npm run check
       - name: Build website
+        if: steps.preflight.outputs.build == 'true'
         run: npm run build
       - name: Configure Pages
+        if: steps.preflight.outputs.build == 'true'
         uses: actions/configure-pages@v6.0.0
       - name: Upload website
+        if: steps.preflight.outputs.build == 'true'
         uses: actions/upload-pages-artifact@v5.0.0
         with:
           path: dist
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
       - name: Deploy to GitHub Pages
+        if: steps.preflight.outputs.build == 'true'
         id: deployment
         uses: actions/deploy-pages@v5.0.1
+      - name: Verify public articles and record the release ledger
+        if: steps.preflight.outputs.release == 'true'
+        run: python -m pipeline.cloud confirm
+      - name: Build confirmed status snapshot
+        if: steps.preflight.outputs.release == 'true'
+        run: npm run build
+      - name: Upload confirmed status snapshot
+        if: steps.preflight.outputs.release == 'true'
+        uses: actions/upload-pages-artifact@v5.0.0
+        with:
+          path: dist
+          name: github-pages-confirmed
+      - name: Deploy confirmed status snapshot
+        if: steps.preflight.outputs.release == 'true'
+        uses: actions/deploy-pages@v5.0.1
+        with:
+          artifact_name: github-pages-confirmed
+      - name: Report daily publication status
+        if: always()
+        run: python -m pipeline.release health >> "$GITHUB_STEP_SUMMARY"

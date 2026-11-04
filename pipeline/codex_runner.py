@@ -22,6 +22,26 @@ class CodexQuotaExceeded(CodexUnavailable):
     pass
 
 
+class CodexAuthenticationRequired(CodexUnavailable):
+    pass
+
+
+def failure_kind(events: str) -> str:
+    """Classify model failures, not unrelated MCP startup warnings on stderr."""
+    errors=[]
+    for line in events.splitlines():
+        try: event=json.loads(line)
+        except ValueError: continue
+        if event.get("type")=="error": errors.append(str(event.get("message","")))
+        elif event.get("type")=="turn.failed":
+            error=event.get("error") or {}
+            errors.append(str(error.get("message","")) if isinstance(error,dict) else str(error))
+    message=" ".join(errors).lower()
+    if any(word in message for word in ("usage limit","rate limit","quota","try again at","limit exceeded")): return "quota"
+    if any(word in message for word in ("unauthorized","authentication","refresh token","sign in","log in","401")): return "auth"
+    return "unavailable"
+
+
 def configuration() -> dict:
     config_file = Path(os.environ.get("CODEX_HOME", str(Path.home() / ".codex"))) / "config.toml"
     try:
@@ -46,7 +66,7 @@ def authenticated_cli() -> str:
                             text=True, encoding="utf-8", errors="replace", timeout=30)
     status = (result.stdout + result.stderr).lower()
     if result.returncode or "chatgpt" not in status or "api key" in status:
-        raise CodexUnavailable("Codex cần đăng nhập bằng ChatGPT; ứng dụng không dùng API key.")
+        raise CodexAuthenticationRequired("Codex cần đăng nhập bằng ChatGPT; ứng dụng không dùng API key.")
     return executable
 
 
@@ -86,11 +106,12 @@ def run_structured(prompt: str, schema_name: str, work_dir: Path,
                                   creationflags=flags)
         except subprocess.TimeoutExpired as exc:
             raise CodexUnavailable("Phiên Codex quá thời gian; giữ trạng thái để chạy lại.") from exc
-    failure = error_log.read_text(encoding="utf-8", errors="replace")[-18000:]
-    failure += event_log.read_text(encoding="utf-8", errors="replace")[-18000:]
     if proc.returncode or not output.exists():
-        if any(term in failure.lower() for term in ("usage limit", "rate limit", "quota", "try again at", "limit exceeded")):
+        kind=failure_kind(event_log.read_text(encoding="utf-8", errors="replace"))
+        if kind=="quota":
             raise CodexQuotaExceeded("Đã chạm hạn mức Codex; sẽ thử lại ở phiên kế tiếp.")
+        if kind=="auth":
+            raise CodexAuthenticationRequired("Cần đăng nhập lại Codex bằng ChatGPT.")
         raise CodexUnavailable(f"Codex không hoàn tất (exit {proc.returncode}); xem nhật ký cục bộ {run_id}.")
     try:
         data = json.loads(output.read_text(encoding="utf-8-sig"))

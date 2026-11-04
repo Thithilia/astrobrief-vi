@@ -32,6 +32,7 @@ ALLOWED_HOSTS = {
     "doi.org", "dx.doi.org", "iopscience.iop.org", "www.aanda.org", "aanda.org",
     "academic.oup.com", "arxiv.org", "www.arxiv.org", "export.arxiv.org",
     "cdn.iopscience.iop.org", "content.cld.iop.org", "oup.silverchair-cdn.com", "oup.silverchair.com", "api.crossref.org", "authors.library.caltech.edu", "orca.cardiff.ac.uk", "researchprofiles.ku.dk", "researchonline.ljmu.ac.uk",
+    "feeds.library.caltech.edu",
 }
 CHALLENGE_HOSTS = {"validate.perfdrive.com", "challenges.cloudflare.com"}
 CAPTCHA_MARKERS = (

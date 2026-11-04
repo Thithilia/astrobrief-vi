@@ -69,6 +69,10 @@ def review_prompt(paper: dict, source: dict, draft: dict) -> str:
 Đối chiếu DOI và phiên bản, mọi số liệu/đơn vị/chiều bất đẳng thức, cỡ mẫu, ý nghĩa thống kê,
 kết luận nhân quả và phạm vi giả thiết. Kiểm tra diễn giải hình với ảnh được cung cấp.
 Phân biệt dự đoán/mô phỏng/đo đạc, tránh biến khả năng thành phát hiện. Kiểm tra thuật ngữ Việt (English).
+Đánh giá các tuyên bố summary thực sự đưa ra; không yêu cầu kể mọi chi tiết hay mọi kết quả của bài gốc.
+Chỉ coi thiếu giả thiết/điều kiện là lỗi khi nó làm thay đổi nghĩa hoặc phạm vi của một tuyên bố.
+Quote phải giữ nguyên bản trích xuất; nếu PDF làm mất số mũ, đối chiếu ngữ cảnh/ảnh rồi kiểm tra số trong thân bài,
+không yêu cầu đổi quote sang một chuỗi không có trong nguồn. Không thêm việc đọc hình chưa được cung cấp vào yêu cầu bắt buộc của summary.
 passed chỉ true khi TẤT CẢ kiểm tra đúng và issues rỗng. Nêu lỗi cụ thể có vị trí và cách sửa khi fail.
 DOI yêu cầu: {paper['doi']}. Nguồn: {source.get('kind')} {source.get('url')} {source.get('version')}.
 CHỨNG CỨ NHẬN DIỆN ĐỘC LẬP: {json.dumps(source.get('identity_evidence', {}), ensure_ascii=False)}
@@ -83,6 +87,8 @@ Chỉ trả edits: mỗi edit có path, before, after. path là đường dẫn 
 ví dụ /sections/2/body, /glossary/0/vi, /evidence/1/quote hoặc /evidence/1/locator.
 before là đoạn nguyên văn xuất hiện đúng MỘT lần trong chuỗi đó; after là đoạn thay thế.
 Giữ nguyên mọi phần không cần sửa. Không thay đổi cấu trúc hay số mục. Không thêm tuyên bố thiếu nguồn.
+Không chép ghi chú biên tập như “cần đối chiếu Hình X” vào bài công khai. Nếu chưa đủ chứng cứ cho một chi tiết,
+bỏ chi tiết đó hoặc diễn đạt kết luận hẹp hơn đã được nguồn hỗ trợ, giữ đúng câu hỏi và kết quả trung tâm.
 evidence.quote phải luôn chép NGUYÊN VĂN từ đoạn nguồn tại evidence.locator, giữ cả cách trích xuất
 số mũ của nguồn; không dịch quote sang tiếng Việt và không sửa quote chỉ để làm đẹp ký hiệu.
 Nếu đổi locator/quote, dùng một đoạn thực tế hỗ trợ claim. Thuật ngữ glossary phải có cả Việt và Anh trong thân bài.

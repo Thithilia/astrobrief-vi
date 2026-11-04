@@ -1,0 +1,66 @@
+---
+import { readFileSync } from 'node:fs';
+import { internalUrl, safeJson } from '../lib/catalog';
+let initial: Record<string, any> = {};
+try { initial = JSON.parse(readFileSync(new URL('../../public/data/health.json', import.meta.url), 'utf8')); } catch {}
+---
+<section class="operations container" aria-label="Tiến độ phát hành" data-health-url={internalUrl('data/health.json')}>
+  <div><span class="eyebrow">PHIÊN ĐỌC HÔM NAY</span><p class="operations-count" id="operations-count" aria-live="polite">Đang kiểm tra tiến độ phát hành…</p></div>
+  <div class="operations-details"><p id="operations-reserve">Kho bài đã duyệt đang được chuẩn bị.</p><p id="operations-reason">Bắt đầu phát hành từ 07:00, giờ Việt Nam.</p></div>
+</section>
+<script type="application/json" id="operations-initial" set:html={safeJson(initial)} />
+<script>
+  const section = document.querySelector<HTMLElement>('.operations');
+  const count = document.getElementById('operations-count');
+  const reserve = document.getElementById('operations-reserve');
+  const reason = document.getElementById('operations-reason');
+  const initial = document.getElementById('operations-initial')?.textContent;
+  let last: Record<string, any> = {};
+  try { last = JSON.parse(initial || '{}'); } catch {}
+  function vietnamDay() {
+    const parts = new Intl.DateTimeFormat('en', {timeZone: 'Asia/Ho_Chi_Minh', year:'numeric', month:'2-digit', day:'2-digit'}).formatToParts(new Date());
+    const get = (type: string) => parts.find((p) => p.type === type)?.value;
+    return `${get('year')}-${get('month')}-${get('day')}`;
+  }
+  function show(value: Record<string, any>, networkError = false) {
+    if (!count || !reserve || !reason) return;
+    const current = value.date === vietnamDay();
+    const n = current && Number.isInteger(value.published) ? value.published : 0;
+    const stock = Number.isInteger(value.approved_available) ? value.approved_available : 0;
+    count.textContent = `Đã xác nhận ${n}/5 summary hôm nay`;
+    reserve.textContent = `Dự phòng: ${stock}/35 bài đã duyệt · khoảng ${Math.floor(stock/5)} ngày`;
+    const stamp = Date.parse(value.generated_at || '');
+    const stale = !current || !Number.isFinite(stamp) || Date.now() - stamp > 3 * 3600_000;
+    const labels: Record<string, string> = {
+      waiting_quota: 'Đang chờ hạn mức Codex để bổ sung bài.',
+      waiting_codex: 'Đang chờ Codex hoạt động lại để bổ sung bài.',
+      waiting_auth: 'Cần đăng nhập lại Codex để bổ sung bài.',
+      waiting_source: 'Đang tìm thêm toàn văn phù hợp.',
+      needs_attention: 'Một số bài cần được xử lý thêm trước khi duyệt.',
+    };
+    if (networkError) reason.textContent = 'Chưa tải được trạng thái mới; đang hiển thị lần kiểm tra gần nhất.';
+    else if (stale && n < 5) reason.textContent = 'Trạng thái chưa cập nhật cho phiên hiện tại; chưa xác nhận đủ 5 bài.';
+    else if (n === 5) reason.textContent = 'Đã phát hành đủ 5 bài và xác nhận trên website.';
+    else if (value.status === 'missed') reason.textContent = `Đã qua mốc chốt; còn thiếu ${5-n} bài.`;
+    else if (value.deploying) reason.textContent = `Đang triển khai và xác nhận ${value.deploying} bài.`;
+    else if (value.status === 'not_due') reason.textContent = 'Bắt đầu phát hành từ 07:00, giờ Việt Nam.';
+    else reason.textContent = labels[value.producer?.status] || `Đang bổ sung ${5-n} bài còn thiếu.`;
+    section?.setAttribute('data-complete', String(current && n === 5 && !networkError));
+  }
+  async function refresh() {
+    try {
+      const response = await fetch(section?.dataset.healthUrl || '', {cache: 'no-store'});
+      if (!response.ok) throw new Error('status');
+      last = await response.json(); show(last);
+    } catch { show(last, true); }
+  }
+  show(last); refresh(); setInterval(refresh, 60_000);
+</script>
+<style>
+  .operations { display:flex; justify-content:space-between; align-items:center; gap:1.5rem; padding-block:1.5rem; border-bottom:1px solid #e7e5e1; }
+  .operations p { margin:.35rem 0 0; }
+  .operations-count { font-size:1.1rem; font-weight:600; color:#222a31; }
+  .operations-details { max-width:38rem; font-size:.85rem; color:#647078; line-height:1.6; }
+  .operations[data-complete="true"] .operations-count { color:#286447; }
+  @media(max-width:680px) { .operations { align-items:flex-start; flex-direction:column; gap:.5rem; } }
+</style>

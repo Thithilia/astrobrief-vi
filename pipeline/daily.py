@@ -80,6 +80,7 @@ def set_job(store, day, doi, state, error=None):
 
 
 def atomic_json(path: Path, value: dict):
+    path.parent.mkdir(parents=True, exist_ok=True)
     temporary = path.with_name(f".{path.name}.{uuid.uuid4().hex}.tmp")
     temporary.write_text(json.dumps(value, ensure_ascii=False, indent=2), encoding="utf-8")
     temporary.replace(path)
@@ -129,7 +130,7 @@ def write_summary(root: Path, summary: dict, draft: dict) -> Path:
     destination.parent.mkdir(parents=True, exist_ok=True)
     fields = ("id", "doi", "title", "dek", "journal", "authors", "paper_title", "published_online",
               "issue_date", "first_seen", "summary_date", "generated_at", "topic", "reading_minutes",
-              "source", "figures", "glossary", "references", "byline")
+              "source", "figures", "glossary", "references", "byline", "content_hash", "reviewed_at")
     frontmatter = {k: summary.get(k) for k in fields}
     body = "\n\n".join(f"## {part['heading']}\n\n{part['body']}" for part in draft["sections"])
     text = "---\n" + yaml.safe_dump(frontmatter, allow_unicode=True, sort_keys=False) + "---\n\n" + body + "\n"

@@ -18,7 +18,7 @@ const toc = headings.filter((heading) => heading.depth === 2);
 const captionText = (caption: string) => caption.replace(/\[(P\d{3}(?:-S\d{3})?)\]\(#nguon-goc\)/g, '($1)');
 ---
 <Layout title={`${data.title} — AstroBrief Việt`} description={data.dek}>
-  <div class="article-container">
+  <div class="article-container" data-content-hash={data.content_hash}>
     <nav class="breadcrumb" aria-label="Đường dẫn"><a href={internalUrl()}>Mỗi ngày</a><span aria-hidden="true">/</span><span>{journalName(data.journal)}</span><span aria-hidden="true">/</span><span>{formatDate(data.summary_date)}</span></nav>
     <header class="article-header">
       <div class="article-kicker"><span class="journal-tag">{journalName(data.journal)}</span><span class="topic-label">{topicName(data.topic)}</span></div>

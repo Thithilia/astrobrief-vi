@@ -8,8 +8,11 @@ Set-Location -LiteralPath $taskProjectRoot
 $env:PYTHONIOENCODING = 'utf-8'
 $taskLogPath = Join-Path $taskLogDirectory ((Get-Date -Format 'yyyy-MM-dd') + '-' + $Mode + '.log')
 if ($Mode -eq 'daily') {
-    & $taskPython -m pipeline daily --catch-up --refresh --publish *>> $taskLogPath
+    & $taskPython -m pipeline produce --target 35 --max-items 5 --budget-minutes 120 --publish *>> $taskLogPath
 } else {
     & $taskPython -m pipeline collect --publish *>> $taskLogPath
+    $taskCollectResult = $LASTEXITCODE
+    & $taskPython -m pipeline prepare-sources --target 30 --budget-minutes 10 *>> $taskLogPath
+    if ($taskCollectResult -ne 0) { exit $taskCollectResult }
 }
 exit $LASTEXITCODE

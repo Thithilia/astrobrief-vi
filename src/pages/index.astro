@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
 import SummaryCard from '../components/SummaryCard.astro';
+import OperationsStatus from '../components/OperationsStatus.astro';
 import { externalUrl, formatDate, formatTimestamp, internalUrl, journalName, loadCatalog, safeJson, TOPICS, topicName } from '../lib/catalog';
 import type { SummaryPreview } from '../lib/catalog';
 
@@ -55,10 +56,12 @@ const clientData = { papers, summaries, base: internalUrl(), topics: TOPICS, jou
   <div class="update-strip">
     <div class="container update-inner">
       <span><span class:list={['status-dot', { 'status-dot-pending': !catalog.generated_at }]}></span>{catalog.generated_at ? `Dữ liệu cập nhật ${formatTimestamp(catalog.generated_at)}` : 'Đang chuẩn bị lần cập nhật đầu tiên'}</span>
-      <span class="update-secondary">Giờ Việt Nam <span aria-hidden="true">·</span> Summary lúc 07:00</span>
+      <span class="update-secondary">Giờ Việt Nam <span aria-hidden="true">·</span> Phát hành từ 07:00</span>
       <a href={internalUrl('tap-chi/')}>Xem nguồn <span aria-hidden="true">↗</span></a>
     </div>
   </div>
+
+  <OperationsStatus />
 
   <section class="container section-block" id="lua-chon">
     <div class="section-heading">
