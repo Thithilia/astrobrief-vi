@@ -1,14 +1,7 @@
 {
   "schema_version": 1,
-  "status": "deploying",
-  "date": "2026-11-04",
-  "ids": [
-    "a24fe076eaed78db"
-  ],
-  "hashes": {
-    "a24fe076eaed78db": "9da0c3d0b4c5f0b4f4952a487e905cacc4a6955b042e58eeb16c11a058d99011"
-  },
-  "prepared_at": "2026-11-04T12:13:40Z",
+  "status": "confirmed",
   "plan_id": "8ca6dcc3e9e362b5fb31b1567e9fe540af864be15de6d40f011a61039957e034",
-  "workflow_run_id": "41827401657"
+  "confirmed_at": "2026-11-04T12:14:16Z",
+  "ids": []
 }
