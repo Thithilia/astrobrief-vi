@@ -6,6 +6,7 @@ import hashlib
 import math
 import re
 import unicodedata
+from copy import deepcopy
 
 TOPICS = {
     "stars": "Sao và môi trường liên sao", "galaxies": "Thiên hà và nhân hoạt động",
@@ -73,6 +74,47 @@ CHỨNG CỨ NHẬN DIỆN ĐỘC LẬP: {json.dumps(source.get('identity_eviden
 Chứng cứ này được bộ thu thập kiểm tra từ metadata nguồn; DOI có thể nằm trong metadata arXiv hoặc bản ghi publisher, không bắt buộc được in trong PDF.
 BẢN NHÁP:\n{json.dumps(draft,ensure_ascii=False)}\nTOÀN VĂN:\n{source['text']}
 """
+
+
+def repair_prompt(paper: dict, source: dict, draft: dict, issues: list[str]) -> str:
+    return COMMON + f"""\nSửa đúng các lỗi dưới đây trên BẢN NHÁP HIỆN CÓ, không viết lại toàn bài.
+Chỉ trả edits: mỗi edit có path, before, after. path là đường dẫn đến một chuỗi hiện có,
+ví dụ /sections/2/body, /glossary/0/vi, /evidence/1/quote hoặc /evidence/1/locator.
+before là đoạn nguyên văn xuất hiện đúng MỘT lần trong chuỗi đó; after là đoạn thay thế.
+Giữ nguyên mọi phần không cần sửa. Không thay đổi cấu trúc hay số mục. Không thêm tuyên bố thiếu nguồn.
+evidence.quote phải luôn chép NGUYÊN VĂN từ đoạn nguồn tại evidence.locator, giữ cả cách trích xuất
+số mũ của nguồn; không dịch quote sang tiếng Việt và không sửa quote chỉ để làm đẹp ký hiệu.
+Nếu đổi locator/quote, dùng một đoạn thực tế hỗ trợ claim. Thuật ngữ glossary phải có cả Việt và Anh trong thân bài.
+Nếu lỗi nằm trong nhiều đoạn, trả đủ các edit liên quan; không trả bản nháp đầy đủ.
+LỖI CẦN SỬA: {json.dumps(issues, ensure_ascii=False)}
+DOI: {paper['doi']}; phiên bản đã đọc: {source.get('url')} {source.get('version')}.
+BẢN NHÁP HIỆN CÓ:\n{json.dumps(draft, ensure_ascii=False)}
+TOÀN VĂN (giữ các nhãn vị trí):\n{source['text']}
+"""
+
+
+def apply_repairs(draft: dict, repairs: dict) -> dict:
+    """Apply exact, bounded string edits atomically; never accept a replacement draft."""
+    result = deepcopy(draft)
+    for edit in repairs.get("edits", []):
+        path = edit.get("path", "")
+        if not re.fullmatch(r"/(?:title|dek|sections/\d+/(?:heading|body)|glossary/\d+/(?:vi|en)|evidence/\d+/(?:claim|locator|quote)|figure_explanations/\d+/(?:caption_vi|alt_vi))", path):
+            raise ValueError(f"Đường dẫn sửa không được phép: {path}")
+        parent = result
+        parts = path.strip("/").split("/")
+        try:
+            for part in parts[:-1]:
+                parent = parent[int(part)] if isinstance(parent, list) else parent[part]
+            current = parent[parts[-1]]
+        except (KeyError, IndexError, TypeError) as exc:
+            raise ValueError(f"Đường dẫn sửa không tồn tại: {path}") from exc
+        before, after = edit.get("before"), edit.get("after")
+        if not isinstance(current, str) or not isinstance(before, str) or not before or not isinstance(after, str):
+            raise ValueError(f"Thay thế phải là chuỗi không rỗng tại {path}")
+        if current.count(before) != 1:
+            raise ValueError(f"Đoạn cần sửa phải xuất hiện đúng một lần tại {path}")
+        parent[parts[-1]] = current.replace(before, after, 1)
+    return result
 
 
 def normalized(text: str) -> str:

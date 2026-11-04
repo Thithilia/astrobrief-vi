@@ -5,6 +5,8 @@ from pipeline.store import Store
 from pipeline.daily import run_daily, TZ, public_figures, recover_summary_files, candidate_pool
 from pipeline.editorial import validate_draft
 from pipeline.codex_runner import CodexQuotaExceeded
+import json
+from copy import deepcopy
 
 
 def paper(n):
@@ -212,3 +214,124 @@ def test_review_cache_binds_draft_text_and_actual_figure(tmp_path):
     before = review_fingerprint(original, package)
     image.write_bytes(b"corrected figure")
     assert review_fingerprint(original, package) != before
+
+
+def test_failed_review_repairs_existing_draft_and_reviews_again(tmp_path):
+    store = Store(tmp_path / "state.sqlite")
+    store.upsert_papers([paper(0)])
+    original = draft()
+    calls = []
+    def runner(prompt, schema, *args, **kwargs):
+        calls.append(schema)
+        if schema == "review" and calls.count("review") == 1:
+            return passing_review() | {"passed": False, "issues": ["Fix the title"]}
+        if schema == "repair":
+            assert json.dumps(original, ensure_ascii=False) in prompt
+            return {"edits": [{"path": "/title", "before": original["title"], "after": "Kết quả đã sửa"}]}
+        return good_runner(prompt, schema, *args, **kwargs)
+    report = run_daily(store, tmp_path, now=datetime(2026,10,26,8,tzinfo=TZ), runner=runner,
+                       acquire=source, progress=silence)
+    assert report["created"] == 1
+    assert calls.count("draft") == 1 and calls.count("review") == 2 and calls.count("repair") == 1
+    saved = store.summaries()[0]["draft"]
+    assert saved["title"] == "Kết quả đã sửa"
+    assert saved["evidence"] == original["evidence"] and saved["sections"] == original["sections"]
+
+
+def test_held_draft_can_resume_without_regeneration_and_quota_keeps_progress(tmp_path):
+    from pipeline.daily import prepare_jobs, set_job
+    store = Store(tmp_path / "state.sqlite")
+    store.upsert_papers([paper(0)])
+    prepare_jobs(store)
+    set_job(store, "2026-10-26", paper(0)["doi"], "held", "Translated quote")
+    broken = draft()
+    broken["evidence"][0]["quote"] = "Mẫu gồm 30 sao."
+    folder = tmp_path / ".local/runs/2026-10-26" / store.get_paper(paper(0)["doi"])["id"]
+    folder.mkdir(parents=True)
+    (folder / "draft.json").write_text(json.dumps(broken), encoding="utf-8")
+    calls = []
+    def runner(prompt, schema, *args, **kwargs):
+        calls.append(schema)
+        if schema == "draft":
+            raise AssertionError("Existing draft must not be regenerated")
+        if schema == "repair":
+            return {"edits": [{"path": "/evidence/0/quote", "before": "Mẫu gồm 30 sao.",
+                               "after": "The sample contains 30 stars."}]}
+        if schema == "review" and calls.count("review") == 1:
+            raise CodexQuotaExceeded("limit")
+        return good_runner(prompt, schema, *args, **kwargs)
+    now = datetime(2026,10,26,8,tzinfo=TZ)
+    report = run_daily(store, tmp_path, now=now, runner=runner, acquire=source, progress=silence)
+    assert report["status"] == "quota_wait" and not store.summaries()
+    assert json.loads((folder / "draft.json").read_text(encoding="utf-8"))["evidence"] == draft()["evidence"]
+    report = run_daily(store, tmp_path, now=now, runner=runner, acquire=source, progress=silence)
+    assert report["created"] == 1 and calls.count("repair") == 1
+
+
+def test_repair_budget_survives_rerun_and_never_publishes_failed_review(tmp_path):
+    from pipeline.daily import MAX_REPAIRS_PER_DAY
+    store = Store(tmp_path / "state.sqlite")
+    store.upsert_papers([paper(0)])
+    calls = []
+    def runner(prompt, schema, *args, **kwargs):
+        calls.append(schema)
+        if schema == "review":
+            return passing_review() | {"passed": False, "issues": ["Unsupported conclusion"]}
+        if schema == "repair":
+            return {"edits": [{"path": "/title", "before": "Một", "after": "Một Một"}]}
+        return good_runner(prompt, schema, *args, **kwargs)
+    now = datetime(2026,10,26,8,tzinfo=TZ)
+    report = run_daily(store, tmp_path, now=now, runner=runner, acquire=source, progress=silence)
+    # Repeating 'Một' makes the second patch ambiguous: reject it atomically.
+    assert report["created"] == 0
+    run_daily(store, tmp_path, now=now, runner=runner, acquire=source, progress=silence)
+    assert calls.count("repair") == MAX_REPAIRS_PER_DAY
+    before = list(calls)
+    run_daily(store, tmp_path, now=now, runner=runner, acquire=source, progress=silence)
+    assert calls == before and not store.summaries()
+
+
+def test_repairs_are_atomic_and_cannot_change_structure_or_other_fields():
+    import pytest
+    from pipeline.editorial import apply_repairs
+    original = draft()
+    snapshot = deepcopy(original)
+    for path in ["/evidence", "/sections/0", "/sections/99/body", "/source/url", "/__class__"]:
+        with pytest.raises(ValueError):
+            apply_repairs(original, {"edits": [
+                {"path": "/title", "before": original["title"], "after": "Temporary change"},
+                {"path": path, "before": "missing", "after": "new"}]})
+        assert original == snapshot
+
+
+def test_retryable_held_draft_outside_current_shortlist_is_resumed(tmp_path):
+    from pipeline.daily import prepare_jobs, set_job
+    store = Store(tmp_path / "state.sqlite")
+    store.upsert_papers([paper(0), paper(1)])
+    prepare_jobs(store)
+    set_job(store, "2026-10-26", paper(0)["doi"], "held", "Interrupted repair")
+    work = tmp_path / ".local/runs/2026-10-26"
+    folder = work / store.get_paper(paper(0)["doi"])["id"]
+    folder.mkdir(parents=True)
+    (folder / "draft.json").write_text(json.dumps(draft()), encoding="utf-8")
+    (work / "selection.json").write_text(json.dumps({"candidates": [
+        {"doi": paper(1)["doi"], "topic": "stars", "rationale": "New candidate"}]}), encoding="utf-8")
+    def runner(prompt, schema, *args, **kwargs):
+        if schema == "selection":
+            raise AssertionError("Shortlist remains usable")
+        return good_runner(prompt, schema, *args, **kwargs)
+    result = run_daily(store, tmp_path, now=datetime(2026,10,26,8,tzinfo=TZ), runner=runner,
+                       acquire=source, progress=silence)
+    assert result["created"] == 2
+
+
+def test_legacy_jobs_schema_is_migrated_without_losing_errors(tmp_path):
+    from pipeline.daily import prepare_jobs
+    store = Store(tmp_path / "state.sqlite")
+    store.conn.execute("CREATE TABLE editorial_jobs (day TEXT, doi TEXT, state TEXT, error TEXT, updated_at TEXT, PRIMARY KEY(day,doi))")
+    store.conn.execute("INSERT INTO editorial_jobs VALUES ('2026-10-26','10.1234/paper0','held','Original error','now')")
+    store.conn.commit()
+    prepare_jobs(store)
+    prepare_jobs(store)
+    row = store.conn.execute("SELECT state,error,repair_attempts FROM editorial_jobs").fetchone()
+    assert tuple(row) == ("held", "Original error", 0)

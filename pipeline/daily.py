@@ -16,12 +16,13 @@ import yaml
 
 from .codex_runner import run_structured, configuration, CodexUnavailable, CodexQuotaExceeded
 from .editorial import (selection_prompt, draft_prompt, review_prompt, validate_draft,
-                        review_passed, reading_minutes, review_fingerprint)
+                        review_passed, reading_minutes, review_fingerprint, repair_prompt, apply_repairs)
 from .fulltext import acquire_fulltext, FullTextUnavailable
 from .store import normalize_doi
 
 ROOT = Path(__file__).resolve().parents[1]
 TZ = ZoneInfo("Asia/Ho_Chi_Minh")
+MAX_REPAIRS_PER_DAY = 3
 
 
 def timestamp() -> str:
@@ -65,6 +66,9 @@ def prepare_jobs(store):
     store.conn.execute("""CREATE TABLE IF NOT EXISTS editorial_jobs (
         day TEXT NOT NULL, doi TEXT NOT NULL, state TEXT NOT NULL,
         error TEXT, updated_at TEXT NOT NULL, PRIMARY KEY(day,doi))""")
+    columns = {row[1] for row in store.conn.execute("PRAGMA table_info(editorial_jobs)")}
+    if "repair_attempts" not in columns:
+        store.conn.execute("ALTER TABLE editorial_jobs ADD COLUMN repair_attempts INTEGER NOT NULL DEFAULT 0")
     store.conn.commit()
 
 
@@ -201,7 +205,8 @@ def run_daily(store, root: Path = ROOT, now: datetime | None = None, limit: int 
         if today >= limit:
             return {"date": day, "status": "complete", "created": 0, "total_today": today}
         failed = {r[0] for r in store.conn.execute(
-            "SELECT doi FROM editorial_jobs WHERE day=? AND state IN ('held','no_fulltext')", (day,))}
+            "SELECT doi FROM editorial_jobs WHERE day=? AND (state='no_fulltext' OR (state='held' AND repair_attempts>=?))",
+            (day, MAX_REPAIRS_PER_DAY))}
         papers = [p for p in store.papers() if p.get("doi") and p["doi"] not in existing_dois
                   and p["doi"] not in failed and p.get("kind") not in ("correction", "editorial", "review")]
         # Pending papers do not expire because their online date precedes today.
@@ -243,6 +248,21 @@ def run_daily(store, root: Path = ROOT, now: datetime | None = None, limit: int 
                 if doi in by_doi and doi not in seen:
                     seen.add(doi)
                     candidates.append((by_doi[doi], item))
+            # Resume drafts held earlier today even when a later shortlist no
+            # longer contains them. They were already scientifically selected.
+            resumable = store.conn.execute(
+                "SELECT doi FROM editorial_jobs WHERE day=? AND state IN ('held','repair','draft','review') AND repair_attempts<? ORDER BY updated_at",
+                (day, MAX_REPAIRS_PER_DAY)).fetchall()
+            for row in resumable:
+                doi = row[0]
+                if doi in by_doi and doi not in seen and cached_json(work / by_doi[doi]["id"] / "draft.json", "draft"):
+                    seen.add(doi)
+                    candidates.append((by_doi[doi], {"topic": by_doi[doi].get("topic", "other"),
+                                                   "rationale": "Tiếp tục sửa bản nháp đã được chọn trước đó trong ngày."}))
+            # Spend writing time on verified readable candidates before probing
+            # more publisher URLs. Stable sort preserves scientific rank within
+            # each readiness group.
+            candidates.sort(key=lambda pair: pair[0]["doi"] not in ready_dois)
             for paper, choice in candidates:
                 if report["total_today"] >= limit:
                     break
@@ -268,34 +288,60 @@ def run_daily(store, root: Path = ROOT, now: datetime | None = None, limit: int 
                 images = [str(f.get("image_path") or f.get("src")) for f in source["figures"]]
                 draft_path = paper_work / "draft.json"
                 repair = ""
-                draft = None
+                draft = cached_json(draft_path, "draft")
                 review = None
-                for attempt in range(2):
+                if draft is None:
                     set_job(store, day, paper["doi"], "draft")
-                    progress(f"Viết và kiểm tra {paper['doi']} (lượt {attempt+1})…", flush=True)
-                    draft = cached_json(draft_path, "draft") if attempt == 0 else None
-                    if draft is None:
-                        draft = runner(draft_prompt(paper, source, repair), "draft", paper_work, images=images)
-                        atomic_json(draft_path, draft)
+                    progress(f"Viết bản nháp {paper['doi']}…", flush=True)
+                    draft = runner(draft_prompt(paper, source), "draft", paper_work, images=images)
+                    atomic_json(draft_path, draft)
+                while True:
                     issues = validate_draft(draft, source)
-                    if issues:
-                        repair = "\n".join(issues)
-                        continue
-                    set_job(store, day, paper["doi"], "review")
-                    fingerprint = review_fingerprint(draft, source)
-                    proof_path = paper_work / "review-provenance.json"
-                    try:
-                        proof = json.loads(proof_path.read_text(encoding="utf-8"))
-                    except (OSError, ValueError):
-                        proof = {}
-                    review = cached_json(paper_work / "review.json", "review")
-                    if proof.get("fingerprint") != fingerprint or not review or not review_passed(review):
-                        review = runner(review_prompt(paper, source, draft), "review", paper_work, images=images)
-                        atomic_json(paper_work / "review.json", review)
-                        atomic_json(proof_path, {"fingerprint": fingerprint, "checked_at": timestamp()})
-                    if review_passed(review):
+                    if not issues:
+                        set_job(store, day, paper["doi"], "review")
+                        fingerprint = review_fingerprint(draft, source)
+                        proof_path = paper_work / "review-provenance.json"
+                        try:
+                            proof = json.loads(proof_path.read_text(encoding="utf-8"))
+                        except (OSError, ValueError):
+                            proof = {}
+                        review = cached_json(paper_work / "review.json", "review")
+                        # Failed reviews are useful repair instructions only when
+                        # they describe this exact draft and source.
+                        if proof.get("fingerprint") != fingerprint or not review:
+                            review = runner(review_prompt(paper, source, draft), "review", paper_work, images=images)
+                            atomic_json(paper_work / "review.json", review)
+                            atomic_json(proof_path, {"fingerprint": fingerprint, "checked_at": timestamp()})
+                        if review_passed(review):
+                            break
+                        issues = review.get("issues", []) or ["Các kiểm tra nguồn chưa đạt."]
+                    repair = "\n".join(issues)
+                    attempts = store.conn.execute(
+                        "SELECT repair_attempts FROM editorial_jobs WHERE day=? AND doi=?", (day, paper["doi"])).fetchone()[0]
+                    if attempts >= MAX_REPAIRS_PER_DAY:
                         break
-                    repair = "\n".join(review.get("issues", [])) or "Các kiểm tra nguồn chưa đạt."
+                    set_job(store, day, paper["doi"], "repair", repair)
+                    progress(f"Sửa các đoạn bị đánh dấu {paper['doi']} (lượt {attempts+1}/{MAX_REPAIRS_PER_DAY})…", flush=True)
+                    edits = runner(repair_prompt(paper, source, draft, issues), "repair", paper_work, images=images)
+                    # Persist the bounded attempt count across restarts.
+                    store.conn.execute("UPDATE editorial_jobs SET repair_attempts=repair_attempts+1 WHERE day=? AND doi=?",
+                                       (day, paper["doi"]))
+                    store.conn.commit()
+                    atomic_json(paper_work / f"draft-before-repair-{attempts+1}.json", draft)
+                    atomic_json(paper_work / f"repair-{attempts+1}.json", edits)
+                    try:
+                        corrected = apply_repairs(draft, edits)
+                    except ValueError as exc:
+                        repair = str(exc)
+                        # A malformed patch must not damage or replace the draft.
+                        set_job(store, day, paper["doi"], "held", repair)
+                        break
+                    if corrected == draft:
+                        repair = "Lượt sửa không thay đổi bản nháp; giữ bài để xử lý tiếp.\n" + repair
+                        break
+                    draft = corrected
+                    atomic_json(draft_path, draft)
+                    review = None
                 if draft is None or validate_draft(draft, source) or not review or not review_passed(review):
                     set_job(store, day, paper["doi"], "held", repair or "Chưa vượt kiểm tra nguồn.")
                     report["held"].append({"doi": paper["doi"], "reason": "review"})

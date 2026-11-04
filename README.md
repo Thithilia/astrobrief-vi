@@ -50,7 +50,7 @@ Máy tắt hoặc mất mạng: website vẫn giữ bản gần nhất. Khi máy
 2. AI xếp hạng ứng viên theo câu hỏi khoa học, kết quả cụ thể, bằng chứng và sự đa dạng chủ đề.
 3. Đọc toàn văn publisher, gồm bản xuất bản chính thức được lưu ở kho trường/viện khi xác nhận được DOI ở trang đầu; nếu không tải được thì tìm bản arXiv khớp DOI, giữ đúng ID và phiên bản. Không biến abstract thành một bài giải thích toàn văn.
 4. Viết bài tiếng Việt có thuật ngữ tiếng Anh ở lần đầu, các đối chiếu kết quả với vị trí trong nguồn, và nhãn **Tổng hợp tự động bằng Codex**.
-5. Một lượt Codex riêng kiểm tra số liệu, đơn vị, kết luận, giả thiết và hình. Các bằng chứng được kiểm tra khớp văn bản trước khi xuất bản. Bài chưa đạt được giữ để sửa, chuyển sang ứng viên tiếp theo.
+5. Một lượt Codex riêng kiểm tra số liệu, đơn vị, kết luận, giả thiết và hình. Các bằng chứng được kiểm tra khớp văn bản trước khi xuất bản. Khi có lỗi, Codex sửa từng đoạn trên bản nháp hiện có bằng các phép thay thế chính xác; phần còn lại và các trích dẫn không bị viết lại. Mỗi thay đổi đều được kiểm tra lại với nguồn trước khi xuất bản. Tối đa ba lượt sửa cho mỗi bài mỗi ngày, lưu tiến độ qua các lần chạy; bài bị giữ còn lượt sửa được tiếp tục ở phiên sau. Khi chưa đạt, chuyển sang ứng viên tiếp theo. Ứng viên đã có toàn văn xác minh được xử lý trước các bài còn phải tìm nguồn.
 
 Các render nguyên trang PDF chỉ dùng nội bộ để đọc hình. Hình đưa lên web phải có quyền sử dụng, credit và vị trí nguồn rõ ràng; không xác định được quyền thì chỉ dẫn tới bài gốc. Cấu trúc giải thích tham khảo [Astrobites](https://astrobites.org/apply-to-write-for-astrobites/); văn bản được viết độc lập từ nghiên cứu gốc.
 

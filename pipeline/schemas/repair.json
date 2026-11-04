@@ -1,0 +1,1 @@
+{"type":"object","properties":{"edits":{"type":"array","items":{"type":"object","properties":{"path":{"type":"string"},"before":{"type":"string"},"after":{"type":"string"}},"required":["path","before","after"],"additionalProperties":false}}},"required":["edits"],"additionalProperties":false}
