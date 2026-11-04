@@ -180,6 +180,16 @@
       "verified_at": "2026-11-04T11:01:46Z",
       "deployment": "41818004898",
       "plan_id": "20915da81a4ad2422de5ce17db2ee5b61194c5dc2c0259bbd5b8f2f2e10f62b0"
+    },
+    {
+      "id": "f0f9af1aec1ee76f",
+      "doi": "10.3847/1538-4357/ae9a79",
+      "summary_date": "2026-11-04",
+      "content_hash": "9baec18ba8196ffad2691083db7a125ebb5a7ad3df45528aa59fe38be3cadf00",
+      "published_at": "2026-11-04T11:22:41Z",
+      "verified_at": "2026-11-04T11:22:42Z",
+      "deployment": "41820146771",
+      "plan_id": "ec7b41fea5aa92b51723956600cdab8e97379dc460fe1bcd3aae13f7d5f3a85b"
     }
   ]
 }
