@@ -200,6 +200,16 @@
       "verified_at": "2026-11-04T12:14:16Z",
       "deployment": "41827401657",
       "plan_id": "8ca6dcc3e9e362b5fb31b1567e9fe540af864be15de6d40f011a61039957e034"
+    },
+    {
+      "id": "cfd7f8c0f785e507",
+      "doi": "10.3847/2041-8213/aeb001",
+      "summary_date": "2026-11-04",
+      "content_hash": "038830b970e5a85a442a317f621333883cf921b05fae3a5a1e7c11c0b99a1c74",
+      "published_at": "2026-11-04T12:30:29Z",
+      "verified_at": "2026-11-04T12:30:30Z",
+      "deployment": "41829667770",
+      "plan_id": "18e6f6e2f123d2aca1fc07214c460dbfd07b0bb9ad6795d0d6de65fbee6869d2"
     }
   ]
 }

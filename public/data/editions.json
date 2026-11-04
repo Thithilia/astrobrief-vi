@@ -2,10 +2,10 @@
   "schema_version": 1,
   "days": {
     "2026-11-04": {
-      "published": 4,
+      "published": 5,
       "target": 5,
-      "status": "waiting_deployment",
-      "checked_at": "2026-11-04T12:29:25Z"
+      "status": "complete",
+      "checked_at": "2026-11-04T12:30:30Z"
     }
   }
 }
