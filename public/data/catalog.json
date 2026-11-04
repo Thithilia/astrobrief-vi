@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T11:22:42Z",
+  "generated_at": "2026-11-04T12:08:30Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-11-04T11:05:06Z",
-      "last_attempt": "2026-11-04T11:05:06Z",
+      "last_success": "2026-11-04T12:07:27Z",
+      "last_attempt": "2026-11-04T12:07:27Z",
       "error": null
     },
     {
@@ -18,8 +18,8 @@
       "short": "ApJ",
       "url": "https://journals.aas.org/astrophysical-journal/",
       "status": "ok",
-      "last_success": "2026-11-04T11:05:06Z",
-      "last_attempt": "2026-11-04T11:05:06Z",
+      "last_success": "2026-11-04T12:07:27Z",
+      "last_attempt": "2026-11-04T12:07:27Z",
       "error": null
     },
     {
@@ -27,20 +27,20 @@
       "name": "The Astrophysical Journal Letters",
       "short": "ApJL",
       "url": "https://journals.aas.org/astrophysical-journal-letters/",
-      "status": "ok",
+      "status": "error",
       "last_success": "2026-11-04T11:05:06Z",
-      "last_attempt": "2026-11-04T11:05:06Z",
-      "error": null
+      "last_attempt": "2026-11-04T12:07:27Z",
+      "error": "RSS: Network error: ConnectError; Crossref: Network error: ConnectError"
     },
     {
       "id": "apjs",
       "name": "The Astrophysical Journal Supplement Series",
       "short": "ApJS",
       "url": "https://journals.aas.org/astrophysical-supplement-series/",
-      "status": "ok",
-      "last_success": "2026-11-04T11:05:06Z",
-      "last_attempt": "2026-11-04T11:05:06Z",
-      "error": null
+      "status": "partial",
+      "last_success": "2026-11-04T12:07:27Z",
+      "last_attempt": "2026-11-04T12:07:27Z",
+      "error": "RSS: Network error: ConnectError"
     },
     {
       "id": "aj",
@@ -48,8 +48,8 @@
       "short": "AJ",
       "url": "https://journals.aas.org/astronomical-journal/",
       "status": "ok",
-      "last_success": "2026-11-04T11:05:06Z",
-      "last_attempt": "2026-11-04T11:05:06Z",
+      "last_success": "2026-11-04T12:07:27Z",
+      "last_attempt": "2026-11-04T12:07:27Z",
       "error": null
     },
     {
@@ -58,8 +58,8 @@
       "short": "MNRAS",
       "url": "https://academic.oup.com/mnras",
       "status": "ok",
-      "last_success": "2026-11-04T11:05:06Z",
-      "last_attempt": "2026-11-04T11:05:06Z",
+      "last_success": "2026-11-04T12:07:27Z",
+      "last_attempt": "2026-11-04T12:07:27Z",
       "error": null
     }
   ],
@@ -1928,7 +1928,7 @@
       "article_number": "288",
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-3881/aeaa59",
       "kind": "research",
-      "topic": "solar",
+      "topic": "planets",
       "has_summary": false
     },
     {
@@ -1957,7 +1957,7 @@
       "article_number": "200",
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/ae9d6d",
       "kind": "research",
-      "topic": "solar",
+      "topic": "planets",
       "has_summary": false
     },
     {
@@ -1977,7 +1977,7 @@
       "article_number": "199",
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/ae9d77",
       "kind": "research",
-      "topic": "stars",
+      "topic": "planets",
       "has_summary": false
     },
     {
@@ -2006,7 +2006,7 @@
     {
       "id": "d18cafc68ef7533c",
       "doi": "10.3847/1538-4357/aea8f9",
-      "title": "Unveiling the Emission Mechanisms of Blazar PKS 1510−089. III. Relationship between the γ -Ray Variability and the Parsec-scale Jet",
+      "title": "Unveiling the Emission Mechanisms of Blazar PKS 1510−089. III. Relationship between the γ-Ray Variability and the Parsec-scale Jet",
       "journal": "apj",
       "authors": [
         "Eva M. Palafox",
@@ -2218,7 +2218,7 @@
       "article_number": "187",
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aead95",
       "kind": "research",
-      "topic": "compact",
+      "topic": "cosmology",
       "has_summary": false
     },
     {
@@ -3992,7 +3992,7 @@
       "article_number": "172",
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aea6b5",
       "kind": "research",
-      "topic": "galaxies",
+      "topic": "cosmology",
       "has_summary": false
     },
     {
@@ -6053,7 +6053,7 @@
     {
       "id": "979ddb4e4c7635f6",
       "doi": "10.3847/1538-3881/aeb098",
-      "title": "An Updated Model for ϵ Eridani b and Prospects for Imaging with the Roman Coronagraph",
+      "title": "An Updated Model for Eridani b and Prospects for Imaging with the Roman Coronagraph",
       "journal": "aj",
       "authors": [
         "Jorge Llop-Sayson",
@@ -23055,7 +23055,7 @@
       "article_number": "A148",
       "source_url": "https://www.aanda.org/10.1051/0004-6361/202659872",
       "kind": "research",
-      "topic": "compact",
+      "topic": "stars",
       "has_summary": false
     },
     {
