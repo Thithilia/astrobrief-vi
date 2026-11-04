@@ -243,3 +243,24 @@ def test_repository_source_discovery_only_uses_doi_linked_official_records():
     from pipeline.repository_sources import parse_leads
     raw=b'<ul><li><a href="https://doi.org/10.1234/test">DOI</a><a href="https://authors.library.caltech.edu/records/abc">record</a></li><li><a href="https://evil.example/10.1234/wrong">fake DOI</a><a href="https://authors.library.caltech.edu/records/wrong">record</a></li></ul>'
     assert parse_leads(raw)=={'10.1234/test':'https://authors.library.caltech.edu/records/abc'}
+
+
+def test_cloud_release_is_imported_for_a_local_preview_without_regeneration(tmp_path,monkeypatch):
+    import pipeline.migration as migration
+    store=world(tmp_path,1);stock(tmp_path,store)
+    plan=prepare(tmp_path,datetime(2026,11,4,8,tzinfo=TZ))
+    confirm(tmp_path,plan,published_at='2026-11-04T01:05:00Z',deployment='cloud',verified=True)
+    article=tmp_path/f"content/summaries/{plan['ids'][0]}.md";article.unlink()
+    monkeypatch.setattr(migration,'sync_release_state',lambda *a,**kw:'sha')
+    assert migration.reconcile_local(store,tmp_path)==1
+    assert article.exists() and len(store.summaries())==1
+    assert store.summaries()[0]['content_hash']==plan['hashes'][plan['ids'][0]]
+
+
+def test_unapproved_markdown_cannot_leak_through_a_metadata_deployment(tmp_path):
+    from pipeline.release import validate_public_tree
+    store=world(tmp_path,1);stock(tmp_path,store)
+    plan=prepare(tmp_path,datetime(2026,11,4,8,tzinfo=TZ));materialize(tmp_path,plan)
+    validate_public_tree(tmp_path,plan)
+    (tmp_path/'content/summaries/unreviewed.md').write_text('Unreviewed content',encoding='utf-8')
+    with pytest.raises(ValueError,match='chưa được'):validate_public_tree(tmp_path,plan)

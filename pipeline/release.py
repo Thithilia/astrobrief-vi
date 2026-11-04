@@ -12,6 +12,7 @@ import httpx
 
 from .daily import atomic_json, write_summary
 from .inventory import digest, load_inventory, preview
+from .store import normalize_doi, paper_id
 
 TZ = ZoneInfo("Asia/Ho_Chi_Minh")
 SITE = "https://thithilia.github.io/astrobrief-vi/"
@@ -30,6 +31,10 @@ def ledger(root: Path) -> dict:
     value = read_json(root / "public/data/releases.json", {"schema_version": 1, "releases": []})
     ids, dois, days = set(), set(), {}
     for item in value["releases"]:
+        if (not normalize_doi(item["doi"]) or item["doi"]!=normalize_doi(item["doi"])
+                or item["id"]!=paper_id(item["doi"])):
+            raise ValueError("Sổ phát hành có nhận diện DOI không hợp lệ")
+        datetime.strptime(item["summary_date"],"%Y-%m-%d")
         if item["id"] in ids or item["doi"] in dois:
             raise ValueError("Sổ phát hành có ID/DOI trùng")
         ids.add(item["id"]); dois.add(item["doi"])
@@ -121,6 +126,15 @@ def materialize(root: Path, state: dict, *, actual_day: str | None = None):
     atomic_json(catalog_path, catalog)
 
 
+def validate_public_tree(root: Path, state: dict | None = None):
+    history=ledger(root)["releases"]
+    allowed={r["id"] for r in history}
+    if state and state.get("status")=="deploying": allowed.update(state.get("ids",[]))
+    files={p.stem for p in (root/"content/summaries").glob("*.md")}
+    if files-allowed: raise ValueError("Có Markdown chưa được sổ phát hành hoặc chỗ giữ cho phép")
+    if {r["id"] for r in history}-files: raise ValueError("Thiếu file của bài đã phát hành; không triển khai snapshot mất bài")
+
+
 def verify_live(root: Path, state: dict, *, client=None, site=SITE) -> bool:
     if not state.get("ids"):
         return True
@@ -152,6 +166,8 @@ def verify_live(root: Path, state: dict, *, client=None, site=SITE) -> bool:
 def confirm(root: Path, state: dict, *, published_at: str, deployment: str, verified: bool):
     if not verified:
         raise ValueError("Chưa xác minh nội dung công khai")
+    if len(state.get("ids",[]))!=len(set(state.get("ids",[]))):
+        raise ValueError("Chỗ giữ có ID trùng")
     day = datetime.fromisoformat(published_at.replace("Z", "+00:00")).astimezone(TZ).date().isoformat()
     value = ledger(root)
     used = {r["id"] for r in value["releases"]}

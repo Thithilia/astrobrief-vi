@@ -72,3 +72,16 @@ def test_publisher_refuses_staged_user_edits_and_paths_outside_allowlist(tmp_pat
     with pytest.raises(RuntimeError,match='staged'):
         publish_files(root,['public/data/catalog.json'],expected_remote=str(remote))
     assert git(root,'diff','--cached','--name-only')=='source.txt'
+
+
+def test_local_publication_does_not_overwrite_cloud_authority_or_upload_temp_files(tmp_path):
+    from pipeline.repository import generated_paths
+    root,remote=setup_repo(tmp_path)
+    (root/'public/data/editions.json').write_text('{}')
+    (root/'public/data/releases.json').write_text('{}')
+    (root/'public/data/.producer.tmp').write_text('partial')
+    queue=root/'content/ready';queue.mkdir(parents=True)
+    (queue/'.draft.tmp').write_text('partial')
+    paths=generated_paths(root)
+    assert 'public/data/editions.json' not in paths and 'public/data/releases.json' not in paths
+    assert not any(path.endswith('.tmp') for path in paths)

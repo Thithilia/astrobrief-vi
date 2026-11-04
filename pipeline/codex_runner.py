@@ -5,6 +5,7 @@ import json
 import os
 from pathlib import Path
 import shutil
+import signal
 import subprocess
 import tomllib
 import uuid
@@ -98,13 +99,23 @@ def run_structured(prompt: str, schema_name: str, work_dir: Path,
         env.pop(key, None)
     env["PYTHONIOENCODING"] = "utf-8"
     # No shell interpolation, no credential copying, no browser/server-exposed runner.
-    flags = subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0
+    flags = (subprocess.CREATE_NO_WINDOW | subprocess.CREATE_NEW_PROCESS_GROUP) if os.name == "nt" else 0
     with event_log.open("w", encoding="utf-8") as events, error_log.open("w", encoding="utf-8") as errors:
+        proc = subprocess.Popen(args, stdin=subprocess.PIPE, stdout=events, stderr=errors,
+                                text=True, encoding="utf-8", env=env, creationflags=flags,
+                                start_new_session=os.name != "nt")
         try:
-            proc = subprocess.run(args, input=prompt, stdout=events, stderr=errors,
-                                  text=True, encoding="utf-8", env=env, timeout=timeout,
-                                  creationflags=flags)
+            proc.communicate(input=prompt, timeout=timeout)
         except subprocess.TimeoutExpired as exc:
+            # Kill only the process tree just created for this invocation.
+            if os.name == "nt":
+                subprocess.run(["taskkill.exe", "/PID", str(proc.pid), "/T", "/F"],
+                               capture_output=True, timeout=20, creationflags=subprocess.CREATE_NO_WINDOW)
+            else:
+                try: os.killpg(proc.pid, signal.SIGKILL)
+                except ProcessLookupError: pass
+            try: proc.wait(timeout=10)
+            except subprocess.TimeoutExpired: proc.kill(); proc.wait(timeout=10)
             raise CodexUnavailable("Phiên Codex quá thời gian; giữ trạng thái để chạy lại.") from exc
     if proc.returncode or not output.exists():
         kind=failure_kind(event_log.read_text(encoding="utf-8", errors="replace"))

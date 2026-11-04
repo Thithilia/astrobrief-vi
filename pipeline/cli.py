@@ -154,6 +154,11 @@ def main(argv=None) -> int:
                     recover_summary_files(store, root)
                     result = push(bootstrap=args.bootstrap)
         elif args.command == "status":
+            sync_error = None
+            if v2:
+                from .migration import reconcile_local
+                try: reconcile_local(store,root)
+                except (RuntimeError,OSError) as exc: sync_error=str(exc)
             summaries = store.summaries()
             result = {"papers": len(store.papers()), "summaries": len(summaries),
                       "daily": store.get_state("daily:last_report"),
@@ -163,7 +168,9 @@ def main(argv=None) -> int:
                 result.update(daily=health(root), producer=store.get_state("producer:last_report"),
                               sources=store.get_state("sources:last_report"), operations_version=2,
                               local_summaries=len(summaries), summaries=len(ledger(root)["releases"]),
-                              summary_dates=sorted({r["summary_date"] for r in ledger(root)["releases"]}))
+                              summary_dates=sorted({r["summary_date"] for r in ledger(root)["releases"]}),
+                              ledger_synced_at=store.get_state("repository:ledger_synced_at"),
+                              ledger_sync_error=sync_error)
         if getattr(args, "publish", False) and code in {0,2}:
             with process_lock(root, "publish"):
                 if v2:

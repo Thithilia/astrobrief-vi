@@ -10,7 +10,7 @@ from pathlib import Path
 import httpx
 
 from .daily import atomic_json
-from .release import health, ledger, read_json, prepare, materialize, verify_live, confirm, now_utc, TZ
+from .release import health, ledger, read_json, prepare, materialize, verify_live, confirm, now_utc, TZ, validate_public_tree
 from .repository import command, publish_files
 
 
@@ -121,7 +121,8 @@ def main(argv=None):
             with open(os.environ["GITHUB_OUTPUT"],"a",encoding="utf-8") as output:
                 for key,value in result.items(): output.write(f"{key}={str(value).lower()}\n")
     elif args.command=="materialize":
-        state=read_json(root/"public/data/release-state.json",{});materialize(root,state); result={"materialized":len(state.get("ids",[]))}
+        state=read_json(root/"public/data/release-state.json",{});materialize(root,state)
+        validate_public_tree(root,state); result={"materialized":len(state.get("ids",[]))}
     else:
         import time
         state=read_json(root/"public/data/release-state.json",{})

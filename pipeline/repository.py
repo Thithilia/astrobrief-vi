@@ -12,7 +12,7 @@ import uuid
 from .daily import atomic_json
 
 GENERATED = ("content/ready/", "public/data/", "public/figures/")
-RELEASE_ONLY = {"public/data/releases.json", "public/data/release-state.json", "public/data/health.json"}
+RELEASE_ONLY = {"public/data/releases.json", "public/data/release-state.json", "public/data/health.json", "public/data/editions.json"}
 
 
 def command(root, *args, check=True):
@@ -105,7 +105,8 @@ def generated_paths(root: Path):
     for folder in ("content/ready","public/data","public/figures"):
         for path in (root/folder).rglob("*"):
             relative=path.relative_to(root).as_posix()
-            if path.is_file() and relative not in RELEASE_ONLY: result.append(relative)
+            allowed_suffix = path.suffix.lower() in ({".png",".jpg",".jpeg",".webp"} if folder=="public/figures" else {".json"})
+            if path.is_file() and allowed_suffix and relative not in RELEASE_ONLY: result.append(relative)
     return result
 
 

@@ -7,7 +7,7 @@ from pathlib import Path
 
 import httpx
 
-from .daily import atomic_json, timestamp
+from .daily import atomic_json, timestamp, write_summary
 from .inventory import validate_envelope
 from .release import SITE, ledger, save_health
 from .repository import command, sync_release_state
@@ -66,5 +66,7 @@ def reconcile_local(store, root: Path, *, fetch=True):
         store.save_summary(dict(s,summary_date=item["summary_date"],published_at=item.get("published_at"),
             content_hash=item["content_hash"],review=record["approval"]["review"],
             draft={"sections":s["sections"]},search_text="\n".join(p["body"] for p in s["sections"])))
+        write_summary(root,dict(s,summary_date=item["summary_date"],content_hash=item["content_hash"]),{"sections":s["sections"]})
         count+=1
+    store.set_state("repository:ledger_synced_at",timestamp())
     return count
