@@ -335,3 +335,14 @@ def test_legacy_jobs_schema_is_migrated_without_losing_errors(tmp_path):
     prepare_jobs(store)
     row = store.conn.execute("SELECT state,error,repair_attempts FROM editorial_jobs").fetchone()
     assert tuple(row) == ("held", "Original error", 0)
+
+
+def test_scientific_inequalities_are_not_html_but_real_tags_remain_blocked():
+    item = draft()
+    item["sections"][0]["body"] += " Với 7 < z ≲ 9,6 dùng Hβ. Nhiều đoạn sau: M > 10⁵ M⊙."
+    assert not validate_draft(item, source(paper(0)))
+    for text in ['<img src=x onerror=alert(1)>', '<svg/onload=alert(1)>', '<script>alert(1)</script>',
+                 '<custom-element>Text</custom-element>', '<!-- hidden -->', '[x](javascript:alert(1))']:
+        unsafe = deepcopy(item)
+        unsafe["sections"][0]["body"] += text
+        assert any("HTML" in issue for issue in validate_draft(unsafe, source(paper(0))))

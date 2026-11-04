@@ -7,6 +7,7 @@ import math
 import re
 import unicodedata
 from copy import deepcopy
+from html.parser import HTMLParser
 
 TOPICS = {
     "stars": "Sao và môi trường liên sao", "galaxies": "Thiên hà và nhân hoạt động",
@@ -139,6 +140,28 @@ def source_segments(source: dict) -> dict[str, str]:
     return {normalized(parts[i]): normalized(parts[i+1]) for i in range(1, len(parts)-1, 2)}
 
 
+def contains_html(text: str) -> bool:
+    class Detector(HTMLParser):
+        found = False
+
+        def handle_starttag(self, tag, attrs):
+            self.found = True
+
+        def handle_endtag(self, tag):
+            self.found = True
+
+        def handle_comment(self, data):
+            self.found = True
+
+        def handle_decl(self, decl):
+            self.found = True
+
+    parser = Detector()
+    parser.feed(text)
+    parser.close()
+    return parser.found
+
+
 def validate_draft(draft: dict, source: dict) -> list[str]:
     issues = []
     if len(draft.get("sections", [])) != 6:
@@ -152,7 +175,7 @@ def validate_draft(draft: dict, source: dict) -> list[str]:
                               *(str(value) for term in draft.get("glossary", []) for value in term.values()),
                               *(str(value) for figure in draft.get("figure_explanations", [])
                                 for key, value in figure.items() if key != "index")])
-    if re.search(r"<\s*/?\s*[a-zA-Z][^>]*>|(?:javascript|vbscript|data|file)\s*:", public_text, re.I):
+    if contains_html(public_text) or re.search(r"(?:javascript|vbscript|data|file)\s*:", public_text, re.I):
         issues.append("Nội dung chứa HTML hoặc liên kết không an toàn.")
     allowed_links = {"#nguon-goc", source.get("url"), "https://doi.org/" + str(source.get("doi", ""))}
     for link in re.findall(r"!?\[[^\]]*\]\(\s*<?([^\s)>]+)", public_text):
