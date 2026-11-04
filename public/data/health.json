@@ -1,35 +1,35 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-04T12:54:06Z",
+  "generated_at": "2026-11-04T13:05:40Z",
   "date": "2026-11-04",
   "timezone": "Asia/Saigon",
   "target": 5,
   "published": 5,
   "missing": 0,
   "deploying": 0,
-  "approved_available": 2,
+  "approved_available": 3,
   "reserve_target": 35,
   "reserve_days": 0,
   "reserve_low": true,
   "status": "complete",
   "producer": {
-    "status": "running",
+    "status": "checkpoint",
     "started_at": "2026-11-04T12:07:26.969115Z",
-    "created": 3,
+    "created": 5,
     "reserve_target": 35,
-    "processed": 4,
+    "processed": 5,
     "held": [],
-    "stage": "review",
-    "heartbeat_at": "2026-11-04T12:50:56.677494Z",
-    "doi": "10.1051/0004-6361/202659826",
+    "stage": "idle",
+    "heartbeat_at": "2026-11-04T13:05:28.533413Z",
+    "doi": null,
     "queue": {
-      "approved": 3,
+      "approved": 5,
       "needs_attention": 1,
       "pending": 1915,
       "published": 19,
-      "reviewing": 1,
-      "source_ready": 11,
+      "source_ready": 10,
       "waiting_source": 115
-    }
+    },
+    "finished_at": "2026-11-04T13:05:28.533413Z"
   }
 }
