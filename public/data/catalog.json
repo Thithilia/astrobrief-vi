@@ -65,6 +65,26 @@
   ],
   "papers": [
     {
+      "id": "7cf790e6641b7f40",
+      "doi": "10.3847/2041-8213/aeb6af",
+      "title": "A New Method for Constraining 3D Exoplanet Atmospheres: Application to WASP-94A b’s Panchromatic Spectrum",
+      "journal": "apjl",
+      "authors": [
+        "Sagnick Mukherjee, Luis Welbanks, Guangwei Fu, David K. Sing and Michael R. Line"
+      ],
+      "published_online": "2026-11-04T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": null,
+      "first_seen": "2026-11-04T11:05:06Z",
+      "volume": "1011",
+      "issue": "2",
+      "article_number": "L40",
+      "source_url": "https://iopscience.iop.org/article/10.3847/2041-8213/aeb6af",
+      "kind": "letter",
+      "topic": "planets",
+      "has_summary": false
+    },
+    {
       "id": "6d64cfa20cb4e482",
       "doi": "10.1051/0004-6361/202660984",
       "title": "The interplay between active galactic nucleus photoionization, radio jet, and star formation in the z ∼ 3.5 radio galaxy 4C +03.24",
@@ -65471,26 +65491,6 @@
       "source_url": "https://iopscience.iop.org/article/10.3847/2041-8213/aeb36f",
       "kind": "letter",
       "topic": "compact",
-      "has_summary": false
-    },
-    {
-      "id": "7cf790e6641b7f40",
-      "doi": "10.3847/2041-8213/aeb6af",
-      "title": "A New Method for Constraining 3D Exoplanet Atmospheres: Application to WASP-94A b’s Panchromatic Spectrum",
-      "journal": "apjl",
-      "authors": [
-        "Sagnick Mukherjee, Luis Welbanks, Guangwei Fu, David K. Sing and Michael R. Line"
-      ],
-      "published_online": "2026-11-04T00:00:00Z",
-      "online_date_precision": "day",
-      "issue_date": null,
-      "first_seen": "2026-11-04T11:05:06Z",
-      "volume": "1011",
-      "issue": "2",
-      "article_number": "L40",
-      "source_url": "https://iopscience.iop.org/article/10.3847/2041-8213/aeb6af",
-      "kind": "letter",
-      "topic": "planets",
       "has_summary": false
     }
   ],
