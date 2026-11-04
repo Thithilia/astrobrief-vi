@@ -6,6 +6,12 @@
       "target": 5,
       "status": "complete",
       "checked_at": "2026-11-04T14:47:20Z"
+    },
+    "2026-11-05": {
+      "published": 0,
+      "target": 5,
+      "status": "not_due",
+      "checked_at": "2026-11-04T18:42:35Z"
     }
   }
 }
