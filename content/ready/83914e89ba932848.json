@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "summary": {
+    "id": "83914e89ba932848",
+    "doi": "10.1051/0004-6361/202661691",
+    "title": "Hơi nước nóng hé lộ đĩa trong của V557 Mon khi sao bùng sáng",
+    "dek": "Trong đợt bùng sáng kéo dài khoảng một năm của V557 Mon, các dải phát xạ hơi nước nóng xuất hiện tạm thời và nhiệt độ phân tử suy ra giảm về 2.000 K khi hệ mờ dần.",
+    "journal": "aa",
+    "authors": [
+      "Zhen Guo",
+      "J. Osses",
+      "V. Fermiano",
+      "Yuting Zhou",
+      "Min Fang",
+      "G. Herczeg",
+      "A. Carvalho",
+      "V. Elbakyan",
+      "L. Hillenbrand",
+      "Mutian Wang",
+      "Hanpu Liu",
+      "Yao Liu",
+      "C. Briceño",
+      "K. Singh",
+      "V. D. Ivanov",
+      "J. Ninan",
+      "T. Giannini",
+      "A. Aliaga",
+      "C. Morris",
+      "M. Montesinos",
+      "He Zhao",
+      "C. Contreras Peña",
+      "J. Jose",
+      "T. Chand",
+      "Wen-Ping Chen",
+      "Wei-Hao Wang",
+      "Yang Huang",
+      "C. Lopez",
+      "P. Fernandez-Schlosser",
+      "D. Correa-Herrera",
+      "R. Kurtev",
+      "V. Rodriguez",
+      "C. Lizana-Vidal",
+      "J. Borissova",
+      "M. Kuhn",
+      "R. K. Saito",
+      "Ram K. Yadav"
+    ],
+    "paper_title": "Hot H 2 O emission during an outburst in a classical T Tauri star",
+    "published_online": "2026-10-02",
+    "issue_date": "2026-10",
+    "first_seen": "2026-10-25T19:58:05Z",
+    "generated_at": "2026-11-04T14:47:07.634016Z",
+    "reviewed_at": "2026-11-05T08:08:11.612664Z",
+    "topic": "stars",
+    "reading_minutes": 7,
+    "source": {
+      "license": null,
+      "version": null,
+      "kind": "publisher",
+      "sha256": "61b1315e9423f07740308ed2dfd31522aa16831a4993646b0a49b99d803bc1a0",
+      "url": "https://authors.library.caltech.edu/records/j222y-c5b21/files/aa61691-26.pdf",
+      "doi": "10.1051/0004-6361/202661691"
+    },
+    "figures": [],
+    "glossary": [
+      {
+        "vi": "Bồi tụ",
+        "en": "Accretion"
+      },
+      {
+        "vi": "Đĩa bồi tụ",
+        "en": "Accretion disk"
+      },
+      {
+        "vi": "Sao trẻ lớp II",
+        "en": "Class II young stellar object"
+      },
+      {
+        "vi": "Sao T Tauri cổ điển",
+        "en": "Classical T Tauri star"
+      },
+      {
+        "vi": "Cấp sao",
+        "en": "Magnitude"
+      },
+      {
+        "vi": "Đường cong ánh sáng",
+        "en": "Light curve"
+      },
+      {
+        "vi": "Độ tắt",
+        "en": "Extinction"
+      },
+      {
+        "vi": "Dải phát xạ phân tử",
+        "en": "Molecular emission band"
+      },
+      {
+        "vi": "Nhiệt độ kích thích",
+        "en": "Excitation temperature"
+      },
+      {
+        "vi": "Cân bằng nhiệt động lực học cục bộ",
+        "en": "Local thermodynamic equilibrium"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Một cơn bùng sáng có thể tiết lộ điều gì?",
+        "body": "Ở gần một sao trẻ, khí phân tử và bụi thay đổi thế nào khi dòng vật chất từ đĩa đổ lên sao đột ngột mạnh hơn? Câu hỏi này liên quan đến cách vật chất xây dựng ngôi sao và đến môi trường hóa học nơi các hành tinh có thể hình thành. Năng lượng giải phóng trong một đợt bồi tụ (accretion) có thể làm nóng đĩa và thay đổi trạng thái vật chất ở đó. Theo dõi sự biến đổi ấy giúp nối lịch sử phát triển của sao với lịch sử của đĩa. [P001-S005](#nguon-goc)\n\nNhóm của Zhen Guo nghiên cứu V557 Mon, một sao trẻ lớp II (Class II young stellar object) trong tinh vân Rosette. Cuối năm 2024, ngôi sao tăng sáng mạnh; các phổ thu được sau đó cho thấy những dải phát xạ của hơi nước nóng cùng CO, TiO và VO. Các dấu vết phân tử xuất hiện trong lúc bùng sáng và không còn thấy trong phổ sau đợt bùng. Bài báo dùng chúng để theo dõi trạng thái khí ở phần trong của đĩa. [P002-S003](#nguon-goc) [P009-S002](#nguon-goc)"
+      },
+      {
+        "heading": "Từ đĩa khí đến ánh sáng của sao",
+        "body": "V557 Mon là sao T Tauri cổ điển (classical T Tauri star): một sao trẻ khối lượng nhỏ vẫn nhận khí từ đĩa bồi tụ (accretion disk) quanh nó. Từ trường có thể dẫn một phần dòng khí đến bề mặt sao. Khi khí va chạm, vùng va chạm phát bức xạ mạnh, đặc biệt ở vùng xanh và tử ngoại. Lượng ánh sáng dư này được dùng để ước lượng tốc độ bồi tụ khối lượng (mass accretion rate).\n\nMột đợt kiểu EXor (EXor outburst) thường kéo dài hàng trăm ngày và làm sao sáng thêm vài cấp sao (magnitudes). Thang cấp sao chạy ngược: cấp sao càng nhỏ thì nguồn càng sáng. Đồng thời, quang phổ (spectrum) có thể lộ ra các dải phát xạ phân tử (molecular emission bands), gồm nhiều chuyển mức phân tử chồng lên nhau. Trước nghiên cứu này, các vạch phát xạ hơi nước riêng lẻ đã được thấy ở sao trẻ và các dải nước rộng đã được thấy ở một số tiền sao. Bài báo báo cáo chuỗi quan sát theo thời gian đầu tiên của các dải nước hồng ngoại gần (near-infrared, NIR) trong một đợt EXor. [P001-S006](#nguon-goc) [P008-S007](#nguon-goc) [P002-S004](#nguon-goc)"
+      },
+      {
+        "heading": "Theo dõi V557 Mon qua nhiều giai đoạn",
+        "body": "Nhóm ghép chuỗi quang trắc (photometric time series) từ Gaia, Zwicky Transient Facility, ATLAS và các kính thiên văn mặt đất với phổ quang học và hồng ngoại gần ở nhiều thời điểm. Đường cong ánh sáng (light curve) cho biết độ sáng thay đổi ra sao; phổ cho biết ánh sáng được phân bố theo bước sóng và bộc lộ các phân tử phát xạ. Phổ từ Magellan và SOAR bao phủ cả lúc hệ đang bùng và khi mờ đi. [P001-S003](#nguon-goc) [P003-S003](#nguon-goc)\n\nĐể có mốc so sánh, nhóm dùng phổ quang học sau đợt bùng, khi sao đã mờ trở lại, cùng dữ liệu trước đợt bùng để ước lượng thuộc tính của sao. Phép khớp cho kiểu phổ M1 và độ tắt (extinction) Aᵥ = 1,8 ± 0,3 mag. Lấy khoảng cách 1,44 ± 0,03 kpc và tuổi khoảng 2 triệu năm của cụm NGC 2244, họ suy ra khối lượng khoảng 0,4–0,5 M☉, với M☉ là khối lượng Mặt Trời. Giá trị này dựa trên các mô hình tiến hóa sao trẻ. [P004-S003](#nguon-goc) [P005-S001](#nguon-goc) [P005-S009](#nguon-goc)"
+      },
+      {
+        "heading": "Khí phân tử nóng lên rồi mờ đi",
+        "body": "Đường cong ánh sáng cho thấy V557 Mon tăng 4,3 mag ở dải r, đạt cực đại sau khoảng 60 ngày, rồi trải qua khoảng 100 ngày ở trạng thái sáng tương đối ổn định trước khi mờ dần. Toàn bộ sự kiện kéo dài khoảng một năm, phù hợp với đặc trưng EXor. Chênh lệch 4,3 mag tương ứng thông lượng (flux) ở dải r tăng khoảng 52 lần; đây là mức tăng trong một dải quan sát. [P005-S010](#nguon-goc) [P005-S011](#nguon-goc) [P006-S001](#nguon-goc)\n\nGiả sử Aᵥ = 1,8 mag, độ trưng bồi tụ (accretion luminosity) cực đại suy ra là 4,6 L☉ và tốc độ bồi tụ cực đại là 6,3 × 10⁻⁷ M☉/năm. Giá trị ở trạng thái yên là (0,9 ± 0,3) × 10⁻⁸ M☉/năm: so các giá trị trung tâm, tốc độ cực đại cao hơn khoảng 70 lần. L☉ là độ trưng của Mặt Trời. [P006-S005](#nguon-goc) [P005-S007](#nguon-goc)\n\nDải nước cho một dấu hiệu bổ sung về khí. Với năm phổ, bảng kết quả cho nhiệt độ kích thích (excitation temperature) suy ra lần lượt 2.900, 3.300, 3.100, 2.000 và 2.000 K. Xu hướng tổng thể là khí phát xạ nguội đi khi hệ mờ dần, dù các giá trị không giảm đều. Phần tóm tắt của bài nêu nhiệt độ từ khoảng 3.000 xuống 2.000 K; dãy trong bảng có một giá trị 3.300 K. Nhóm tác giả cũng nhận thấy cường độ dải phân tử và độ sáng của sao có xu hướng thay đổi cùng nhau. [P009-S001](#nguon-goc) [P009-S002](#nguon-goc) [P001-S004](#nguon-goc)"
+      },
+      {
+        "heading": "Những con số phụ thuộc vào điều gì?",
+        "body": "Aᵥ biểu thị mức ánh sáng bị bụi làm suy giảm trên đường truyền. Kiểu phổ, độ tắt và phần bức xạ dư do bồi tụ có thể tạo ra những phổ gần giống nhau với nhiều tổ hợp giá trị, nên chúng ảnh hưởng đến kết quả suy ra. Chẳng hạn, nếu dùng Aᵥ = 1,0 mag tại cực đại, nhóm thu được độ trưng bồi tụ 2,0 L☉ thay vì 4,6 L☉. Việc đổi độ trưng thành tốc độ bồi tụ còn phụ thuộc vị trí mép trong của đĩa: ở trạng thái yên, nhóm giả định mép này cách tâm sao năm lần bán kính sao; khi bùng, nó có thể tiến gần sao hơn. [P004-S004](#nguon-goc) [P006-S005](#nguon-goc) [P005-S007](#nguon-goc)\n\nĐể suy ra nhiệt độ phân tử, nhóm dùng mô hình lớp khí với cân bằng nhiệt động lực học cục bộ (local thermodynamic equilibrium, LTE) và dữ liệu chuyển mức của ExoMol. Họ khớp chủ yếu vùng 1,7–2,2 µm, che các vạch phát xạ và tách nền liên tục bằng đa thức. Lưới nhiệt độ có bước 100 K; bước lưới thể hiện độ phân giải của phép tìm, chứ không tự xác định sai số của kết quả. [P008-S003](#nguon-goc) [P008-S008](#nguon-goc)\n\nPhụ lục mô tả các mô hình dải phát xạ trong trường hợp mỏng quang học (optically thin) và cho biết phép khớp dải nước không tính sự mở rộng do chuyển động quay Kepler. Các đoạn phổ khác có phát xạ liên tục Brackett hoặc bị trộn với CO. Vì vậy, nhiệt độ trên mô tả lớp khí phát xạ theo mô hình và phụ thuộc vào cách tách nền; nó không đo trực tiếp nhiệt độ ở mọi vị trí trong đĩa. [P008-S009](#nguon-goc) [P013-S009](#nguon-goc) [P014-S002](#nguon-goc)"
+      },
+      {
+        "heading": "Một đĩa tạm thời trở nên giống hệ trẻ hơn",
+        "body": "So sánh phổ của V557 Mon với V2492 Cyg, một vật thể lớp I trẻ hơn và đang hoạt động mạnh, nhóm tác giả đề xuất hình ảnh đĩa trong được “trẻ hóa”: trong đợt bùng, khí của hệ lớp II tạm thời có những đặc điểm phổ giống một hệ ở giai đoạn sớm hơn. Đây là diễn giải về trạng thái vật lý của khí; tuổi của sao không thay đổi. [P009-S003](#nguon-goc) [P009-S004](#nguon-goc)\n\nTừ mô hình đĩa α với khối lượng sao 0,5 M☉ và α = 0,03, các thang thời gian tăng và giảm 28 và 70 ngày tương ứng với bán kính đặc trưng 0,047 và 0,087 AU. Các bán kính này được suy ra theo mô hình đáp ứng nhiệt, không phải kích thước đo trực tiếp. [P006-S003](#nguon-goc) [P010-S001](#nguon-goc)\n\nBài báo thiếu phổ trong 100 ngày đầu, đặc biệt khi nguồn đang tăng sáng, nên chưa xác định được tác nhân kích hoạt. Theo dõi nhanh một đợt tương tự bằng quang trắc và phổ từ trước cực đại đến lúc suy giảm có thể kiểm tra nhiệt độ và cường độ dải nước biến đổi thế nào so với tốc độ bồi tụ. So sánh nhiều EXor sẽ cho biết hiện tượng này phổ biến đến đâu và giúp phân biệt các cách đốt nóng khí đĩa. [P011-S001](#nguon-goc) [P011-S002](#nguon-goc)\n\n*Tổng hợp tự động bằng Codex.*"
+      }
+    ],
+    "references": [
+      {
+        "label": "Bài công bố gốc (DOI)",
+        "url": "https://doi.org/10.1051/0004-6361/202661691"
+      },
+      {
+        "label": "Toàn văn đã đọc",
+        "url": "https://authors.library.caltech.edu/records/j222y-c5b21/files/aa61691-26.pdf"
+      }
+    ],
+    "byline": "Tổng hợp tự động bằng Codex"
+  },
+  "approval": {
+    "content_hash": "cceb56b9f365604f3629956ab13e42ab5853a04ade85efcdbb7aafe03a1f9c52",
+    "review_fingerprint": "9dd6f75421dc0bbf25780d0c482a6b3453edea86b893d15e4e05e11eedfb9b97",
+    "review": {
+      "passed": true,
+      "doi_matches": true,
+      "fulltext_used": true,
+      "numbers_supported": true,
+      "conclusions_supported": true,
+      "figures_supported": true,
+      "terminology_consistent": true,
+      "issues": []
+    },
+    "model": "gpt-6.1-terra"
+  }
+}
