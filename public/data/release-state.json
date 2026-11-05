@@ -1,7 +1,22 @@
 {
   "schema_version": 1,
-  "status": "confirmed",
-  "plan_id": "18e6f6e2f123d2aca1fc07214c460dbfd07b0bb9ad6795d0d6de65fbee6869d2",
-  "confirmed_at": "2026-11-04T12:30:30Z",
-  "ids": []
+  "status": "deploying",
+  "date": "2026-11-05",
+  "ids": [
+    "979ddb4e4c7635f6",
+    "e13df1e846b38324",
+    "bd790fe2c14eea1f",
+    "16cba281d93b2eb9",
+    "07a446467d298de7"
+  ],
+  "hashes": {
+    "979ddb4e4c7635f6": "120c5527177462e79193da92b02fbd9de624e13c863ec9391ea2a7a64a8fb826",
+    "e13df1e846b38324": "0a046e1baa97fe90076d34ab4919270e1d3f6deb00e9e42b6440efc028f33291",
+    "bd790fe2c14eea1f": "503172917e1a3b5b10993b81e27bce441bc6c6a82f8fcc1b62c4e40bf6377065",
+    "16cba281d93b2eb9": "7b975afd48dad7d2b7c62991545a5a101d72a5a7244ec64e3c59a0979a1b7ade",
+    "07a446467d298de7": "8be2127e451adc96ec4838e57aa9ecdd5664f4bfe23affa8d9f5ec8c321bb94c"
+  },
+  "prepared_at": "2026-11-05T04:51:07Z",
+  "plan_id": "720f15b3a6aa30507979742362f0d14393f2675ff93bfca78cc254b898c69678",
+  "workflow_run_id": "41970310651"
 }
