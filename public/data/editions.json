@@ -8,10 +8,10 @@
       "checked_at": "2026-11-04T14:47:20Z"
     },
     "2026-11-05": {
-      "published": 0,
+      "published": 5,
       "target": 5,
-      "status": "waiting_deployment",
-      "checked_at": "2026-11-05T04:51:07Z"
+      "status": "complete",
+      "checked_at": "2026-11-05T04:51:31Z"
     }
   }
 }
