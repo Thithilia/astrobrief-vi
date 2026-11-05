@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T10:05:58Z",
+  "generated_at": "2026-11-05T11:02:52Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-11-05T10:05:06Z",
-      "last_attempt": "2026-11-05T10:05:06Z",
+      "last_success": "2026-11-05T11:02:14Z",
+      "last_attempt": "2026-11-05T11:02:14Z",
       "error": null
     },
     {
@@ -18,8 +18,8 @@
       "short": "ApJ",
       "url": "https://journals.aas.org/astrophysical-journal/",
       "status": "ok",
-      "last_success": "2026-11-05T10:05:06Z",
-      "last_attempt": "2026-11-05T10:05:06Z",
+      "last_success": "2026-11-05T11:02:14Z",
+      "last_attempt": "2026-11-05T11:02:14Z",
       "error": null
     },
     {
@@ -28,8 +28,8 @@
       "short": "ApJL",
       "url": "https://journals.aas.org/astrophysical-journal-letters/",
       "status": "ok",
-      "last_success": "2026-11-05T10:05:06Z",
-      "last_attempt": "2026-11-05T10:05:06Z",
+      "last_success": "2026-11-05T11:02:14Z",
+      "last_attempt": "2026-11-05T11:02:14Z",
       "error": null
     },
     {
@@ -38,8 +38,8 @@
       "short": "ApJS",
       "url": "https://journals.aas.org/astrophysical-supplement-series/",
       "status": "ok",
-      "last_success": "2026-11-05T10:05:06Z",
-      "last_attempt": "2026-11-05T10:05:06Z",
+      "last_success": "2026-11-05T11:02:14Z",
+      "last_attempt": "2026-11-05T11:02:14Z",
       "error": null
     },
     {
@@ -48,8 +48,8 @@
       "short": "AJ",
       "url": "https://journals.aas.org/astronomical-journal/",
       "status": "ok",
-      "last_success": "2026-11-05T10:05:06Z",
-      "last_attempt": "2026-11-05T10:05:06Z",
+      "last_success": "2026-11-05T11:02:14Z",
+      "last_attempt": "2026-11-05T11:02:14Z",
       "error": null
     },
     {
@@ -58,8 +58,8 @@
       "short": "MNRAS",
       "url": "https://academic.oup.com/mnras",
       "status": "ok",
-      "last_success": "2026-11-05T10:05:06Z",
-      "last_attempt": "2026-11-05T10:05:06Z",
+      "last_success": "2026-11-05T11:02:14Z",
+      "last_attempt": "2026-11-05T11:02:14Z",
       "error": null
     }
   ],
@@ -33225,7 +33225,7 @@
     {
       "id": "288e32f695b85b55",
       "doi": "10.1051/0004-6361/202661307",
-      "title": "Formation of adducts of C 6 H with Na + , Mg + , and Al + metal cations by radiative association",
+      "title": "Formation of adducts of C6H with Na+, Mg+, and Al+ metal cations by radiative association",
       "journal": "aa",
       "authors": [
         "Niyazi Bulut",
@@ -33701,7 +33701,7 @@
       "article_number": "A116",
       "source_url": "https://www.aanda.org/10.1051/0004-6361/202661371",
       "kind": "research",
-      "topic": "stars",
+      "topic": "galaxies",
       "has_summary": false
     },
     {
@@ -37341,7 +37341,7 @@
       "article_number": "A127",
       "source_url": "https://www.aanda.org/10.1051/0004-6361/202661864",
       "kind": "research",
-      "topic": "compact",
+      "topic": "galaxies",
       "has_summary": false
     },
     {
@@ -37589,7 +37589,7 @@
     {
       "id": "61e1eaf7214e1f31",
       "doi": "10.1051/0004-6361/202661903",
-      "title": "SPHERE/ZIMPOL observations of the symbiotic system R Aquarii",
+      "title": "SPHERE/ZIMPOL observations of the symbiotic system R Aquarii★",
       "journal": "aa",
       "authors": [
         "H. M. Schmid",
@@ -37622,7 +37622,7 @@
       "article_number": "A138",
       "source_url": "https://www.aanda.org/10.1051/0004-6361/202661903",
       "kind": "research",
-      "topic": "solar",
+      "topic": "stars",
       "has_summary": false
     },
     {
@@ -39488,7 +39488,7 @@
       "article_number": "A117",
       "source_url": "https://www.aanda.org/10.1051/0004-6361/202662219",
       "kind": "research",
-      "topic": "solar",
+      "topic": "stars",
       "has_summary": false
     },
     {
@@ -40643,7 +40643,7 @@
       "article_number": "A106",
       "source_url": "https://www.aanda.org/10.1051/0004-6361/202662644",
       "kind": "research",
-      "topic": "planets",
+      "topic": "stars",
       "has_summary": false
     },
     {
@@ -67806,6 +67806,26 @@
       "source_url": "https://www.aanda.org/10.1051/0004-6361/202661142",
       "kind": "research",
       "topic": "compact",
+      "has_summary": false
+    },
+    {
+      "id": "06cc7a4c711af3ea",
+      "doi": "10.3847/1538-4357/aeacd5",
+      "title": "Frame Degeneracy and Sine-quadrature Residuals in Lunar Tidal Modeling",
+      "journal": "apj",
+      "authors": [
+        "Muhittin Cenk Eser"
+      ],
+      "published_online": "2026-11-05T00:00:00Z",
+      "online_date_precision": "day",
+      "issue_date": "2026-11-10",
+      "first_seen": "2026-11-05T11:02:14Z",
+      "volume": "1011",
+      "issue": "2",
+      "article_number": "226",
+      "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aeacd5",
+      "kind": "research",
+      "topic": "methods",
       "has_summary": false
     }
   ],
