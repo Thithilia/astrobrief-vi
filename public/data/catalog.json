@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T08:06:04Z",
+  "generated_at": "2026-11-05T09:06:10Z",
   "timezone": "Asia/Saigon",
   "journals": [
     {
@@ -8,8 +8,8 @@
       "short": "A&A",
       "url": "https://www.aanda.org/",
       "status": "ok",
-      "last_success": "2026-11-05T08:05:06Z",
-      "last_attempt": "2026-11-05T08:05:06Z",
+      "last_success": "2026-11-05T09:05:06Z",
+      "last_attempt": "2026-11-05T09:05:06Z",
       "error": null
     },
     {
@@ -18,8 +18,8 @@
       "short": "ApJ",
       "url": "https://journals.aas.org/astrophysical-journal/",
       "status": "ok",
-      "last_success": "2026-11-05T08:05:06Z",
-      "last_attempt": "2026-11-05T08:05:06Z",
+      "last_success": "2026-11-05T09:05:06Z",
+      "last_attempt": "2026-11-05T09:05:06Z",
       "error": null
     },
     {
@@ -28,8 +28,8 @@
       "short": "ApJL",
       "url": "https://journals.aas.org/astrophysical-journal-letters/",
       "status": "ok",
-      "last_success": "2026-11-05T08:05:06Z",
-      "last_attempt": "2026-11-05T08:05:06Z",
+      "last_success": "2026-11-05T09:05:06Z",
+      "last_attempt": "2026-11-05T09:05:06Z",
       "error": null
     },
     {
@@ -38,8 +38,8 @@
       "short": "ApJS",
       "url": "https://journals.aas.org/astrophysical-supplement-series/",
       "status": "ok",
-      "last_success": "2026-11-05T08:05:06Z",
-      "last_attempt": "2026-11-05T08:05:06Z",
+      "last_success": "2026-11-05T09:05:06Z",
+      "last_attempt": "2026-11-05T09:05:06Z",
       "error": null
     },
     {
@@ -48,8 +48,8 @@
       "short": "AJ",
       "url": "https://journals.aas.org/astronomical-journal/",
       "status": "ok",
-      "last_success": "2026-11-05T08:05:06Z",
-      "last_attempt": "2026-11-05T08:05:06Z",
+      "last_success": "2026-11-05T09:05:06Z",
+      "last_attempt": "2026-11-05T09:05:06Z",
       "error": null
     },
     {
@@ -58,8 +58,8 @@
       "short": "MNRAS",
       "url": "https://academic.oup.com/mnras",
       "status": "ok",
-      "last_success": "2026-11-05T08:05:06Z",
-      "last_attempt": "2026-11-05T08:05:06Z",
+      "last_success": "2026-11-05T09:05:06Z",
+      "last_attempt": "2026-11-05T09:05:06Z",
       "error": null
     }
   ],
@@ -376,7 +376,7 @@
       "article_number": "221",
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aeaadf",
       "kind": "research",
-      "topic": "galaxies",
+      "topic": "cosmology",
       "has_summary": false
     },
     {
@@ -404,7 +404,7 @@
       "article_number": "220",
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aeac18",
       "kind": "research",
-      "topic": "compact",
+      "topic": "cosmology",
       "has_summary": false
     },
     {
@@ -437,13 +437,13 @@
       "article_number": "218",
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aeaccf",
       "kind": "research",
-      "topic": "galaxies",
+      "topic": "cosmology",
       "has_summary": false
     },
     {
       "id": "463d4b0e181bfc54",
       "doi": "10.3847/1538-4357/aeace4",
-      "title": "New Constraints on r -process Nucleosynthesis in Neutron Star Mergers from GW170817 Late-phase Spectra",
+      "title": "New Constraints on r-process Nucleosynthesis in Neutron Star Mergers from GW170817 Late-phase Spectra",
       "journal": "apj",
       "authors": [
         "Salma Rahmouni",
@@ -604,7 +604,7 @@
       "article_number": "211",
       "source_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aeaf52",
       "kind": "research",
-      "topic": "stars",
+      "topic": "solar",
       "has_summary": false
     },
     {
@@ -11836,16 +11836,16 @@
         "M. Gieles",
         "L. Ramírez-Galeano"
       ],
-      "published_online": "2026-10-28",
+      "published_online": "2026-11-05",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-11",
       "first_seen": "2026-10-28T10:00:05Z",
-      "volume": null,
+      "volume": "715",
       "issue": null,
-      "article_number": null,
+      "article_number": "L9",
       "source_url": "https://www.aanda.org/10.1051/0004-6361/202662541",
-      "kind": "research",
-      "topic": "stars",
+      "kind": "letter",
+      "topic": "galaxies",
       "has_summary": false
     },
     {
@@ -24255,7 +24255,7 @@
     {
       "id": "e6dd96d11c410ebb",
       "doi": "10.1051/0004-6361/202660121",
-      "title": "Astrometric planet search around southern ultracool dwarfs. V. Discovery of the exoplanet candidate PALTA-1 b",
+      "title": "Astrometric planet search around southern ultracool dwarfs",
       "journal": "aa",
       "authors": [
         "J. Sahlmann",
@@ -24265,13 +24265,13 @@
         "M. Mayor",
         "S. Udry"
       ],
-      "published_online": "2026-10-08",
+      "published_online": "2026-11-05",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-11",
       "first_seen": "2026-10-25T19:58:05Z",
-      "volume": null,
+      "volume": "715",
       "issue": null,
-      "article_number": null,
+      "article_number": "A139",
       "source_url": "https://www.aanda.org/10.1051/0004-6361/202660121",
       "kind": "research",
       "topic": "planets",
@@ -26792,20 +26792,20 @@
       "journal": "aa",
       "authors": [
         "A. Giannetti",
-        "T.G.S. Pillai",
+        "T. G. S. Pillai",
         "J. Kauffmann",
         "A. Palau",
         "E. Vázquez-Semadeni",
         "K. Morii",
         "P. Sanhueza"
       ],
-      "published_online": "2026-10-07",
+      "published_online": "2026-11-05",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-11",
       "first_seen": "2026-10-25T19:58:05Z",
-      "volume": null,
+      "volume": "715",
       "issue": null,
-      "article_number": null,
+      "article_number": "A76",
       "source_url": "https://www.aanda.org/10.1051/0004-6361/202660386",
       "kind": "research",
       "topic": "stars",
@@ -41274,15 +41274,15 @@
         "J. Labadie-Bartz",
         "Th. Rivinius"
       ],
-      "published_online": "2026-10-22",
+      "published_online": "2026-11-05",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-11",
       "first_seen": "2026-10-25T19:58:05Z",
-      "volume": null,
+      "volume": "715",
       "issue": null,
-      "article_number": null,
+      "article_number": "L8",
       "source_url": "https://www.aanda.org/10.1051/0004-6361/202663054",
-      "kind": "research",
+      "kind": "letter",
       "topic": "stars",
       "has_summary": false
     },
@@ -67597,11 +67597,17 @@
       "title": "Transitions in the Mass-ratio and Spin Properties of Binary Black Holes in GWTC-5",
       "journal": "apjl",
       "authors": [
-        "Elizabeth Flanagan, Fabio Antonini, Thomas Callister, Debatri Chattopadhyay, Fani Dosopoulou, Isobel Romero-Shaw and Jakob Stegmann"
+        "Elizabeth Flanagan",
+        "Fabio Antonini",
+        "Thomas Callister",
+        "Debatri Chattopadhyay",
+        "Fani Dosopoulou",
+        "Isobel Romero-Shaw",
+        "Jakob Stegmann"
       ],
       "published_online": "2026-11-05T00:00:00Z",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-11-10",
       "first_seen": "2026-11-05T08:05:06Z",
       "volume": "1011",
       "issue": "2",
@@ -67617,11 +67623,14 @@
       "title": "Giant Impacts Preferentially Remove Low-mass Atmospheres: A Generalised Scaling Law for Impact-driven Atmospheric Loss",
       "journal": "apjl",
       "authors": [
-        "Matthew J. Roche, Simon J. Lock, Philip J. Carter and Zoë M. Leinhardt"
+        "Matthew J. Roche",
+        "Simon J. Lock",
+        "Philip J. Carter",
+        "Zoë M. Leinhardt"
       ],
       "published_online": "2026-11-05T00:00:00Z",
       "online_date_precision": "day",
-      "issue_date": null,
+      "issue_date": "2026-11-10",
       "first_seen": "2026-11-05T08:05:06Z",
       "volume": "1011",
       "issue": "2",
@@ -67689,6 +67698,54 @@
       "source_url": "https://iopscience.iop.org/article/10.3847/2041-8213/aeb371",
       "kind": "letter",
       "topic": "solar",
+      "has_summary": false
+    },
+    {
+      "id": "44b45324d1343c18",
+      "doi": "10.1051/0004-6361/202556714",
+      "title": "Analogues of the Milky Way–Sagittarius interaction in the TNG50: Effect on the Milky Way",
+      "journal": "aa",
+      "authors": [
+        "Marcin Semczuk",
+        "Teresa Antoja",
+        "Alexandra Girón-Soto",
+        "Chervin F. P. Laporte"
+      ],
+      "published_online": "2026-11-05",
+      "online_date_precision": "day",
+      "issue_date": "2026-11",
+      "first_seen": "2026-11-05T09:05:06Z",
+      "volume": "715",
+      "issue": null,
+      "article_number": "A74",
+      "source_url": "https://www.aanda.org/10.1051/0004-6361/202556714",
+      "kind": "research",
+      "topic": "galaxies",
+      "has_summary": false
+    },
+    {
+      "id": "76251e37eb6bb906",
+      "doi": "10.1051/0004-6361/202660234",
+      "title": "SPAMMS: 3D spectroscopic modeling of stellar surfaces",
+      "journal": "aa",
+      "authors": [
+        "D. Galán-Diéguez",
+        "M. Abdul-Masih",
+        "C. Allende Prieto",
+        "S. R. Berlanas",
+        "A. Herrero",
+        "H. Sana"
+      ],
+      "published_online": "2026-11-05",
+      "online_date_precision": "day",
+      "issue_date": "2026-11",
+      "first_seen": "2026-11-05T09:05:06Z",
+      "volume": "715",
+      "issue": null,
+      "article_number": "A80",
+      "source_url": "https://www.aanda.org/10.1051/0004-6361/202660234",
+      "kind": "research",
+      "topic": "stars",
       "has_summary": false
     }
   ],
