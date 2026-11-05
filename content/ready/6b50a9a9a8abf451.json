@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "summary": {
+    "id": "6b50a9a9a8abf451",
+    "doi": "10.1051/0004-6361/202661652",
+    "title": "Quầng Lyman-alpha quanh thiên hà sớm nhỏ hơn: tái ion hóa hay thiên hà lớn dần?",
+    "dek": "Ở z ≥ 6, các quầng Lyman-alpha được phát hiện có chiều dài thang trung bình nhỏ hơn khoảng ba lần so với mẫu ở z ∼ 3,2, nhưng nguyên nhân vật lý vẫn chưa được xác định.",
+    "journal": "aa",
+    "authors": [
+      "Daniil Smirnov",
+      "Lutz Wisotzki",
+      "Tanya Urrutia",
+      "John Pharo",
+      "Ramona Augustin",
+      "Yucheng Guo",
+      "Daria Kozlova",
+      "Haruka Kusakabe",
+      "Jorryt Matthee",
+      "Ismael Pessa",
+      "Joop Schaye"
+    ],
+    "paper_title": "Lyman-alpha haloes in the aftermath of reionisation",
+    "published_online": "2026-11-02",
+    "issue_date": null,
+    "first_seen": "2026-11-01T07:12:11Z",
+    "generated_at": "2026-11-05T13:18:49.663035Z",
+    "reviewed_at": "2026-11-05T13:32:19.746438Z",
+    "topic": "cosmology",
+    "reading_minutes": 8,
+    "source": {
+      "url": "https://arxiv.org/abs/2607.05087v2",
+      "kind": "arxiv",
+      "version": "2607.05087v2",
+      "sha256": "fc90e85589fd6c02973714c2a14adcb57e541266c2677a0baba9c23f20626a46",
+      "doi": "10.1051/0004-6361/202661652",
+      "license": null
+    },
+    "figures": [],
+    "glossary": [
+      {
+        "vi": "Dịch chuyển đỏ",
+        "en": "Redshift"
+      },
+      {
+        "vi": "Quầng Lyman-alpha",
+        "en": "Lyman-alpha halo"
+      },
+      {
+        "vi": "Thiên hà phát xạ Lyα",
+        "en": "Lyman-alpha emitter"
+      },
+      {
+        "vi": "Tán xạ cộng hưởng",
+        "en": "Resonant scattering"
+      },
+      {
+        "vi": "Môi trường quanh thiên hà",
+        "en": "Circumgalactic medium"
+      },
+      {
+        "vi": "Môi trường liên thiên hà",
+        "en": "Intergalactic medium"
+      },
+      {
+        "vi": "Độ sáng bề mặt",
+        "en": "Surface brightness"
+      },
+      {
+        "vi": "Chiều dài thang mũ",
+        "en": "Exponential scale length"
+      },
+      {
+        "vi": "Chồng ảnh",
+        "en": "Stacking"
+      },
+      {
+        "vi": "Độ rộng toàn phần tại nửa cực đại",
+        "en": "Full width at half maximum"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Câu hỏi: quầng quanh thiên hà đã thay đổi ra sao?",
+        "body": "*Tổng hợp tự động bằng Codex từ bản arXiv 2607.05087v2 của Smirnov và cộng sự.*\n\nVào cuối thời kỳ tái ion hóa (reionisation), ánh sáng từ các thiên hà đi qua khí hydro đang chuyển dần từ trạng thái trung hòa sang ion hóa. Liệu quầng Lyman-alpha quanh những thiên hà mờ ở thời kỳ ấy khác thế nào so với quầng của các thiên hà được quan sát muộn hơn?\n\nSmirnov và cộng sự so sánh các thiên hà ở dịch chuyển đỏ (redshift) z ≥ 6 với một mẫu ở z ∼ 3,2. Giá trị z càng lớn tương ứng với thời kỳ quan sát càng sớm. Nhóm thấy các quầng phát hiện được ở thời kỳ sớm nhỏ hơn theo chiều dài thang, dù tỉ lệ phát hiện riêng lẻ không khác biệt có ý nghĩa thống kê. Điều này mở ra hai cách giải thích: ánh sáng bị tán xạ tới vùng quá mờ để thấy, hoặc quầng lớn dần cùng thiên hà. [P001-S002](#nguon-goc) [P015-S003](#nguon-goc)"
+      },
+      {
+        "heading": "Vì sao Lyα cho biết về khí quanh thiên hà?",
+        "body": "Vạch Lyman-alpha (Lyα) có bước sóng nghỉ khoảng 1216 Å và có thể phát sinh từ quá trình hydro tái hợp rồi chuyển mức. Photon Lyα tương tác mạnh với hydro trung hòa và có thể đổi hướng nhiều lần qua tán xạ cộng hưởng (resonant scattering). Vì vậy, bức xạ tạo gần các vùng hình thành sao có thể hiện ra thành quầng Lyman-alpha (Lyman-alpha halo, LAH) rộng hơn vùng chứa sao. Bức xạ tạo ngay trong khí quanh thiên hà cũng có thể đóng góp. [P001-S004](#nguon-goc)\n\nKhí ấy thuộc môi trường quanh thiên hà (circumgalactic medium, CGM); xa hơn là môi trường liên thiên hà (intergalactic medium, IGM). Thiên hà được chọn qua vạch Lyα gọi là thiên hà phát xạ Lyα (Lyman-alpha emitter, LAE). Độ sáng bề mặt (surface brightness) đo thông lượng nhận được trên mỗi đơn vị diện tích góc. Nếu tán xạ trải photon ra vùng rất rộng, quầng có thể quá mờ để phát hiện dù photon vẫn tồn tại. Kích thước quan sát được vì thế phụ thuộc cả vào khí lẫn độ nhạy phép đo. [P001-S005](#nguon-goc) [P001-S006](#nguon-goc)"
+      },
+      {
+        "heading": "Hai mẫu thiên hà với độ sâu được đối chiếu",
+        "body": "Hai mẫu dùng máy quang phổ trường tích phân MUSE tại Kính thiên văn Rất lớn của ESO. Mẫu xa gồm 18 LAE thuộc MUSE eXtremely Deep Field (MXDF), với thời gian phơi sáng cộng dồn tới 141 giờ. Mẫu gần gồm 90 LAE ở 3 ≤ z ≤ 3,4 từ trường nông MUSCATEL-SF, phơi sáng khoảng 1,7 giờ. Hình 1 cho thấy vị trí và phổ ví dụ của hai mẫu. [P002-S007](#nguon-goc) [P004-S005](#nguon-goc)\n\nĐộ sáng bề mặt quan sát bị suy giảm theo hệ số (1 + z)⁴, khiến cùng một quầng khó nhìn hơn ở z cao. Nhóm chọn các bộ dữ liệu có độ nhạy nội tại gần nhau sau hiệu chỉnh sự suy giảm này; Hình 2 cho thấy cơ sở lựa chọn. Thước đo dùng nhiễu hiệu dụng trong một lớp phổ rộng 1,25 Å. Nó phục vụ so sánh độ sâu, không phải giới hạn cuối của ảnh giả dải hẹp. [P003-S011](#nguon-goc) [P003-S012](#nguon-goc)\n\nNhóm so sánh ảnh Lyα với mô hình ánh sáng tử ngoại (ultraviolet, UV) từ JWST hoặc Hubble, sau khi tính đến độ nhòe của MUSE. Họ dùng các vùng trời trống để hiệu chỉnh nhiễu. Nhóm dùng p < 0,05 làm ngưỡng phát hiện hình thức: ở ngưỡng này, giả thuyết Lyα phân bố giống ánh sáng UV bị bác bỏ. Sau kiểm định, họ kiểm tra bằng mắt ảnh Lyα giả dải hẹp và biên dạng độ sáng bề mặt của tất cả thiên hà, rồi loại bốn phát hiện hình thức ở z ∼ 3,2 có giá trị χ² cao dường như bị chi phối bởi phần dư từ phép trừ nền trời hoặc phổ liên tục. [P005-S003](#nguon-goc) [P007-S002](#nguon-goc) [P007-S005](#nguon-goc)"
+      },
+      {
+        "heading": "Quầng nhỏ hơn, và phép chồng ảnh cho thấy gì?",
+        "body": "Có 6/18 LAE ở z ≥ 6 và 40/90 ở z ∼ 3,2 có quầng được phát hiện riêng lẻ; tỉ lệ sau là (44 ± 5)%. Hai tỉ lệ không khác nhau có ý nghĩa thống kê. Tuy nhiên, các quầng đã phát hiện ở z ≥ 6 có chiều dài thang mũ (exponential scale length) trung bình nhỏ hơn khoảng ba lần. Trong mô hình của nhóm, đây là khoảng cách mà độ sáng bề mặt của thành phần quầng giảm đi một hệ số e. Với mẫu z ∼ 3, trung vị là 5,3 ± 1,8 kpc, trong đó 1,8 kpc là sai số chuẩn của trung vị. Kiểm định Kolmogorov–Smirnov cho hai phân bố quầng đã phát hiện cho p = 0,0008. [P007-S006](#nguon-goc) [P008-S004](#nguon-goc) [P012-S006](#nguon-goc)\n\nNhóm còn chồng ảnh (stacking) của các thiên hà không có quầng được phát hiện riêng. Với 50 thiên hà ở z ∼ 3, ảnh chồng cho tín hiệu quầng rõ tới hơn 10 kpc; chiều dài thang từ ảnh chồng trung vị là 6,84 ± 1,26 kpc. Với 12 thiên hà ở z ≥ 6, cả ảnh chồng trung bình lẫn trung vị đều không cho thấy thành phần Lyα mở rộng đáng kể. Nhóm suy ra phần thông lượng thuộc quầng < 0,4 và/hoặc chiều dài thang ≲ 1,3 kpc cho ảnh chồng. Không phát hiện không đồng nghĩa với không có quầng. [P009-S016](#nguon-goc) [P010-S002](#nguon-goc) [P010-S003](#nguon-goc)\n\nTheo ước tính của nhóm, nếu chỉ chồng 12 thiên hà z ∼ 3, sai số tăng khoảng hai lần vẫn không đủ để xóa dấu hiệu quầng. Phổ cũng khác: nhóm khớp đỉnh đỏ của mỗi vạch Lyα bằng hàm Gaussian bất đối xứng; ở mẫu z ∼ 3, họ chủ ý loại đỉnh xanh nếu có để thống nhất với mẫu z ≥ 6. Trung vị độ rộng toàn phần tại nửa cực đại (full width at half maximum, FWHM) suy ra từ phép khớp đỉnh đỏ, sau hiệu chỉnh độ mở rộng do dụng cụ, là 260 km s⁻¹ ở z ∼ 3 và 153 km s⁻¹ ở z ≥ 6; khoảng tứ phân vị tương ứng là 154 và 59 km s⁻¹. Các vạch chưa phân giải được xử lý như số liệu kiểm duyệt khi ước lượng trung vị. [P010-S004](#nguon-goc) [P010-S005](#nguon-goc) [P010-S009](#nguon-goc)"
+      },
+      {
+        "heading": "Phép so sánh kiểm soát được những gì?",
+        "body": "Độ sâu tương đương không làm hai mẫu thành bản sao của nhau. Trung vị log₁₀(M⋆/M☉) lần lượt là 9,13 ở z ∼ 3 và 7,88 ở z ≥ 6; khối lượng sao được suy ra từ mô hình phổ. Khi ghép các mẫu con theo từng đại lượng riêng rẽ—khối lượng sao, tốc độ tạo sao, độ sáng UV hoặc độ sáng Lyα—nhóm vẫn thấy chênh lệch về chiều dài thang và độ rộng vạch. Đây là kiểm tra từng biến, không phải phép ghép đồng thời mọi tính chất. [P012-S007](#nguon-goc) [P017-S004](#nguon-goc) [P017-S005](#nguon-goc)\n\nĐộ phân giải cũng quan trọng: khi mô phỏng sáu quầng z ≥ 6 dưới điều kiện quan sát ở z ∼ 3, nhóm chỉ phát hiện lại ba quầng. Mẫu gần vì thế khó nhận ra quầng nhỏ hơn; phép thử này không giải thích được sự thiếu tương đối các quầng lớn trong mẫu xa. Với thiên hà không thấy đối ứng UV, mô hình trung tâm được giả định là nguồn điểm. Mẫu xa chỉ có 18 thiên hà được chọn qua Lyα, nên kết quả không tự động áp dụng cho mọi thiên hà ở cùng thời kỳ. [P019-S002](#nguon-goc) [P019-S003](#nguon-goc) [P005-S008](#nguon-goc)\n\nCác phép đo trước cũng cho những kết quả khác nhau. Ảnh chồng của Momose và cộng sự tại z = 6,6 cho chiều dài thang khoảng 12,6 kpc, trong khi Leclercq và cộng sự không thấy xu hướng hệ thống trong khoảng 3 ≲ z ≲ 6. Những nghiên cứu này dùng mẫu và phương pháp khác nhau. [P011-S010](#nguon-goc) [P012-S003](#nguon-goc)"
+      },
+      {
+        "heading": "Tái ion hóa hay thiên hà lớn dần?",
+        "body": "Nếu khí trung hòa quanh các thiên hà xa tán xạ photon ra quy mô rất lớn, quầng có thể còn tồn tại nhưng quá mờ; kích thước bong bóng ion hóa quanh thiên hà khi ấy ảnh hưởng đến phần bức xạ nhìn thấy. Đây là diễn giải của nhóm, không phải phép đo trực tiếp phần hydro trung hòa. Với độ lệch đỉnh Lyα 200 km s⁻¹, bán kính bong bóng 0,2 pMpc—megaparsec vật lý—và phần hydro trung hòa 0,2, mô hình của họ cho vạch hẹp đi khoảng 15%. Mức này nhỏ hơn khoảng 41% tính từ tỉ số độ rộng quan sát 1,7. Trong bộ giả thiết đó, riêng hiệu ứng này không đủ giải thích số đo. [P013-S006](#nguon-goc) [P014-S003](#nguon-goc)\n\nMột khả năng khác là quầng Lyα lớn dần cùng thiên hà và quầng vật chất tối. Từ khối lượng sao và một quan hệ suy ra khối lượng quầng, nhóm ước tính bán kính virial điển hình khoảng 13 kpc ở z ≥ 6 và 35 kpc ở z ∼ 3: tỉ số xấp xỉ 2,6, gần mức thay đổi của thang Lyα. Đây là ước tính gián tiếp, phụ thuộc quan hệ khối lượng được chọn. Hai cơ chế cũng có thể cùng tác động. [P014-S008](#nguon-goc) [P015-S008](#nguon-goc)\n\nBước tiếp theo là đo quầng qua nhiều khoảng dịch chuyển đỏ với độ nhạy và độ phân giải được kiểm soát, đồng thời dùng các vạch không cộng hưởng để xác định vận tốc hệ và so sánh với mô phỏng truyền bức xạ. Một xu hướng tăng liên tục theo kích thước thiên hà sẽ ủng hộ đồng tiến hóa; thay đổi gắn với trạng thái ion hóa ở các thiên hà tương đương sẽ củng cố vai trò của tái ion hóa. [P015-S006](#nguon-goc)"
+      }
+    ],
+    "references": [
+      {
+        "label": "Bài công bố gốc (DOI)",
+        "url": "https://doi.org/10.1051/0004-6361/202661652"
+      },
+      {
+        "label": "Toàn văn đã đọc",
+        "url": "https://arxiv.org/abs/2607.05087v2"
+      }
+    ],
+    "byline": "Tổng hợp tự động bằng Codex"
+  },
+  "approval": {
+    "content_hash": "ffb70208628d906263b2eb07c80962fed83afd4ff07e99c8a5e9f0a1f1d818c6",
+    "review_fingerprint": "50114dd9df1b8ebf495927b206c4e7b33f835b89759e63f3abd709162a02a6d3",
+    "review": {
+      "passed": true,
+      "doi_matches": true,
+      "fulltext_used": true,
+      "numbers_supported": true,
+      "conclusions_supported": true,
+      "figures_supported": true,
+      "terminology_consistent": true,
+      "issues": []
+    },
+    "model": "gpt-6.1-terra"
+  }
+}
