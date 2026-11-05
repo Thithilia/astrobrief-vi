@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "summary": {
+    "id": "2c7fee229797fc0b",
+    "doi": "10.3847/1538-4357/ae9a7a",
+    "title": "Đo hằng số Hubble từ tương quan giữa sóng hấp dẫn và thiên hà",
+    "dek": "Từ hai sự kiện sóng hấp dẫn và danh mục GLADE+, nhóm tác giả báo cáo tín hiệu tương quan chéo ở mức 5,9σ và suy ra H₀ = 67 (+18/−15) km s⁻¹ Mpc⁻¹.",
+    "journal": "apj",
+    "authors": [
+      "Isabela Santiago de Matos",
+      "Charles Dalang",
+      "Tessa Baker",
+      "Raul Abramo",
+      "João Ferri",
+      "Miguel Quartin"
+    ],
+    "paper_title": "First Measurement of the Hubble Constant from Gravitational Wave–Galaxy Cross Correlations",
+    "published_online": "2026-11-02T00:00:00Z",
+    "issue_date": "2026-11-10",
+    "first_seen": "2026-11-03T08:00:04Z",
+    "generated_at": "2026-11-05T08:45:37.157760Z",
+    "reviewed_at": "2026-11-05T08:56:53.970349Z",
+    "topic": "cosmology",
+    "reading_minutes": 7,
+    "source": {
+      "license": null,
+      "version": "2512.15380v2",
+      "kind": "arxiv",
+      "sha256": "3453c245f9e26ab21b3f7e0b3432ba43ecc7bb08331cca4b000d1bd4b92fcdc8",
+      "url": "https://arxiv.org/abs/2512.15380v2",
+      "doi": "10.3847/1538-4357/ae9a7a"
+    },
+    "figures": [],
+    "glossary": [
+      {
+        "vi": "Hằng số Hubble",
+        "en": "Hubble constant"
+      },
+      {
+        "vi": "Sóng hấp dẫn",
+        "en": "Gravitational waves"
+      },
+      {
+        "vi": "Khoảng cách độ sáng",
+        "en": "Luminosity distance"
+      },
+      {
+        "vi": "Dịch chuyển đỏ",
+        "en": "Redshift"
+      },
+      {
+        "vi": "Còi sáng",
+        "en": "Bright siren"
+      },
+      {
+        "vi": "Còi tối",
+        "en": "Dark siren"
+      },
+      {
+        "vi": "Phổ góc tương quan chéo",
+        "en": "Angular cross-spectrum"
+      },
+      {
+        "vi": "Độ lệch nguồn sóng hấp dẫn",
+        "en": "Gravitational-wave bias"
+      },
+      {
+        "vi": "Hiệp phương sai",
+        "en": "Covariance"
+      },
+      {
+        "vi": "Khoảng hậu nghiệm mật độ cao",
+        "en": "Highest-density posterior interval"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Một cách khác để đo tốc độ giãn nở",
+        "body": "Vũ trụ hiện giãn nở nhanh đến mức nào? Hằng số Hubble (Hubble constant, H₀) lượng hóa tốc độ giãn nở đó và là một thông số then chốt của vũ trụ học. Những phương pháp dựa trên bức xạ phông vi sóng vũ trụ (cosmic microwave background, CMB) và thang khoảng cách thiên văn cho các kết quả khác nhau, tạo nên vấn đề căng thẳng Hubble (Hubble tension).\n\nSóng hấp dẫn (gravitational waves, GW) mở ra một đường đo khác. Trong nghiên cứu này, Isabela Santiago de Matos và các cộng sự tìm dấu vết thống kê chung giữa vị trí của các nguồn GW và phân bố thiên hà. Từ vị trí của tín hiệu đó, họ suy ra H₀. Phương pháp mang tên Peak Sirens đã được Ferri và cộng sự đề xuất trước đây; bài báo mới áp dụng nó vào dữ liệu quan sát. Một nghiên cứu trước dùng các bộ dữ liệu tương tự đã không phát hiện được tín hiệu, với cách xử lý khác đối với thông tin khoảng cách [P002-S002](#nguon-goc) [P002-S011](#nguon-goc)."
+      },
+      {
+        "heading": "Ghép khoảng cách sóng hấp dẫn với dịch chuyển đỏ",
+        "body": "Dạng sóng từ một hệ vật thể đặc sáp nhập cho thông tin về khoảng cách độ sáng (luminosity distance, D_L) của nguồn. Để đo sự giãn nở, ta còn cần dịch chuyển đỏ (redshift, z). Với các nguồn đủ gần và bỏ qua vận tốc riêng, hai đại lượng liên hệ gần đúng qua D_L ≈ cz/H₀, trong đó c là tốc độ ánh sáng. Vì vậy, ghép được D_L với z sẽ cho phép suy ra H₀.\n\nMột nguồn có tín hiệu điện từ xác định được thiên hà chủ là còi sáng (bright siren): dịch chuyển đỏ của thiên hà có thể cung cấp z. Với còi tối (dark siren), thiên hà chủ thường chưa được xác định duy nhất và thông tin từ danh mục thiên hà được dùng theo cách thống kê. Peak Sirens cũng dùng thống kê, nhưng đặt câu hỏi cụ thể: các vùng có xác suất chứa nguồn GW tương quan mạnh nhất với các thiên hà ở khoảng dịch chuyển đỏ nào?\n\nNhóm đo tương quan chéo (cross-correlation) qua phổ góc tương quan chéo (angular cross-spectrum), tính riêng cho từng cặp khoảng z của thiên hà và D_L của nguồn GW. Tín hiệu đạt đỉnh khi hai khoảng này tương ứng với cùng vùng không gian. Vị trí đỉnh cung cấp quan hệ khoảng cách–dịch chuyển đỏ mà không cần chỉ ra duy nhất thiên hà chủ của từng sự kiện [P002-S003](#nguon-goc) [P002-S007](#nguon-goc)."
+      },
+      {
+        "heading": "Hai sự kiện và hàng nghìn vũ trụ mô phỏng",
+        "body": "Nhóm sử dụng khoảng 280.000 thiên hà trong dải K của danh mục GLADE+ sau các bước chọn lọc, cùng hai sự kiện GW190814 và GW170817 từ GWTC-3.0. GW190814 được định vị trên vùng trời rộng 18,5 độ vuông ở mức 90%. GW170817 có thiên hà chủ đã biết. Trong phân tích chính, nhóm cố định vị trí trên trời của nguồn này theo thiên hà chủ, nhưng không dùng dịch chuyển đỏ đã đo của thiên hà đó [P004-S003](#nguon-goc) [P004-S004](#nguon-goc) [P004-S005](#nguon-goc).\n\nCác thiên hà được chia theo z; phân bố xác suất vị trí ba chiều của mỗi nguồn GW được chia theo D_L. Nhóm tính phổ chéo cho các cặp khoảng đó trên những thang góc ứng với đa cực ℓ từ 14 đến 69. Nhiều cặp nguồn GW–thiên hà có thể được dùng trong phép thống kê này, dù chỉ có hai sự kiện GW; chúng không tương đương với nhiều phép đo GW độc lập.\n\nĐể dự đoán tín hiệu và ước lượng hiệp phương sai (covariance) giữa các phép đo, nhóm tạo gần 6.000 mô phỏng có độ phân giải vị trí của các sự kiện giống dữ liệu. Họ cũng ghép các bản đồ thiên hà và GW từ những mô phỏng khác nhau để xây dựng trường hợp không có tương quan. So sánh trường hợp này với dữ liệu cho phép đánh giá mức ý nghĩa của tín hiệu [P004-S007](#nguon-goc) [P008-S001](#nguon-goc) [P008-S003](#nguon-goc)."
+      },
+      {
+        "heading": "Tín hiệu 5,9σ và giá trị H₀",
+        "body": "Với riêng GW190814, bài báo báo cáo p = 6,7 × 10⁻⁴, tương đương 3,4σ theo quy đổi Gaussian hai phía. Khi thêm GW170817, nhóm thu được p = 1,9 × 10⁻⁹ và nêu mức 5,9σ. Các giá trị p được ước lượng từ các phân bố χ² của mô phỏng, có dùng phép khớp phân bố Fréchet; mức ý nghĩa vì thế phụ thuộc vào cách mô hình hóa đuôi thống kê. Nếu quy đổi p thứ hai theo cùng quy ước Gaussian hai phía, kết quả xấp xỉ 6,0σ [P004-S008](#nguon-goc) [P004-S009](#nguon-goc).\n\nTừ vị trí đỉnh, phân tích hai sự kiện cho H₀ = 67 (+18/−15) km s⁻¹ Mpc⁻¹, với khoảng hậu nghiệm mật độ cao (highest-density posterior interval) 68%. Đồng thời, nhóm đặt giới hạn trên b_gw < 4,3 ở mức 95%. Đại lượng b_gw mô tả độ lệch nguồn sóng hấp dẫn (gravitational-wave bias), tức mức độ các nguồn này lần theo phân bố vật chất tối. Chỉ dùng GW190814 cho H₀ = 53 (+31/−18) km s⁻¹ Mpc⁻¹ ở mức 68% và b_gw < 6,2 ở mức 95% [P005-S007](#nguon-goc).\n\nHình 1 biểu diễn các đỉnh tương quan gần D_L ≈ 40 Mpc và 255 Mpc. Hình 3 cho thấy phân bố của H₀ thu hẹp khi thêm GW170817. Đường Planck trong Hình 1 là đường tham chiếu của mô hình nền, còn các khoảng H₀ vừa nêu được suy ra từ phân tích tương quan của bài báo [P004-S006](#nguon-goc) [P006-S003](#nguon-goc)."
+      },
+      {
+        "heading": "Những giả thiết định hình kết quả",
+        "body": "Nhóm dùng phân bố tiên nghiệm (prior) phẳng trong khoảng H₀ từ 20 đến 120 km s⁻¹ Mpc⁻¹ và b_gw từ 0 đến 10. Mô phỏng nền dùng vũ trụ học Planck với Ω_m = 0,3153. Khi thay đổi H₀, mô hình dịch vị trí đỉnh nhưng bỏ qua sự thay đổi của hình dạng phổ theo vũ trụ học. Để tách b_gw khỏi biên độ gom cụm của thiên hà và vật chất, nhóm còn dùng biên độ tự tương quan thiên hà và giá trị σ₈ từ CMB [P003-S007](#nguon-goc) [P003-S008](#nguon-goc) [P004-S009](#nguon-goc) [P004-S010](#nguon-goc).\n\nMô phỏng cho phép thiên hà chủ nằm ngoài phần danh mục quan sát được. Tuy nhiên, chúng giả sử các thiên hà có xác suất như nhau để chứa nguồn GW và các thiên hà không quan sát được có thống kê gom cụm giống những thiên hà được quan sát. Nhóm mô hình hóa độ lệch theo b_gw(1 + z), với một tham số chung cho mẫu; chỉ có hai sự kiện khiến giá trị này chịu biến động thống kê lớn [P006-S007](#nguon-goc) [P006-S008](#nguon-goc) [P007-S007](#nguon-goc).\n\nVị trí đỉnh nhạy với H₀, còn biên độ chịu ảnh hưởng của b_gw. Dù phát hiện được tương quan, phân tích chỉ cho giới hạn trên của b_gw. Nhóm lưu ý rằng cần mô hình hóa sự phụ thuộc của hiệp phương sai vào b_gw khi tham số tiến gần không; phân tích hiện tại giữ hiệp phương sai cố định khi thay đổi nó. Vận tốc riêng (peculiar velocity) cũng chưa được đưa vào; nhóm ước tính ảnh hưởng lên H₀ nhỏ hơn độ bất định cuối cùng [P003-S010](#nguon-goc) [P005-S009](#nguon-goc) [P006-S003](#nguon-goc)."
+      },
+      {
+        "heading": "Từ phép đo đầu tiên đến mẫu nguồn lớn hơn",
+        "body": "Kết quả cho thấy có thể khai thác cấu trúc không gian của thiên hà để nối khoảng cách GW với dịch chuyển đỏ và đo H₀. Độ chính xác hiện chưa cạnh tranh với các phép đo hàng đầu từ CMB và nến chuẩn, nhưng bài báo nhận thấy nó tương đương và phù hợp với các kết quả còi tối khác. Việc dùng GW170817 trong phân tích chính cũng kiểm tra cách phương pháp hoạt động khi không sử dụng dịch chuyển đỏ của thiên hà chủ [P006-S004](#nguon-goc) [P006-S005](#nguon-goc).\n\nBước tiếp theo là dùng danh mục thiên hà sâu hơn và thêm các sự kiện GW được định vị tốt. Nhóm dự báo khoảng 100 sự kiện có bản đồ vị trí giống GW190814 có thể đưa độ chính xác H₀ xuống khoảng 4%, theo phép ngoại suy ở độ phân giải cố định [P007-S001](#nguon-goc) [P007-S002](#nguon-goc). Có thể kiểm tra dự báo đó bằng mô phỏng hoặc phân tích mẫu nguồn GW lớn hơn, với độ phân giải vị trí trên trời tương tự GW190814. Mô hình hóa tốt hơn hiệp phương sai và xét các hiệu ứng vận tốc riêng cũng là những hướng cải thiện phép đo [P005-S009](#nguon-goc) [P006-S003](#nguon-goc). Một hướng bổ sung khác là nghiên cứu quan hệ và hiệp phương sai giữa Peak Sirens với các phương pháp còi chuẩn khác, phục vụ việc so sánh hoặc kết hợp chúng [P006-S006](#nguon-goc) [P006-S007](#nguon-goc).\n\nBài tổng hợp tự động bằng Codex dựa trên bản arXiv 2512.15380v2."
+      }
+    ],
+    "references": [
+      {
+        "label": "Bài công bố gốc (DOI)",
+        "url": "https://doi.org/10.3847/1538-4357/ae9a7a"
+      },
+      {
+        "label": "Toàn văn đã đọc",
+        "url": "https://arxiv.org/abs/2512.15380v2"
+      }
+    ],
+    "byline": "Tổng hợp tự động bằng Codex"
+  },
+  "approval": {
+    "content_hash": "35a2a0fcee478c5effd182753919f2cf19e72477675100c600b3851824f37028",
+    "review_fingerprint": "2e5693821933c5304d1e44476c723e1d3380444fd66bcd461149a40260f68414",
+    "review": {
+      "passed": true,
+      "doi_matches": true,
+      "fulltext_used": true,
+      "numbers_supported": true,
+      "conclusions_supported": true,
+      "figures_supported": true,
+      "terminology_consistent": true,
+      "issues": []
+    },
+    "model": "gpt-6.1-terra"
+  }
+}
