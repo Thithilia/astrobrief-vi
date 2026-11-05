@@ -1,21 +1,20 @@
 {
-  "status": "waiting_codex",
-  "started_at": "2026-11-05T07:00:06.536874Z",
+  "status": "running",
+  "started_at": "2026-11-05T08:00:26.450683Z",
   "created": 0,
   "reserve_target": 35,
-  "processed": 0,
+  "processed": 1,
   "held": [],
-  "stage": "starting",
-  "next_retry_at": "2026-11-05T07:20:31.344614Z",
-  "heartbeat_at": "2026-11-05T07:00:07.413646Z",
-  "doi": null,
+  "stage": "review",
+  "heartbeat_at": "2026-11-05T08:04:58.865129Z",
+  "doi": "10.1051/0004-6361/202661691",
   "queue": {
     "approved": 1,
     "needs_attention": 1,
-    "pending": 1837,
+    "pending": 1839,
     "published": 26,
-    "source_ready": 22,
-    "waiting_codex": 1,
-    "waiting_source": 184
+    "reviewing": 1,
+    "source_ready": 24,
+    "waiting_source": 221
   }
 }
