@@ -6,7 +6,7 @@
   "processed": 1,
   "held": [],
   "stage": "review",
-  "heartbeat_at": "2026-11-05T13:03:58.898398Z",
+  "heartbeat_at": "2026-11-05T13:14:27.639043Z",
   "doi": "10.3847/1538-4357/aeaf4e",
   "queue": {
     "approved": 16,
@@ -14,7 +14,7 @@
     "pending": 1674,
     "published": 26,
     "reviewing": 1,
-    "source_ready": 27,
-    "waiting_source": 395
+    "source_ready": 28,
+    "waiting_source": 394
   }
 }
