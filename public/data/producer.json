@@ -1,20 +1,20 @@
 {
   "status": "running",
   "started_at": "2026-11-05T10:00:09.376862Z",
-  "created": 2,
+  "created": 3,
   "reserve_target": 35,
-  "processed": 3,
+  "processed": 4,
   "held": [],
   "stage": "review",
-  "heartbeat_at": "2026-11-05T10:17:33.444898Z",
-  "doi": "10.3847/2041-8213/aeb6b1",
+  "heartbeat_at": "2026-11-05T10:33:55.276924Z",
+  "doi": "10.3847/1538-3881/aeb11c",
   "queue": {
-    "approved": 8,
+    "approved": 9,
     "needs_attention": 2,
     "pending": 1764,
     "published": 26,
     "reviewing": 1,
-    "source_ready": 23,
+    "source_ready": 22,
     "waiting_source": 315
   }
 }
