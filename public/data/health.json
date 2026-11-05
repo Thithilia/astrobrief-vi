@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-05T11:03:17Z",
+  "generated_at": "2026-11-05T11:15:02Z",
   "date": "2026-11-05",
   "timezone": "Asia/Saigon",
   "target": 5,
   "published": 5,
   "missing": 0,
   "deploying": 0,
-  "approved_available": 11,
+  "approved_available": 12,
   "reserve_target": 35,
   "reserve_days": 2,
   "reserve_low": false,
@@ -19,17 +19,17 @@
     "reserve_target": 35,
     "processed": 1,
     "held": [],
-    "stage": "draft",
-    "heartbeat_at": "2026-11-05T11:02:15.206937Z",
+    "stage": "review",
+    "heartbeat_at": "2026-11-05T11:13:07.018163Z",
     "doi": "10.3847/1538-4357/aeac2a",
     "queue": {
       "approved": 11,
-      "drafting": 1,
       "needs_attention": 2,
-      "pending": 1764,
+      "pending": 1717,
       "published": 26,
-      "source_ready": 20,
-      "waiting_source": 315
+      "reviewing": 1,
+      "source_ready": 28,
+      "waiting_source": 355
     }
   }
 }
