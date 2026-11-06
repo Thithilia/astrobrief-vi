@@ -14,10 +14,10 @@
       "checked_at": "2026-11-05T14:16:01Z"
     },
     "2026-11-06": {
-      "published": 0,
+      "published": 5,
       "target": 5,
-      "status": "waiting_deployment",
-      "checked_at": "2026-11-06T01:50:21Z"
+      "status": "complete",
+      "checked_at": "2026-11-06T01:51:20Z"
     }
   }
 }
