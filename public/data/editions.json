@@ -16,8 +16,8 @@
     "2026-11-06": {
       "published": 0,
       "target": 5,
-      "status": "not_due",
-      "checked_at": "2026-11-05T21:36:19Z"
+      "status": "waiting_deployment",
+      "checked_at": "2026-11-06T01:50:21Z"
     }
   }
 }
